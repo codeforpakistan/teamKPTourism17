@@ -36,8 +36,8 @@
 			<!-- TREKKING dIV -->
 			<div class="col-lg-4 col-sm-6 col-xs-12">
 				<div class="text-center zoom famous_events_div outer-wrapper margins padding">
-					<img id="trekking_normal" class="image_normal" src="./images/Swat_valley_blurred.png" />
-					<img id="trekking_hover" class="image_hover" src="./images/Swat_valley_blurred.png" />	
+					<img id="trekking_normal" class="image_normal" src="images/Swat_valley_blurred.png" />
+					<img id="trekking_hover" class="image_hover" src="images/img-1.jpg" />	
 					<div class="cover trekking_cover">
 						<div class="has_wrapper">
 							<h2 class="color-black">Trekking</h2>
@@ -58,8 +58,8 @@
 			<!-- TREKKING 2 dIV -->
 			<div class="col-lg-4 col-sm-6 col-xs-12">
 				<div class="text-center zoom famous_events_div outer-wrapper margins padding">
-					<img id="trekking2_normal" class="image_normal" src="./images/Swat_valley_blurred.png" />
-					<img id="trekking2_hover" class="image_hover" src="./images/Swat_valley_blurred.png" />	
+					<img id="trekking2_normal" class="image_normal" src="images/Swat_valley_blurred.png" />
+					<img id="trekking2_hover" class="image_hover" src="images/img-2.jpg" />	
 					<div class="cover trekking2_cover">
 						<div class="has_wrapper">
 							<h2 class="color-black">Trekking</h2>
@@ -81,7 +81,7 @@
 			<div class="col-lg-4 col-sm-6 col-xs-12">
 				<div class="text-center zoom famous_events_div outer-wrapper margins padding">
 					<img id="trekking_normal" class="image_normal" src="./images/Swat_valley_blurred.png" />
-					<img id="trekking_hover" class="image_hover" src="./images/Swat_valley_blurred.png" />	
+					<img id="trekking_hover" class="image_hover" src="./images/img-3.jpg" />	
 					<div class="cover site_seeing_cover">
 						<div class="has_wrapper">
 							<h2 class="color-black">Site Seeing</h2>
@@ -103,7 +103,7 @@
 			<div class="col-lg-4 col-sm-6 col-xs-12">
 				<div class="text-center zoom famous_events_div outer-wrapper margins padding">
 					<img id="trekking_normal" class="image_normal" src="./images/Swat_valley_blurred.png" />
-					<img id="trekking_hover" class="image_hover" src="./images/Swat_valley_blurred.png" />	
+					<img id="trekking_hover" class="image_hover" src="./images/img-4.jpg" />	
 					<div class="cover paragliding_cover">
 						<div class="has_wrapper">
 							<h2 class="color-black">Paragliding</h2>
@@ -125,7 +125,7 @@
 			<div class="col-lg-4 col-sm-6 col-xs-12">
 				<div class="text-center zoom famous_events_div outer-wrapper margins padding">
 					<img id="trekking_normal" class="image_normal" src="./images/Swat_valley_blurred.png" />
-					<img id="trekking_hover" class="image_hover" src="./images/Swat_valley_blurred.png" />	
+					<img id="trekking_hover" class="image_hover" src="./images/img-5.jpg" />	
 					<div class="cover fishing_cover">
 						<div class="has_wrapper">
 							<h2 class="color-black">Fishing</h2>
@@ -147,7 +147,7 @@
 			<div class="col-lg-4 col-sm-6 col-xs-12">
 				<div class="text-center zoom famous_events_div outer-wrapper margins padding">
 					<img id="trekking_normal" class="image_normal" src="./images/Swat_valley_blurred.png" />
-					<img id="trekking_hover" class="image_hover" src="./images/Swat_valley_blurred.png" />	
+					<img id="trekking_hover" class="image_hover" src="./images/img-6.jpg" />	
 					<div class="cover culture_cover">
 						<div class="has_wrapper">
 							<h2 class="color-black">Culture</h2>
@@ -296,31 +296,39 @@
 					<!-- LEFT CONTAINER DIV -->
 					<div class="col-lg-10">
 						<div class="col-lg-6 col-md-6 col-sm-12">
-							<!-- LEFT IMAGE DIV -->
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<img id="visa_guide" class="img img-responsive" src="images/sample_image _4.png" />
-								<p class="color-black">SMALL GROUP TOUR</p>
-								<p class="event_cost left">Rs. 5000</p>
+							<div class="margins">
+								<!-- LEFT IMAGE DIV -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<div class="tours_image_div">
+										<img id="visa_guide" class="img img-responsive" src="images/sample_image _4.png" />
+										<p class="color-black">SMALL GROUP TOUR</p>
+										<p class="event_cost left">Rs. 5000</p>
+									</div>
+								</div>	
+								<!-- LEFT TEXT DIV -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<h3 class="color-black">Private Tour 4-Day Naran Trip From Peshawar with awesome activities</h3>
+									<p class="color-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								</div>
 							</div>	
-							<!-- LEFT TEXT DIV -->
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<h3 class="color-black">Private Tour 4-Day Naran Trip From Peshawar with awesome activities</h3>
-								<p class="color-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-							</div>
-						</div>	
+						</div>
 
 						<!-- RIGHT CONTAINER DIV -->
 						<div class="col-lg-6 col-md-6 col-sm-12">
-							<!-- RIGHT IMAGE DIV -->
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<img id="visa_guide" class="img img-responsive" src="images/sample_image_2.png" />
-								<p class="color-black">SMALL GROUP TOUR</p>
-								<p class="event_cost left">Rs. 5000</p>
-							</div>	
-							<!-- RIGHT TEXT DIV -->
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<h3 class="color-black">Private Tour 4-Day Naran Trip From Peshawar with awesome activities</h3>
-								<p class="color-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								<div class="margins">
+								<!-- RIGHT IMAGE DIV -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<div class="tours_image_div">
+										<img id="visa_guide" class="img img-responsive" src="images/sample_image_2.png" />
+										<p class="color-black">SMALL GROUP TOUR</p>
+										<p class="event_cost left">Rs. 5000</p>
+									</div>	
+								</div>
+								<!-- RIGHT TEXT DIV -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<h3 class="color-black">Private Tour 4-Day Naran Trip From Peshawar with awesome activities</h3>
+									<p class="color-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								</div>
 							</div>
 						</div>
 						<div class="col-lg-1"></div>
@@ -333,33 +341,42 @@
 					<!-- LEFT CONTAINER DIV -->
 					<div class="col-lg-10">
 						<div class="col-lg-6 col-md-6 col-sm-12">
+							<div class="margins">
 							<!-- LEFT IMAGE DIV -->
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<img id="visa_guide" class="img img-responsive" src="images/sample_image_2.png" />
-								<p class="color-black">SMALL GROUP TOUR</p>
-								<p class="event_cost left">Rs. 5000</p>
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<div class="tours_image_div">
+										<img id="visa_guide" class="img img-responsive" src="images/sample_image_2.png" />
+										<p class="color-black">SMALL GROUP TOUR</p>
+										<p class="event_cost left">Rs. 5000</p>
+									</div>	
+								</div>
+								<!-- LEFT TEXT DIV -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<h3 class="color-black">Private Tour 4-Day Naran Trip From Peshawar with awesome activities</h3>
+									<p class="color-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								</div>
 							</div>	
-							<!-- LEFT TEXT DIV -->
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<h3 class="color-black">Private Tour 4-Day Naran Trip From Peshawar with awesome activities</h3>
-								<p class="color-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-							</div>
-						</div>	
+						</div>
 
 						<!-- RIGHT CONTAINER DIV -->
 						<div class="col-lg-6 col-md-6 col-sm-12">
-							<!-- RIGHT IMAGE DIV -->
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<img id="visa_guide" class="img img-responsive" src="images/sample_image _4.png" />
-								<p class="color-black">SMALL GROUP TOUR</p>
-								<p class="event_cost left">Rs. 5000</p>
-							</div>	
-							<!-- RIGHT TEXT DIV -->
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<h3 class="color-black">Private Tour 4-Day Naran Trip From Peshawar with awesome activities</h3>
-								<p class="color-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+							<div class="margins">
+								<!-- RIGHT IMAGE DIV -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<div class="tours_image_div">
+										<img id="visa_guide" class="img img-responsive" src="images/sample_image _4.png" />
+										<p class="color-black">SMALL GROUP TOUR</p>
+										<p class="event_cost left">Rs. 5000</p>
+									</div>
+								</div>	
+								<!-- RIGHT TEXT DIV -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<h3 class="color-black">Private Tour 4-Day Naran Trip From Peshawar with awesome activities</h3>
+									<p class="color-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								</div>
 							</div>
 						</div>
+
 						<div class="col-lg-1"></div>
 					</div>	
 				</div>

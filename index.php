@@ -35,14 +35,18 @@
 		<div class="row margins">
 			<!-- DISCOVER -->
 			<div class="col-sm-6 text-center right-separation animated SlideInLeft">
-				<img src="images/discover-01.png" alt="" class="img img-responsive auto-margin">
+				<object type="image/svg+xml" data="images/home_page_illlustrations-02.svg" width="50%" height="auto">
+				 	<param name="src" value="images/home_page_illlustrations-02.svg">
+				</object>
 				<h2 class="color-blue">Discover</h2>
 				<p class="color-text intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 				<a href="discover.php"><button class="btn btn-default">GO</button></a>
 			</div>
 			<!-- NAVIGATE -->
 			<div class="col-sm-6 text-center left-separation small-screen-margin animated SlideInRight">
-				<img src="images/discover2-01.png" alt="" class="img img-responsive auto-margin">
+				<object type="image/svg+xml" data="images/home_page_illlustrations-03.svg" width="50%" height="auto">
+				 	<param name="src" value="images/home_page_illlustrations-03.svg">
+				</object>
 				<h2 class="color-blue">Navigation</h2>
 				<p class="color-text intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 				<a href="#"><button class="btn btn-default">GO</button></a>
