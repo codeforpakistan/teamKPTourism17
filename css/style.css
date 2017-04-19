@@ -7,22 +7,29 @@
     src: url('../fonts/Raleway/sansation_light.ttf');
 }
 @font-face {
-    font-family: Robotto;
+    font-family: Robotto-Bold;
     src: url('../fonts/Robotto/Roboto-Bold.ttf');
 }
 @font-face {
-    font-family: Robotto Thin;
+    font-family: Robotto-Thin;
     src: url('../fonts/Robotto/Roboto-Thin.ttf');
+}
+@font-face {
+    font-family: Robotto-Black;
+    src: url('../fonts/Robotto/Roboto-Black.ttf');
+}
+@font-face {
+    font-family: Robotto-Light;
+    src: url('../fonts/Robotto/Roboto-Light.ttf');
 }
 p, a {
 	font-family: 'Open Sans';
 }
-h2 {
-	font-family: 'Robotto';
-	font-weight: bold;
-}
 h4, h3 {
-	font-family: 'Open Sans';
+	font-family: 'Robotto-Light';
+}
+h4 {
+	font-size: 20px;
 }
 .pattern {
 	background: url('../images/geo_pattern_light.png');
@@ -37,6 +44,9 @@ h4, h3 {
 .color {
 	color: #444;
 }
+.heading_large {
+	font-size: 57px;
+}
 .auto-margin {
 	margin-left: auto;
 	margin-right: auto;
@@ -45,10 +55,10 @@ h4, h3 {
 	border-left: 1px solid #e6e6e6;
 }
 .right-separation {
-	border-right: 1px solid #e6e6e6;
+	border-right: 2px solid #e6e6e6;
 }
 .color-blue {
-	color: #1063a2;
+	color: rgb(20,101,163);
 }
 .color-black {
 	color: #000;
@@ -71,6 +81,14 @@ h4, h3 {
 	border: none;
 }
 /* Landing Page */
+.top_div h2 {
+	font-family: 'Robotto-Black';
+	font-weight: bold;
+}
+.top_div p {
+	font-family: 'Robotto-Thin';
+	font-size: 16px;
+}
 .intro-text {
 	padding: 0 25% 2%;
 }
@@ -80,6 +98,9 @@ h4, h3 {
 .footer {
 	background-color: #284146;
 	min-height: 60px;
+}
+.footer ul {
+	margin: 0;
 }
 .footer-links, .other_regions_link {
     list-style: none;
@@ -166,7 +187,7 @@ h4, h3 {
     margin: auto;
     margin: auto;
     padding: .5em 0;
-    font-family: 'Robotto Thin';
+    font-family: 'Robotto-Thin';
 }
 .famous_regions_div:hover h2, .famous_events_div:hover h2 {
 	background: url(../images/menu_swipe.png) no-repeat;
@@ -240,10 +261,10 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
 .outer-wrapper img{
 	width: 100%;
 }
-.cover, .trekking_cover{
+.cover, .trekking_cover, .trekking2_cover, .site_seeing_cover, .paragliding_cover, .fishing_cover, .culture_cover {
 	position: absolute;
 	top: 0;
-    opacity: .85;
+    opacity: .8;
 	width: 100%;
 	height: 100%;
 	border-radius: 30px !important;
@@ -254,6 +275,21 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
 .trekking_cover {
 	background: url(../images/trekking.png) no-repeat 50% 25%;
 }
+.trekking2_cover {
+	background: url(../images/trekking2.png) no-repeat 50% 25%;
+}
+.site_seeing_cover {
+	background: url(../images/siteseeing2.png) no-repeat 50% 25%;
+}
+.paragliding_cover {
+	background: url(../images/paraglide2.png) no-repeat 50% 25%;
+}
+.fishing_cover {
+	background: url(../images/fishing2.png) no-repeat 50% 25%;
+}
+.culture_cover {
+	background: url(../images/cult2.png) no-repeat 50% 25%;
+}
 .cover {	
 	background-color: #f6f6f6;
 }
@@ -262,6 +298,9 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
 }
 .full_width {
 	width: 100%;
+}
+.full_height {
+	height: 100%;
 }
 .has_wrapper {
     position: relative;
@@ -279,12 +318,36 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
 .radius {
 	border-radius: 0px 0px 30px 30px;
 }
+.survival_text_wrapper  {
+    width: 90%;
+    margin: 12% auto;
+}
+.guide_link {
+    font-family: Robotto-Bold;
+    font-size: 16px;
+
+}
+a.guide_link:hover {
+    text-decoration: none;    
+}
+.event_cost {
+	color: #fff;
+	background-color: red;
+}
+.left {
+	float: left;
+}
+
+
+
+
+
 
 @media (max-width: 1200px) {
 	.famous_regions_div {
-	    height: 315px;
+	    height: 300px;
 	    min-height: 200px;
-	    margin-bottom: 12%;
+	    margin-bottom: 15%;
 	}
 	.footer > .col-sm-8 {
 		width: 100%;
@@ -297,13 +360,15 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
 }
 @media (max-width: 768px) {
 	.famous_regions_div {
-	    height: 265px;
+	    height: 245px;
 	    min-height: 200px;
-	    margin-bottom: 12%;
+	    margin-bottom: 20%;
 	}
 	.famous_regions_div .has-feedback {
-	    width: 70%;
+	    width: 100%;
 	    margin: auto;
+	    position: relative;
+	    top: 12%;
 	}
 }
 @media (max-width: 767px) {

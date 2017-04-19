@@ -13,29 +13,35 @@
 
 
 <body class="pattern">
-	<div class="container">		
+	<div class="container">	
+		<!-- TOP LOGO DIV -->
+		<div class="col-sm-12">	
+			<div class="row margins top_div animated ZoomIn">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+					<div class="text-center margins">
+						<img src="images/logo.png" alt="">
+						<h2 class="color-blue heading_large">TCKP</h2>
+						<h4 class="color-blue">Choose your adventure</h4>
+						<p class="color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+						<a href="#"><button class="btn btn-default">GO BACK</button></a>
+					</div>
+				</div>
+				<div class="col-sm-4"></div>
+			</div>
+		</div>	
+		
+		<!-- NAVIGATIONS -->
 		<div class="row margins">
-			<div class="col-sm-4">
-			</div>
-			<div class="col-sm-4 text-center slidedown">
-				<img src="images/logo.png" alt="">
-				<h2 class="color-blue">TCKP</h2>
-				<h4 class="color-blue">Choose your Adventure</h4>
-				<p class="color-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
-				<a href="#"><button class="btn btn-default">GO BACK</button></a>
-			</div>
-			<div class="col-sm-4">
-			</div>
-		</div>
-
-		<div class="row margins">
-			<div class="col-sm-6 text-center right-separation">
+			<!-- DISCOVER -->
+			<div class="col-sm-6 text-center right-separation animated SlideInLeft">
 				<img src="images/discover-01.png" alt="" class="img img-responsive auto-margin">
 				<h2 class="color-blue">Discover</h2>
 				<p class="color-text intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 				<a href="discover.php"><button class="btn btn-default">GO</button></a>
 			</div>
-			<div class="col-sm-6 text-center left-separation small-screen-margin animated ">
+			<!-- NAVIGATE -->
+			<div class="col-sm-6 text-center left-separation small-screen-margin animated SlideInRight">
 				<img src="images/discover2-01.png" alt="" class="img img-responsive auto-margin">
 				<h2 class="color-blue">Navigation</h2>
 				<p class="color-text intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -44,20 +50,21 @@
 		</div>
 	</div>
 
-	<div class="footer landing_footer">
-		<div class="col-sm-2"></div>
-		<div class="col-sm-8 text-center">
-			<ul>
-				<li class="footer-links"><a href="#">Home</a></li>
-				<li class="footer-links"><a href="#">Terms</a></li>
-				<li class="footer-links"><a href="#">Privacy Policy</a></li>
-				<li class="footer-links"><a href="#">Site Map</a></li>
-				<li class="footer-links"><a href="#">Discover Places</a></li>
-				<li class="footer-links"><a href="#">Navigation</a></li>
-			</ul>
+	<!-- FOOTER DIV -->
+		<div class="footer landing_footer">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<ul class="text-center">
+					<li class="footer-links"><a href="#">Home</a></li>
+					<li class="footer-links"><a href="#">Terms</a></li>
+					<li class="footer-links"><a href="#">Privacy Policy</a></li>
+					<li class="footer-links"><a href="#">Site Map</a></li>
+					<li class="footer-links"><a href="#">Discover Places</a></li>
+					<li class="footer-links"><a href="#">Navigation</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-2"></div>
 		</div>
-		<div class="col-sm-2"></div>
-	</div>
 
 </body>
 
