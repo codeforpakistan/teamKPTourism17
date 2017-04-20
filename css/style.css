@@ -199,7 +199,6 @@ h4 {
 	background: url(../images/menu_swipe.png) no-repeat;	
     background-size: 100%;
     color: #fff;
-    background-size: cover;
     font-weight: 600;
     margin-bottom: 10px;
     font-size: 45px;
@@ -231,20 +230,20 @@ h4 {
     margin-top: -1em;
 }
 /*  Area details page */
-.famous_events_div .has_top {
+.famous_events_div .has_bottom, .trek_page_div .has_bottom {
     position: absolute;
     bottom: 0%;
 }
-p.normal_details, .zoom:hover div.hover_details, img.image_normal, .zoom:hover img.image_hover {
+p.normal_details, .zoom:hover div.hover_details, img.image_normal, .zoom:hover img.image_hover, .trek_page_normal_details, .trek_page_div:hover .trek_page_hover_details {
 	display: block;
 }
-div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, img.image_hover {
+div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, img.image_hover, .trek_page_hover_details, .trek_page_div:hover .trek_page_normal_details {
 	display: none;
 }
 .hover_details p {
 	padding: 5% 5% 0 5%;	
     color: #000;
-    font-size: medium;
+    font-size: smaller;
     font-weight: 600;
     font-style: italic;
 }
@@ -252,9 +251,9 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
     position: relative;
     bottom: -1em;
 }
-.famous_events_div {
+.famous_events_div, .trek_page_div {
 	padding: 0;
-	height: 440px;
+	height: 400px;
     margin: 0 auto 20%;
     border-radius: 30px !important;
     width: 90%;
@@ -264,10 +263,10 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
 }
 .outer-wrapper img {
     width: 100%;
-    height: 440px;
+    height: 400px;
     border-radius: 30px !important;
 }
-.cover, .trekking_cover, .trekking2_cover, .site_seeing_cover, .paragliding_cover, .fishing_cover, .culture_cover {
+.cover, .trekking_cover, .trekking2_cover, .site_seeing_cover, .paragliding_cover, .fishing_cover, .culture_cover, .trek_page_cover_div {
 	position: absolute;
 	top: 0;
     opacity: .8;
@@ -276,6 +275,8 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
 	border-radius: 30px !important;
 	transition: display 1s ease-in-out;
 	-webkit-transition: display 1s ease-in-out;
+}
+.cover, .trekking_cover, .trekking2_cover, .site_seeing_cover, .paragliding_cover, .fishing_cover, .culture_cover {
 	display: block;
 }
 .trekking_cover {
@@ -299,7 +300,7 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
 .cover {	
 	background-color: #f6f6f6;
 }
-.outer-wrapper:hover .cover, .outer-wrapper:hover .trekking_cover{
+.outer-wrapper:hover .cover {
 	display: none;
 }
 .full_width {
@@ -346,6 +347,46 @@ a.guide_link:hover {
 .tours_image_div {
 	min-height: 230px;
 }
+/*  
+TREKS PAGE
+*/
+.trek_page_div {
+	background: url('../images/trek-tile-bg-map.png') no-repeat; 
+	background-size: cover !important;
+}
+.trek_page_cover_div {
+	background-color: #fcfcfc;
+}
+.trek_page_cover_div {
+	display: none;
+}
+.trek_page_div:hover .trek_page_cover_div {
+	display: block;
+}
+.width_76 {
+	width: 76%;
+    margin: 2% auto 5%;
+}
+.width_76 h3 {
+	font-size: 30px;
+}
+.recommendation:hover {
+	margin-bottom: 5%;
+}
+.filled_stars:before {
+   content: "\2605";
+   position: absolute;
+   color: cornflowerblue;
+}
+.trek_page_has_wrapper  {
+	padding-bottom: 2%;
+}
+.trek_explore {
+	margin-bottom: -14px;
+}
+.trek_specs {
+	padding-top: 10px;
+}
 
 
 
@@ -358,11 +399,11 @@ a.guide_link:hover {
 	    min-height: 200px;
 	    margin-bottom: 15%;
 	}
-	.famous_events_div {
-		height: 420px;
+	.famous_events_div, .trek_page_div {
+		height: 380px;
 	}
 	.outer-wrapper img {
-	    height: 420px;
+	    height: 380px;
 	}
 	.footer > .col-sm-8 {
 		width: 100%;
@@ -378,6 +419,7 @@ a.guide_link:hover {
     width: 82%;
   }
 }
+
 @media (max-width: 768px) {
 	.famous_regions_div {
 	    height: 245px;
@@ -390,16 +432,20 @@ a.guide_link:hover {
 	    position: relative;
 	    top: 12%;
 	}
-	.famous_events_div {
-		height: 360px;
+	.famous_events_div, .trek_page_div {
+		height: 320px;
 	}
 	.outer-wrapper img {
-	    height: 360px;
+	    height: 320px;
+	}
+	.cover {
+	    background-size: 30%;
 	}
 	.container {
 	    width: 82%;
-	  }
+	}
 }
+
 @media (max-width: 767px) {
 	.intro-text {
 		padding: 0 0 2%;
@@ -423,14 +469,18 @@ a.guide_link:hover {
 	.footer ul {
 	    padding: 0;
 	}
-	@media (max-width: 500px) {
-	.famous_events_div {
-		height: 320px;
+}
+@media (max-width: 500px) {
+	.famous_events_div, .trek_page_div {
+		height: 290px;
 	}
 	.outer-wrapper img {
-	    height: 320px;
+	    height: 290px;
+	}
+	.famous_regions_div h2, .famous_events_div h2{	
+	    padding: .22em 0;
 	}
 }
-}
+
 
 

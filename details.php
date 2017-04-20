@@ -45,7 +45,7 @@
 							<p class="normal_details">8 differnet trekking paths</p>
 						</div>
 					</div>				
-					<div class="has_top hover_details">	
+					<div class="has_bottom hover_details">	
 						<h2>Trekking</h2>
 						<div class="white_bg shadow radius">					
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -67,7 +67,7 @@
 							<p class="normal_details">8 differnet trekking paths</p>
 						</div>
 					</div>				
-					<div class="has_top hover_details">	
+					<div class="has_bottom hover_details">	
 						<h2>Trekking</h2>
 						<div class="white_bg shadow radius">					
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -89,7 +89,7 @@
 							<p class="normal_details">15 differnet site seeing spots</p>
 						</div>
 					</div>				
-					<div class="has_top hover_details">	
+					<div class="has_bottom hover_details">	
 						<h2>Site Seeing</h2>
 						<div class="white_bg shadow radius">					
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -111,7 +111,7 @@
 							<p class="normal_details">3 amazing paragliding experiences</p>
 						</div>
 					</div>				
-					<div class="has_top hover_details">	
+					<div class="has_bottom hover_details">	
 						<h2>Paragliding</h2>
 						<div class="white_bg shadow radius">					
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -133,7 +133,7 @@
 							<p class="normal_details">5 differnet spots for fishing and relaxing</p>
 						</div>
 					</div>				
-					<div class="has_top hover_details">	
+					<div class="has_bottom hover_details">	
 						<h2>Fishing</h2>
 						<div class="white_bg shadow radius">					
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -155,7 +155,7 @@
 							<p class="normal_details">Explore the cultural values of naran</p>
 						</div>
 					</div>				
-					<div class="has_top hover_details">	
+					<div class="has_bottom hover_details">	
 						<h2>Culture</h2>
 						<div class="white_bg shadow radius">					
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
