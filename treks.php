@@ -14,29 +14,100 @@
 
 <body class="pattern animated zoomIn">
 	<div class="container">	
-		<!-- TOP LOGO DIV -->
+		<!-- TOP LOGO AND MENU DIV -->
 		<div class="col-sm-12">	
 			<div class="row margins top_div">
-				<div class="col-sm-4"></div>
-				<div class="col-sm-4">
-					<div class="text-center margins">
-						<img src="images/logo.png" alt="">
-						<h2 class="color-blue heading_large">TREKKING</h2>
-						<h4 class="color-blue">Select a Trekking Trail to Explore the Adventure</h4>
-						<p class="color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+				<!-- LOGO DIV -->
+				<div class="col-sm-6 col-xs-12">
+					<div class="col-sm-3 col-xs-4">
+						<img class="img img-responsive logo" src="images/logo.png" alt="">
+					</div>
+					<div class="col-sm-9 col-xs-8">
+						<h4 class="color-blue top_div_logo_heading text-left"> TCKP DISCOVER</h4>
+						<h5 class="color-text text-left">Tourism Cooperation KP</h5>
 					</div>
 				</div>
-				<div class="col-sm-4"></div>
+				<!-- MENU DIV -->				
+				<div class="col-sm-6 col-xs-12">
+					<ul class="text-right">
+						<li class="top-links color-black"><a href="#">Destination</a></li>
+						<li class="top-links color-black"><a href="#">Tour</a></li>
+						<li class="top-links color-black"><a href="#">Plan</a></li>
+						<li class="top-links color-black"><a href="#">Sign In</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
-		<!-- EVENTS DIV -->
+		<!-- BREAD CRUMB AND WEATHER DIV -->
+		<div class="col-sm-12">	
+			<div class="row">
+				<!-- BREADCRUMB DIV -->
+				<div class="col-sm-6 col-xs-12">
+					<div class="col-sm-3 col-xs-4"></div>
+					<div class="col-sm-9 col-xs-8">
+						<ol class="breadcrumb">
+						  <li><a href="http://localhost/tckp">Home</a></li>
+						  <li><a href="http://localhost/tckp/discover.php">Discover</a></li>
+						  <li class="active">Naran</li>
+						</ol>
+					</div>
+				</div>
+				<!-- MENU DIV -->				
+				<div class="col-sm-6 col-xs-12">
+					<div class="col-sm-10 col-xs-12">
+						<h5 class="color-text text-right">Discover > Naran</h5>
+					</div>
+					<div class="col-sm-2 col-xs-12"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- BANNER ROW -->
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="banner">
+					<!-- TOP BANNER -->
+				<div class="scroller">
+		            <div data-lazy-background="images/img-1.jpg" data-effect="fadein">
+			            <h1 data-pos="['20%', '8%']" data-duration="700" data-effect="fadein">TREKKING IN</h1>
+			            <h1 data-pos="['27%', '8%']" data-duration="700" data-effect="fadein">NARAN</h1>
+			            <p data-pos="['36%', '8%']" data-duration="700" data-effect="fadein">Lorem ipsum dolor sit amet</p>
+			            <div data-pos="['40%', '3%']" data-duration="700" data-effect="fadein">
+			                <a href="#"><button class="btn btn-white">VISIT NOW</button></a>
+		                </div>
+			        </div>
+			        <div data-lazy-background="images/img-5.jpg" data-effect="fadein">
+			            <h1 data-pos="['20%', '8%']" data-duration="700" data-effect="fadein">SKIING IN</h1>
+			            <h1 data-pos="['27%', '8%']" data-duration="700" data-effect="fadein">KALAM</h1>
+		                <p data-pos="['36%', '8%']" data-duration="700" data-effect="fadein">Lorem ipsum dolor sit amet</p>
+		                <div data-pos="['40%', '3%']" data-duration="700" data-effect="fadein">
+		                    <a href="#"><button class="btn btn-white">VISIT NOW</button></a>
+			            </div>
+			        </div>
+					<div data-lazy-background="images/img-6.jpg" data-effect="fadein">
+			            <h1 data-pos="['20%', '8%']" data-duration="700" data-effect="fadein">FISHING IN</h1>
+		                <h1 data-pos="['27%', '8%']" data-duration="700" data-effect="fadein">CHITRAL</h1>
+		                <p data-pos="['36%', '8%']" data-duration="700" data-effect="fadein">Lorem ipsum dolor sit amet</p>
+		                <div data-pos="['40%', '3%']" data-duration="700" data-effect="fadein">
+			                <a href="#"><button class="btn btn-white">VISIT NOW</button></a>
+			            </div>
+			        </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+	<!-- TREKS DIV -->
+	<div class="container padding">
 		<div class="col-lg-12">
 			<!-- TREKKING dIV -->
 			<div class="col-lg-4 col-sm-6 col-xs-12">
 				<div class="text-center zoom trek_page_div outer-wrapper margins padding shadow">
-					<object type="image/svg+xml" data="images/trek_one-02.svg" width="90%" height="auto">
-					 	<param name="src" value="images/trek_one-02.svg">
+					<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
+					 	<param name="src" value="images/trek_two-03.svg">
 					</object>
 
 					<div class="trek_page_normal_details trek_page_has_wrapper white_bg radius">
@@ -53,37 +124,33 @@
 								<h3 class="text-black">Trekking Lorem Ipsum</h3>
 								<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
 								<p class="recommendation">Recommended</p>			
-								<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+								<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 							</div>
 							<div class="white_bg radius trek_specs">
 								<div class="col-lg-12"> 
 									<div class="col-lg-4">
-										<p class="color-black">Distance</p>
+										<p class="text-black">Distance</p>
 										<h3 id="trek_distance" class="color-blue">8.5</h3>
-										<p class="color-black">Km</p>
+										<p class="text-black">Km</p>
 									</div>
 									<div class="col-lg-4">
-										<p class="color-black">Time</p>
+										<p class="text-black">Time</p>
 										<h3 id="trek_distance" class="color-blue">1.5</h3>
-										<p class="color-black">hrs</p>
+										<p class="text-black">hrs</p>
 									</div>
 									<div class="col-lg-4">
-										<p class="color-black">Speed</p>
+										<p class="text-black">Speed</p>
 										<h3 id="trek_distance" class="color-blue">3</h3>
-										<p class="color-black">Km/hr</p>
+										<p class="text-black">Km/hr</p>
 									</div>
 								</div>
-								<a href="#"><button class="btn btn-primary trek_explore">EXPLORE</button></a>
+								<a href="#"><button id="trek-1" class="btn btn-primary trek_explore">EXPLORE</button></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>			
-
 		</div>
-
-		
-
 	</div>
 
 		<!-- EXPLORE REGIONS' LINKS  DIV -->
@@ -155,7 +222,7 @@
 						<div class="text-center zoom margins">
 							<img id="visa_guide" class="img img-responsive auto-margin" src="./images/visas.png" />	
 							<div class="survival_text_wrapper">
-								<h4 class="color-black">Visas</h4>
+								<h4 class="text-black">Visas</h4>
 								<p class="color-text">Dull but essential passport paper-work and entry info</p>
 							</div>				
 						</div>
@@ -166,7 +233,7 @@
 						<div class="text-center zoom margins">
 							<img id="time_guide" class="img img-responsive auto-margin" src="./images/best-time.png" />	
 							<div class="survival_text_wrapper">
-								<h4 class="color-black">Best time to visit</h4>
+								<h4 class="text-black">Best time to visit</h4>
 								<p class="color-text">Hit the ground at the right time</p>
 							</div>				
 						</div>
@@ -178,7 +245,7 @@
 						<div class="text-center zoom margins">
 							<img id="cost_guide" class="img img-responsive auto-margin" src="./images/money-and-costs.png" />	
 							<div class="survival_text_wrapper">
-								<h4 class="color-black">Money and Costs</h4>
+								<h4 class="text-black">Money and Costs</h4>
 								<p class="color-text">Budgets and on-the-ground costs</p>
 							</div>				
 						</div>
@@ -190,7 +257,7 @@
 						<div class="text-center zoom margins">
 							<img id="health_guide" class="img img-responsive auto-margin" src="./images/health.png" />	
 							<div class="survival_text_wrapper">
-								<h4 class="color-black">Health</h4>
+								<h4 class="text-black">Health</h4>
 								<p class="color-text">Keep safe and well on the road/p>
 							</div>				
 						</div>
@@ -228,6 +295,19 @@
 </body>
 
 <script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="js/devrama.slider.js" ></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.scroller').DrSlider(); 
+
+		// SET SELECTED ACTIVITY
+		$('button').click(function() {
+			window.sessionStorage.setItem('path', $(this).attr('id'));
+			console.log(sessionStorage);
+		});
+	});
+</script>
 
 
 </html>
