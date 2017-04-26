@@ -47,6 +47,9 @@ h4 {
 .container {
     width: 82%;
 }
+.breadcrumb {
+    background-color: transparent !important;
+}
 .heading_large {
 	font-size: 57px;
 }
@@ -82,6 +85,11 @@ h4 {
     background: -moz-linear-gradient( 0deg, rgb(79,172,254) 0%, rgb(0,242,254) 100%);
     background: -webkit-linear-gradient( 0deg, rgb(79,172,254) 0%, rgb(0,242,254) 100%);
     background: -ms-linear-gradient( 0deg, rgb(79,172,254) 0%, rgb(0,242,254) 100%);
+}
+.btn-white {
+	color: #000;
+    border-color: #ccc;
+    background: #fff;
 }
 .btn-primary {
 	border: none;
@@ -123,6 +131,34 @@ h4 {
 }
 .white_bg {
 	background-color: #fff;
+}
+.grey_bg {
+	background-color: #f9f9f9;
+}
+.top-links {
+	display: inline-block;
+	padding: 1em;
+	margin-top: 5%;
+}
+.top-links a {
+	text-decoration: none;
+	color: #444;
+}
+.top_div_logo_heading {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Robotto-Bold;
+    margin-bottom: 0;
+}
+.logo {
+	width: 60%;
+}
+.top_div {
+	margin: 1em 0;
+    border-bottom: 1px solid #eee;
+}
+.top_div h5 {
+	margin-top: 0;
 }
 /* Discovery page */
 .other_regions .north_heading_margin {
@@ -184,7 +220,7 @@ h4 {
 	-webkit-transition: transform 0.5s ease-in-out;
 }
 .zoom:hover{
-	transform: scale(1.1);
+	transform: translateY(-10px);
 	cursor: pointer;
 	z-index: 999;
 }
@@ -254,9 +290,39 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
 .famous_events_div, .trek_page_div {
 	padding: 0;
 	height: 400px;
+	margin: 0 auto 20%;
+	border-radius: 30px !important;
+	width: 90%;
+	background-color: #fff;
+}
+.famous_events_div {
+	border-bottom: 3px solid #3a4ed5;
+	border-top: 3px solid #3acfd5;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-position: 0px 0px, 100% 13px;
+	background-repeat: no-repeat;
+	-webkit-background-size: 3px 100%;
+	-moz-background-size: 20px 100%;
+	background-size: 3px 100%;
+	background-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%), -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+	background-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%), -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+	background-image: -o-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%), -o-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+	background-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%), linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+}
+.famous_events_div:hover, .trek_page_div:hover {
+	padding: 0;
+    height: 400px;
     margin: 0 auto 20%;
     border-radius: 30px !important;
     width: 90%;
+    border-bottom: none;
+    border-top: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: none;
 }
 .outer-wrapper{
 	position: relative;
@@ -266,7 +332,7 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
     height: 400px;
     border-radius: 30px !important;
 }
-.cover, .trekking_cover, .trekking2_cover, .site_seeing_cover, .paragliding_cover, .fishing_cover, .culture_cover, .trek_page_cover_div {
+.cover, .trek_page_cover_div {
 	position: absolute;
 	top: 0;
     opacity: .8;
@@ -276,15 +342,16 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
 	transition: display 1s ease-in-out;
 	-webkit-transition: display 1s ease-in-out;
 }
-.cover, .trekking_cover, .trekking2_cover, .site_seeing_cover, .paragliding_cover, .fishing_cover, .culture_cover {
+.cover {
 	display: block;
 }
-.trekking_cover {
+/*.trekking_cover {
 	background: url(../images/visas.png) no-repeat 50% 25%;
 }
 .trekking2_cover {
 	background: url(../images/best-time.png) no-repeat 50% 25%;
 }
+
 .site_seeing_cover {
 	background: url(../images/money-and-costs.png) no-repeat 50% 25%;
 }
@@ -298,7 +365,13 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
 	background: url(../images/money-and-costs.png) no-repeat 50% 25%;
 }
 .cover {	
-	background-color: #f6f6f6;
+	background-color: #fff;
+}
+*/
+.events_image_normal {
+	width: 35% !important;
+	height: auto !important;
+	margin: 12% auto 0;
 }
 .outer-wrapper:hover .cover {
 	display: none;
@@ -320,7 +393,10 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
 	margin-bottom: 0px;
 }
 .shadow {	
-    box-shadow: 0px 10px 20px #ccc;
+    box-shadow: 0px 10px 20px rgba(0,0,0,.1);
+}
+.shadow:hover {	
+    box-shadow: 0px 10px 35px rgba(0,0,0,.2);
 }
 .radius {
 	border-radius: 0px 0px 30px 30px;
@@ -340,12 +416,49 @@ a.guide_link:hover {
 .event_cost {
 	color: #fff;
 	background-color: red;
-}
-.left {
-	float: left;
+	padding: .2em .7em;
+	border-radius: 6px;
+	margin: 0 8px 0 0;
 }
 .tours_image_div {
-	min-height: 230px;
+	min-height: 210px;
+}
+.tours_image_div img {
+	border-radius: 15px;
+}
+.tours_image_div p {
+	font-size: small;
+	margin: 10px 0 0;
+}
+.banner {
+	margin-bottom: 20px;
+	z-index: 999;
+	height: 100%;
+	overflow: hidden;
+}
+.inner span.nav-link{
+	display: none !important;
+}
+.scroller h1{
+	color: #fff;
+	font-size: 56px;
+	font-family: 'Robotto-Bold'
+}
+.scroller p {
+	color: #fff;
+	font-size: medium;
+}
+.sort_list {
+	width: 60%;
+	left: 20% !important;
+	right: 20% !important;
+	padding: 1em;
+}
+.seeAllLink {
+	font-weight: bold;
+    font-family: 'Robotto-Bold';
+    cursor:pointer;
+    text-decoration:none;
 }
 /*  
 TREKS PAGE
@@ -383,10 +496,20 @@ TREKS PAGE
 }
 .trek_explore {
 	margin-bottom: -14px;
+	padding:3% 15%;
 }
 .trek_specs {
 	padding-top: 10px;
 }
+.trek_page_hover_details > p.text-black {
+    font-size: smaller;
+    font-weight: 600;
+}
+.trek_dimensions {
+	width: 282px !important;
+	height: 282px !important;
+}
+
 
 
 
@@ -413,11 +536,24 @@ TREKS PAGE
 	    display: inline-block;
 	    padding: 1em;
 	} 
+	.events_image_normal {
+		width: 40% !important;
+	}
+}
+@media (max-width: 940px) {
+	.banner {
+		height: auto;
+		overflow: hidden;
+	}
 }
 @media (min-width: 992px) {
-  .container {
-    width: 82%;
-  }
+    .container {
+    	width: 82%;
+  	}
+    .trek_dimensions {
+		width: 272px !important;
+		height: 272px !important;
+	}
 }
 
 @media (max-width: 768px) {
@@ -443,6 +579,13 @@ TREKS PAGE
 	}
 	.container {
 	    width: 82%;
+	}
+	.trek_dimensions {
+		width: 242px !important;
+		height: 242px !important;
+	}
+	.events_image_normal {
+		width: 26% !important;
 	}
 }
 
@@ -470,6 +613,11 @@ TREKS PAGE
 	    padding: 0;
 	}
 }
+@media (max-width: 550px) {
+	.events_image_normal {
+		width: 32% !important;
+	}
+}
 @media (max-width: 500px) {
 	.famous_events_div, .trek_page_div {
 		height: 290px;
@@ -479,6 +627,10 @@ TREKS PAGE
 	}
 	.famous_regions_div h2, .famous_events_div h2{	
 	    padding: .22em 0;
+	}
+	.trek_dimensions {
+		width: 222px !important;
+		height: 222px !important;
 	}
 }
 
