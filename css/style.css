@@ -35,11 +35,10 @@ h4 {
 	background: url('../images/geo_pattern_light.png');
 }
 .margins {
-	margin-top: 3em;
-	margin-bottom: 2em;
+	margin: 3em 0 2em 0;
 }
 .padding {
-	padding: 5% 0; 
+	padding: 5% 0 4%;
 }
 .color {
 	color: #444;
@@ -51,7 +50,7 @@ h4 {
     background-color: transparent !important;
 }
 .heading_large {
-	font-size: 57px;
+	font-size: 50px;
 }
 .auto-margin {
 	margin-left: auto;
@@ -88,12 +87,47 @@ h4 {
 }
 .btn-white {
 	color: #000;
-    border-color: #ccc;
-    background: #fff;
+	border-color: #ccc;
+	background: #fff;
+}
+.dropdown .btn-white {
+	 padding: 3% 18%; 
 }
 .btn-primary {
 	border: none;
 }
+
+.modal-open .content {
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    filter: blur(20px); 
+}
+.modal-backdrop {
+  background-color: rgba(255,255,255,.6);
+}
+.spacing {
+	padding: 5% 0 2%;
+	margin-top: 3em;
+    margin-bottom: 2em;
+}
+.searchbox {
+	width: 150px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	font-size: 16px;
+	background-color: white;
+	background: url('../images/searchicon.png') no-repeat 88% 10px;
+	background-size: 22px;
+	padding: 8px 20px 8px 20px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+	margin-left: 2em;
+}
+.searchbox:focus {
+    width: 230px;
+}
+
 /* Landing Page */
 .top_div h2 {
 	font-family: 'Robotto-Black';
@@ -105,6 +139,9 @@ h4 {
 }
 .intro-text {
 	padding: 0 25% 2%;
+}
+.gotomain {
+	padding: .65em 2.5em;
 }
 .landing_footer {	
 	margin-top: 10%;
@@ -160,7 +197,15 @@ h4 {
 .top_div h5 {
 	margin-top: 0;
 }
-/* Discovery page */
+
+/* 
+Discovery page 
+*/
+.selectoptions option {
+	height: 35px;
+	font-size: 16px !important;
+	margin-top: 20px;
+}
 .other_regions .north_heading_margin {
 	margin-left: 15px;
 }
@@ -170,164 +215,177 @@ h4 {
 .regions_row {
 	min-height: 500px;
 }
-.famous_regions_div {
-    height: 375px;
-    min-height: 200px;
-    margin-bottom: 12%;
-} 
-.swat {  
-	background: url('../images/swat_district.png') no-repeat 50%;
-	background-size: contain;
-}
-.swat:hover {
-	background: url('../images/swat_district_hover_image.png') no-repeat 50%; 
-    background-size: contain;
-}
-.naran {
-	background: url('../images/naran.png') no-repeat 50%;
-	background-size: contain;
-}
-.naran:hover {
-	background: url('../images/naran-hover.png') no-repeat 50%; 
-    background-size: contain;
-}
-.chitral {  
-	background: url('../images/chitral.png') no-repeat 50%;
-	background-size: contain;
-}
-.chitral:hover {
-	background: url('../images/chitral-hover.png') no-repeat 50%; 
-    background-size: contain;
-}
-.abottabad {  
-	background: url('../images/abottabad.png') no-repeat 50%;
-	background-size: contain;
-}
-.abottabad:hover {
-	background: url('../images/abottabad-hover.png') no-repeat 50%; 
-    background-size: contain;
-}
-.kalam {  
-	background: url('../images/kalam.png') no-repeat 50%;
-	background-size: contain;
-}
-.kalam:hover {
-	background: url('../images/kalam.png') no-repeat 50%; 
-    background-size: contain;
+.regions_image_margin {
+	margin: auto;
 }
 .zoom{
-	transition: transform 0.5s ease-in-out;
-	-webkit-transition: transform 0.5s ease-in-out;
+	transition: transform .5s ease-in-out;
+	-webkit-transition: transform .5s ease-in-out;
 }
 .zoom:hover{
 	transform: translateY(-10px);
 	cursor: pointer;
 	z-index: 999;
 }
-.famous_regions_div h2, .famous_events_div h2{	
-    width: 100%;   
-    margin: auto;
-    margin: auto;
-    padding: .35em 0;
-    font-family: 'Robotto-Thin';
-}
-.famous_regions_div:hover h2, .famous_events_div:hover h2 {
-	background: url(../images/menu_swipe.png) no-repeat;	
-    background-size: 100%;
-    color: #fff;
-    font-weight: 600;
-    margin-bottom: 10px;
-    font-size: 45px;
-}
 .famous_regions_div p {
 	background-color: rgba(255,255,255,.9);
-    width: 80%;
-    border-radius: 10px;
-    margin: auto;
-    padding: 1em 1em 2em;
-    display: none;  
-    color: #000;
-    font-size: smaller;
-    font-weight: 600;
-    font-style: italic;
-    box-shadow: 0px 10px 20px #ccc;
+	width: 80%;
+	border-radius: 10px;
+	margin: auto;
+	padding: 2em 1em 2em;
+	display: none;
+	color: #000;
+	font-size: smaller;
+	font-weight: 600;
+	font-style: italic;
+	box-shadow: 0px 10px 20px #ccc;
+}
+.famous_regions_div {
+	position: relative;
+	margin-top: 3em;
+	margin-bottom: 10%;
+	height: 520px;
+	/* overflow: hidden; */
+}
+#region_selection_sort {
+    display: inline-block;
+    width: 150px;
+    margin-left: 2em;
 }
 .famous_regions_div a{
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
 	display: none;
 }
 .famous_regions_div:hover a, .famous_regions_div:hover p{
 	display: block;
 }
 .famous_regions_div .has-feedback {
-	position: relative;
-	top: 25%;
+	position: absolute !important;
+	top: 35%;
+	width: 100%;
 }
 .famous_regions_div button {
     margin-top: -1em;
 }
-/*  Area details page */
-.famous_events_div .has_bottom, .trek_page_div .has_bottom {
+.famous_regions_div h2{
+    width: 100%;
+    margin: auto;
+    padding: .65em 0 15px;
+    font-family: 'Robotto-Thin';
+}
+.famous_regions_div:hover h2 {
+	background: url(../images/menu_swipe.png) no-repeat;
+	background-size: 100%;
+	color: #fff;
+	font-size: 45px;
+}
+.famous_regions_div .has_bottom {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+/*  
+Area details page 
+*/
+.famous_events_div h2{
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    width: 100%;
+    margin: auto;
+    padding: .65em 0 15px;
+    font-family: 'Robotto-Thin';
+}
+.famous_events_div:hover h2 {
+	background: url(../images/menu_swipe.png) no-repeat 10%;
+	background-size: 100%;
+	color: #fff;
+	font-size: 45px;
+	margin: auto;
+	position: absolute;
+	top: -70px;
+	font-family: 'Robotto-Thin';
+}
+.famous_events_div .has_bottom {
     position: absolute;
     bottom: 0%;
+    width: 100%;
 }
-p.normal_details, .zoom:hover div.hover_details, img.image_normal, .zoom:hover img.image_hover, .trek_page_normal_details, .trek_page_div:hover .trek_page_hover_details {
+.normal_details, .famous_regions_div:hover div.hover_details, .famous_regions_div:hover img.image_hover,.famous_events_div:hover div.hover_details, img.image_normal, .famous_events_div:hover img.image_hover, .trek_page_normal_details, .trek_page_div:hover .trek_page_hover_details {	
+	opacity: 1;
 	display: block;
+	animation: anim 1s ease-in-out;
 }
-div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, img.image_hover, .trek_page_hover_details, .trek_page_div:hover .trek_page_normal_details {
-	display: none;
+div.hover_details,.famous_regions_div:hover .normal_details, .famous_regions_div:hover img.image_normal, .famous_events_div:hover .normal_details, .famous_events_div:hover img.image_normal, img.image_hover, .trek_page_hover_details, .trek_page_div:hover .trek_page_normal_details {
+  opacity: 0;
+  display: none;
+  transition:  opacity 1s ease-in-out;
+}
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .hover_details p {
-	padding: 5% 5% 0 5%;	
-    color: #000;
-    font-size: smaller;
-    font-weight: 600;
-    font-style: italic;
+	padding: 12% 5% 0 5%;
+	color: #000;
+	font-size: smaller;
+	font-weight: 600;
+	font-style: italic;
 }
 .hover_details a {
     position: relative;
     bottom: -1em;
 }
-.famous_events_div, .trek_page_div {
+.famous_events_div {
+	background-color: #fff;
 	padding: 0;
 	height: 400px;
 	margin: 0 auto 20%;
 	border-radius: 30px !important;
 	width: 90%;
-	background-color: #fff;
+	position: relative;
 }
-.famous_events_div {
-	border-bottom: 3px solid #3a4ed5;
-	border-top: 3px solid #3acfd5;
+.famous_events_div:hover {
+	padding: 0;
+	height: 400px;
+	margin: 0 auto 20%;
+	border-radius: 30px !important;
+	width: 90%;
+	border-bottom: none;
+	border-top: none;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	background-position: 0px 0px, 100% 13px;
-	background-repeat: no-repeat;
-	-webkit-background-size: 3px 100%;
-	-moz-background-size: 20px 100%;
-	background-size: 3px 100%;
-	background-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%), -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-	background-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%), -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-	background-image: -o-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%), -o-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-	background-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%), linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+	background-color: #fff;
+	background-image: none;
 }
-.famous_events_div:hover, .trek_page_div:hover {
-	padding: 0;
-    height: 400px;
-    margin: 0 auto 20%;
-    border-radius: 30px !important;
-    width: 90%;
-    border-bottom: none;
-    border-top: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: none;
+.famous_events_div::before{
+	background-image: -moz-linear-gradient( -54deg, rgb(91,220,168) 0%, rgb(3,201,225) 100%);
+	background-image: -webkit-linear-gradient( -54deg, rgb(91,220,168) 0%, rgb(3,201,225) 100%);
+	background-image: -ms-linear-gradient( -54deg, rgb(91,220,168) 0%, rgb(3,201,225) 100%);
+	position: absolute;
+	background-color: #fff;
+	border-radius: 32px;
+	top: -4px;
+	bottom: -4px;
+	left: -4px;
+	right: -4px;
+	content: '';
+	z-index: -1;
 }
-.outer-wrapper{
-	position: relative;
+.famous_events_div:hover::before{
+	background-image: none;
+	content: '';
 }
-.outer-wrapper img {
+.famous_events_div img {
     width: 100%;
     height: 400px;
     border-radius: 30px !important;
@@ -335,43 +393,22 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
 .cover, .trek_page_cover_div {
 	position: absolute;
 	top: 0;
-    opacity: .8;
+	opacity: .8;
 	width: 100%;
 	height: 100%;
 	border-radius: 30px !important;
-	transition: display 1s ease-in-out;
-	-webkit-transition: display 1s ease-in-out;
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
 }
 .cover {
 	display: block;
 }
-/*.trekking_cover {
-	background: url(../images/visas.png) no-repeat 50% 25%;
-}
-.trekking2_cover {
-	background: url(../images/best-time.png) no-repeat 50% 25%;
-}
-
-.site_seeing_cover {
-	background: url(../images/money-and-costs.png) no-repeat 50% 25%;
-}
-.paragliding_cover {
-	background: url(../images/health.png) no-repeat 50% 25%;
-}
-.fishing_cover {
-	background: url(../images/visas.png) no-repeat 50% 25%;
-}
-.culture_cover {
-	background: url(../images/money-and-costs.png) no-repeat 50% 25%;
-}
-.cover {	
-	background-color: #fff;
-}
-*/
 .events_image_normal {
 	width: 35% !important;
 	height: auto !important;
-	margin: 12% auto 0;
+	margin: 0% auto 0;
+	padding-top: 20%;
+	padding-bottom: 12%;
 }
 .outer-wrapper:hover .cover {
 	display: none;
@@ -392,11 +429,11 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
 .famous_events_div:hover h2 {
 	margin-bottom: 0px;
 }
-.shadow {	
-    box-shadow: 0px 10px 20px rgba(0,0,0,.1);
+.shadow {
+    box-shadow: 0 0 40px #eee;
 }
-.shadow:hover {	
-    box-shadow: 0px 10px 35px rgba(0,0,0,.2);
+.shadow:hover {
+    box-shadow: 0px 10px 45px rgba(0,0,0,.15);
 }
 .radius {
 	border-radius: 0px 0px 30px 30px;
@@ -404,6 +441,8 @@ div.hover_details, .zoom:hover p.normal_details, .zoom:hover img.image_normal, i
 .survival_text_wrapper  {
     width: 90%;
     margin: 12% auto;
+    min-height: 70px;
+    max-height: 110px;
 }
 .guide_link {
     font-family: Robotto-Bold;
@@ -431,10 +470,13 @@ a.guide_link:hover {
 	margin: 10px 0 0;
 }
 .banner {
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 	z-index: 999;
 	height: 100%;
 	overflow: hidden;
+}
+.innerPages_banner {
+	height: 77% !important;
 }
 .inner span.nav-link{
 	display: none !important;
@@ -453,6 +495,11 @@ a.guide_link:hover {
 	left: 20% !important;
 	right: 20% !important;
 	padding: 1em;
+	border-radius: 20px;
+	z-index: 99;
+}
+.sort_list li {
+	padding: .5em;
 }
 .seeAllLink {
 	font-weight: bold;
@@ -460,21 +507,84 @@ a.guide_link:hover {
     cursor:pointer;
     text-decoration:none;
 }
+#survivalModel p {
+	text-align: justify;
+}
+.modal-content {
+	padding: 1em 2em;
+}
+.modal-dialog {
+    width: 82% !important;
+}
+.pushedright {
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	bottom: -90px;
+}
+.other_activities_box {
+	margin: 3em 0 2em 1em;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	min-height: 100px;
+}
+.other_activities_box:hover {
+	box-shadow: 5px 8px 40px 0px #ddd;
+}
+.other_activities_box img {
+	border-radius: 10px 0 0 10px;
+	margin-left: -15px;
+	height: 98px;
+}
+.about {
+	line-height: 2em;
+	padding: 3% 0 2%;
+}
+
 /*  
 TREKS PAGE
 */
-.trek_page_div {
-	background: url('../images/trek-tile-bg-map.png') no-repeat; 
-	background-size: cover !important;
-}
 .trek_page_cover_div {
 	background-color: #fcfcfc;
-}
-.trek_page_cover_div {
 	display: none;
 }
 .trek_page_div:hover .trek_page_cover_div {
-	display: block;
+	display: block !important;
+}
+.trek_page_div {
+	background-color: #fff;
+	padding: 0;
+	height: 400px;
+	margin: 0 auto 20%;
+	border-radius: 30px !important;
+	width: 90%;
+	position: relative;
+	background: url('../images/trek-tile-bg-map.png') no-repeat; 
+	background-size: cover !important;
+}
+.trek_page_div:hover {
+	padding: 0;
+	height: 400px;
+	margin: 0 auto 20%;
+	border-radius: 30px !important;
+	width: 90%;
+	border-bottom: none;
+	border-top: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #fff;
+	background-image: none;
+}
+.trek_page_div img {
+    width: 100%;
+    height: 400px;
+    border-radius: 30px !important;
+}
+.trek_page_div .has_bottom {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
 }
 .width_76 {
 	width: 76%;
@@ -509,6 +619,77 @@ TREKS PAGE
 	width: 282px !important;
 	height: 282px !important;
 }
+/* SURVIVAL GUIDE PAGE
+*/	
+.small_box {
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	margin-top: 6px;
+}
+.large_box {
+	width: 55px;
+	height: 60px;
+	border-radius: 10px;
+}
+.calendar_div p{
+	margin-left: 40%;
+}
+.color_box_beige {
+	background: yellow;
+}
+.color_box_blue {
+	background: teal;
+}.color_box_gray {
+	background: #ccc;
+}
+.guide_map_image {
+	height: 50%;
+	overflow: hidden;
+}
+.horizontal_rule {
+	border-bottom: 1px solid #ccc;
+}
+.zeropadding {
+	padding: 0 !important;
+}
+.survival_container {
+	width: 70%;
+	margin: auto;
+}
+.view_details {
+	cursor: pointer;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+.vertical_rule > div:not(:last-child) {
+	border-right: 1px solid #ccc;
+}
+.vertical_rule ul {
+	padding-left: 1.2em;
+}
+.vertical_rule > div:not(:first-child) {
+	padding-left: 3em;
+}
+.vertical_rule > div {
+	padding-right: 2em;
+}
+.gray_bg {
+	background: #f3f3f3;
+}
+.costs_list {
+	padding-left: 1.3em;
+	padding-bottom: 2em;
+}
+.survival_link:hover {
+	text-decoration:none;
+}
+
+
+
+
+
 
 
 
@@ -518,15 +699,13 @@ TREKS PAGE
 
 @media (max-width: 1200px) {
 	.famous_regions_div {
-	    height: 300px;
+	    height: 325px;
 	    min-height: 200px;
 	    margin-bottom: 15%;
 	}
-	.famous_events_div, .trek_page_div {
-		height: 380px;
-	}
-	.outer-wrapper img {
-	    height: 380px;
+	.famous_regions_div .img-responsive {
+		max-width: 80% !important;
+		height: 100%;
 	}
 	.footer > .col-sm-8 {
 		width: 100%;
@@ -539,10 +718,13 @@ TREKS PAGE
 	.events_image_normal {
 		width: 40% !important;
 	}
+	.calendar_div p{
+		margin-left: 20%;
+	}
 }
 @media (max-width: 940px) {
-	.banner {
-		height: auto;
+	.banner, .innerPages_banner  {
+		height: auto !important;
 		overflow: hidden;
 	}
 }
@@ -553,6 +735,13 @@ TREKS PAGE
     .trek_dimensions {
 		width: 272px !important;
 		height: 272px !important;
+	}
+	.calendar_div p{
+		margin-left: 21%;
+	}
+	.survival_container {
+		width: 70%;
+		margin: auto;
 	}
 }
 
@@ -568,12 +757,6 @@ TREKS PAGE
 	    position: relative;
 	    top: 12%;
 	}
-	.famous_events_div, .trek_page_div {
-		height: 320px;
-	}
-	.outer-wrapper img {
-	    height: 320px;
-	}
 	.cover {
 	    background-size: 30%;
 	}
@@ -586,6 +769,10 @@ TREKS PAGE
 	}
 	.events_image_normal {
 		width: 26% !important;
+	}
+	.survival_container {
+		width: 80%;
+		margin: auto;
 	}
 }
 
@@ -612,20 +799,26 @@ TREKS PAGE
 	.footer ul {
 	    padding: 0;
 	}
+	.calendar_div p{
+		margin-left: 20%;
+	}
+	.famous_regions_div .img-responsive {
+	    max-width: 35% !important;
+	}
 }
 @media (max-width: 550px) {
 	.events_image_normal {
 		width: 32% !important;
 	}
+	.famous_regions_div .img-responsive {
+	    max-width: 45% !important;
+	}
 }
 @media (max-width: 500px) {
-	.famous_events_div, .trek_page_div {
-		height: 290px;
+	.famous_regions_div h2 {	
+	    padding: .22em 0;
 	}
-	.outer-wrapper img {
-	    height: 290px;
-	}
-	.famous_regions_div h2, .famous_events_div h2{	
+	.famous_events_div h2{	
 	    padding: .22em 0;
 	}
 	.trek_dimensions {
