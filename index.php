@@ -16,30 +16,41 @@
 	<div class="container">	
 		<!-- TOP DIV -->
 		<!-- TOP LOGO AND MENU DIV -->
-		<div class="col-sm-12">	
-			<div class="row margins top_div">
-				<!-- LOGO DIV -->
-				<div class="col-sm-6 col-xs-12">
-					<div class="col-sm-3 col-xs-4">
-						<img class="img img-responsive logo" src="images/logo.png" alt="">
+		<!-- TOP LOGO AND MENU DIV -->
+			<div class="col-sm-12">	
+				<div class="row margins top_div">
+					<!-- LOGO DIV -->
+					<div class="col-lg-6 col-sm-5 col-xs-3">
+						<div class="col-sm-3 col-xs-9">
+							<img class="img img-responsive logo" src="images/logo.png" alt="">
+						</div>
+						<div class="col-sm-9 col-xs-3 text-left">
+							<h4 class="color-blue top_div_logo_heading"> TCKP DISCOVER</h4>
+							<h5 class="color-text heading-description">Tourism Cooperation KP</h5>
+						</div>
 					</div>
-					<div class="col-sm-9 col-xs-8">
-						<h4 class="color-blue top_div_logo_heading text-left"> TCKP DISCOVER</h4>
-						<h5 class="color-text text-left">Tourism Cooperation KP</h5>
+					<!-- MENU DIV -->				
+					<div class="col-lg-6 col-sm-7 col-xs-9">
+						<nav class="navbar">
+							<div class="navbar-header">
+						      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuBar">
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>                        
+						      </button>
+						    </div>
+						    <div class="collapse navbar-collapse" id="menuBar">
+								<ul class="nav navbar-nav">
+									<li class="top-links color-black"><a href="#">Destination</a></li>
+									<li class="top-links color-black"><a href="#">Tour</a></li>
+									<li class="top-links color-black"><a href="#">Plan</a></li>
+									<li class="top-links color-black"><a href="#">Sign In</a></li>
+								</ul>
+							</div>
+						</nav>
 					</div>
-				</div>
-				<!-- MENU DIV -->				
-				<div class="col-sm-6 col-xs-12">
-					<ul class="text-right">
-						<li class="top-links color-black"><a href="#">Destination</a></li>
-						<li class="top-links color-black"><a href="#">Tour</a></li>
-						<li class="top-links color-black"><a href="#">Plan</a></li>
-						<li class="top-links color-black"><a href="#">Sign In</a></li>
-					</ul>
 				</div>
 			</div>
-		</div>
-
 		
 
 		<!-- TOP LOGO DIV -->
@@ -91,30 +102,29 @@
 		</div>
 	</div>
 
-	<!-- FOOTER DIV -->
-		<div class="footer landing_footer">
-			<div class="col-sm-2"></div>
-			<div class="col-sm-8">
-				<ul class="text-center">
-					<li class="footer-links"><a href="#">Home</a></li>
-					<li class="footer-links"><a href="#">Terms</a></li>
-					<li class="footer-links"><a href="#">Privacy Policy</a></li>
-					<li class="footer-links"><a href="#">Site Map</a></li>
-					<li class="footer-links"><a href="#">Discover Places</a></li>
-					<li class="footer-links"><a href="#">Navigation</a></li>
-				</ul>
+	<!-- START OF FOOTER -->
+		<div class="footer">
+			<div class="col-sm-12">
+				<div class="col-sm-push-2 col-sm-8 col-sm-pull-2">
+					<ul class="text-center">
+						<li class="footer-links"><a href="#">Home</a></li>
+						<li class="footer-links"><a href="#">Terms</a></li>
+						<li class="footer-links"><a href="#">Privacy Policy</a></li>
+						<li class="footer-links"><a href="#">Site Map</a></li>
+						<li class="footer-links"><a href="#">Discover Places</a></li>
+						<li class="footer-links"><a href="#">Navigation</a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="col-sm-2"></div>
 		</div>
+		<!-- END OF FOOTER -->
 
 </body>
 
 <script type="text/javascript" src="js/jquery.min.js" ></script>
 <script type="text/javascript" src="js/bootstrap.min.js" ></script>
-<script type="text/javascript" src="js/devrama.slider.js" ></script>
 <script type="text/javascript">
-	$(document).ready(function(){
-		$('.scroller').DrSlider(); 			
+	$(document).ready(function(){ 			
 	});
 </script>
 

@@ -3,8 +3,9 @@
 <html>
 <head>
 <title>Treks | TCKP</title>
-<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 <meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" id="bootstrap-css" href="./css/bootstrap.css" type="text/css" media="all">
 <link rel="stylesheet" id="style-css" href="./css/style.css" type="text/css" media="all">
 <link rel="stylesheet" id="animate-css" href="./css/animate.css" type="text/css" media="all">
@@ -13,55 +14,41 @@
 
 
 <body class="pattern animated fadeIn">
-	<!-- Modal -->
-		<div id="searchModel" class="modal fade" role="dialog">
-		  <div class="modal-dialog">
-
-		    <!-- Modal content-->
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h3 class="color-blue modal-title">Visas</h3>
-		      </div>
-		      <div class="modal-body">
-		      	<h4 class="color-blue">Heading 1</h4>
-		        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		      	
-		      	<h4 class="color-blue">Heading 2</h4>
-		      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		      	<h4 class="color-blue">Heading 3</h4>
-		      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		      </div>
-		    </div>
-
-		  </div>
-		</div>
-	<!-- TOP DIV -->
 	<div class="content">
+		<!-- TOP DIV -->
 		<div class="container">	
 			<!-- TOP LOGO AND MENU DIV -->
 			<div class="col-sm-12">	
 				<div class="row margins top_div">
 					<!-- LOGO DIV -->
-					<div class="col-sm-6 col-xs-12">
-						<div class="col-sm-3 col-xs-4">
+					<div class="col-lg-6 col-sm-5 col-xs-3">
+						<div class="col-sm-3 col-xs-9">
 							<img class="img img-responsive logo" src="images/logo.png" alt="">
 						</div>
-						<div class="col-sm-9 col-xs-8">
-							<h4 class="color-blue top_div_logo_heading text-left"> TCKP DISCOVER</h4>
-							<h5 class="color-text text-left">Tourism Cooperation KP</h5>
+						<div class="col-sm-9 col-xs-3 text-left">
+							<h4 class="color-blue top_div_logo_heading"> TCKP DISCOVER</h4>
+							<h5 class="color-text heading-description">Tourism Cooperation KP</h5>
 						</div>
 					</div>
 					<!-- MENU DIV -->				
-					<div class="col-sm-6 col-xs-12">
-						<ul class="text-right">
-							<li class="top-links color-black"><a href="#">Destination</a></li>
-							<li class="top-links color-black"><a href="#">Tour</a></li>
-							<li class="top-links color-black"><a href="#">Plan</a></li>
-							<li class="top-links color-black"><a href="#">Sign In</a></li>
-						</ul>
+					<div class="col-lg-6 col-sm-7 col-xs-9">
+						<nav class="navbar">
+							<div class="navbar-header">
+						      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuBar">
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>                        
+						      </button>
+						    </div>
+						    <div class="collapse navbar-collapse" id="menuBar">
+								<ul class="nav navbar-nav">
+									<li class="top-links color-black"><a href="#">Destination</a></li>
+									<li class="top-links color-black"><a href="#">Tour</a></li>
+									<li class="top-links color-black"><a href="#">Plan</a></li>
+									<li class="top-links color-black"><a href="#">Sign In</a></li>
+								</ul>
+							</div>
+						</nav>
 					</div>
 				</div>
 			</div>
@@ -70,59 +57,46 @@
 			<div class="col-sm-12">	
 				<div class="row">
 					<!-- BREADCRUMB DIV -->
-					<div class="col-sm-6 col-xs-12">
-						<div class="col-sm-3 col-xs-4"></div>
-						<div class="col-sm-9 col-xs-8">
-							<ol class="breadcrumb">
-							  <li><a href="http://localhost/tckp">Home</a></li>
-							  <li><a href="http://localhost/tckp/discover.php">Discover</a></li>
-							  <li class="active">Naran</li>
-							</ol>
-						</div>
+					<div class="col-lg-6 col-xs-12">
+						<ol class="breadcrumb">
+						  <li><a href="index.php">Home</a></li>
+						  <li><a href="discover.php">Discover</a></li>							  
+						  <li><a href="details.php">Area & Activities Details</a></li>
+						  <li class="active"></li>
+						</ol>
 					</div>
-					<!-- MENU DIV -->				
+					<!-- ELEVATION AND WEATHER DIV -->				
 					<div class="col-sm-6 col-xs-12">
-						<div class="col-sm-10 col-xs-12">
-							<form action="" method="">
-								<input type="text" class="searchbox"  data-toggle="modal" data-target="#searchModel">
-							</form>
+						<div class="col-sm-6 col-xs-12">
 						</div>
-						<div class="col-sm-2 col-xs-12"></div>
+						<div class="col-sm-6 col-xs-12">
+							<p class="about_elevation">8202'<br/>Elevation</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- BANNER ROW -->
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="banner innerPages_banner">
-						<!-- TOP BANNER -->
-					<div class="scroller">
-			            <div data-lazy-background="images/img-1.jpg">
-				            <h1 data-pos="['20%', '8%']" data-duration="700" data-effect="fadein">TREKKING IN</h1>
-				            <h1 data-pos="['27%', '8%']" data-duration="700" data-effect="fadein">NARAN</h1>
-				            <p data-pos="['36%', '8%']" data-duration="700" data-effect="fadein">Lorem ipsum dolor sit amet</p>
-				            <div data-pos="['40%', '3%']" data-duration="700" data-effect="fadein">
-				                <a href="#"><button class="btn btn-white">VISIT NOW</button></a>
-			                </div>
-				        </div>
-				        <div data-lazy-background="images/img-5.jpg">
-				            <h1 data-pos="['20%', '8%']" data-duration="700" data-effect="fadein">SKIING IN</h1>
-				            <h1 data-pos="['27%', '8%']" data-duration="700" data-effect="fadein">KALAM</h1>
-			                <p data-pos="['36%', '8%']" data-duration="700" data-effect="fadein">Lorem ipsum dolor sit amet</p>
-			                <div data-pos="['40%', '3%']" data-duration="700" data-effect="fadein">
-			                    <a href="#"><button class="btn btn-white">VISIT NOW</button></a>
-				            </div>
-				        </div>
-						<div data-lazy-background="images/img-6.jpg">
-				            <h1 data-pos="['20%', '8%']" data-duration="700" data-effect="fadein">FISHING IN</h1>
-			                <h1 data-pos="['27%', '8%']" data-duration="700" data-effect="fadein">CHITRAL</h1>
-			                <p data-pos="['36%', '8%']" data-duration="700" data-effect="fadein">Lorem ipsum dolor sit amet</p>
-			                <div data-pos="['40%', '3%']" data-duration="700" data-effect="fadein">
-				                <a href="#"><button class="btn btn-white">VISIT NOW</button></a>
-				            </div>
-				        </div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="trekkingMainPage-banner">
+					<img class="img img-responsive" src="images/img_1.jpg" />
+				</div>
+			</div>
+		</div>
+
+		<!-- ABOUT DIV -->
+		<div class="white_bg about-trek">
+			<div class="container">
+				<div class="col-sm-12 text-justify">
+					<div class="col-lg-6 col-xs-12">
+						<p class="color-black about-trek-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p class="color-black about-trek-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+					</div>
+					<div class="col-lg-6 col-xs-12">	
+						<p class="color-black about-trek-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p class="color-black about-trek-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 					</div>
 				</div>
 			</div>
@@ -130,11 +104,30 @@
 				
 		<!-- TREKS DIV -->
 		<div class="container padding">
+			<!-- EVENTS SELECTION DIV -->
+			<div class="row">	
+					<div class="col-sm-push-4 col-sm-4 col-sm-pull-4">
+						<div class="text-center margins">
+							<h3 class="color-black">FAMOUS Trekking Paths</h3>
+							<h5 class="color-blue">Choose a trail to explore</h5>
+							<form action="" method="">
+								<select class="form-control input-group-lg" name="trek_selection_sort" id="trek_selection_sort">
+									<optgroup class="selectoptions">
+								    	<option>Regions</option>
+								    	<option>Popularity</option>
+								    	<option>Activities</option>
+								    </optgroup>
+								</select>
+							</form>
+						</div>
+					</div>
+			</div>
+
 			<div class="col-lg-12">
 				<!-- 1st TREKKING PATH dIV -->
-				<div class="col-lg-4 col-sm-6 col-xs-12">
-					<div class="zoom">
-						<div class="text-center trek_page_div spacing shadow">
+				<div class="col-lg-4 col-sm-6 col-xs-12 text-center ">
+					<div class="translate">
+						<div class="trek_page_div spacing shadow">
 							<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
 							 	<param name="src" value="images/trek_two-03.svg">
 							</object>
@@ -173,7 +166,7 @@
 												<p class="text-black">Km/hr</p>
 											</div>
 										</div>
-										<a href="#"><button id="trek-1" class="btn btn-primary trek_explore">EXPLORE</button></a>
+										<a href="trek/"><button id="path_1" class="btn btn-primary trek_explore">EXPLORE</button></a>
 									</div>
 								</div>
 							</div>
@@ -182,9 +175,9 @@
 				</div>
 
 				<!-- 2nd TREKKING PATH dIV -->
-				<div class="col-lg-4 col-sm-6 col-xs-12">
-					<div class="zoom">
-						<div class="text-center trek_page_div spacing shadow">
+				<div class="col-lg-4 col-sm-6 col-xs-12 text-center ">
+					<div class="translate">
+						<div class="trek_page_div spacing shadow">
 							<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
 							 	<param name="src" value="images/trek_two-03.svg">
 							</object>
@@ -223,7 +216,7 @@
 												<p class="text-black">Km/hr</p>
 											</div>
 										</div>
-										<a href="#"><button id="trek-2" class="btn btn-primary trek_explore">EXPLORE</button></a>
+										<a href="trek/"><button id="path_2" class="btn btn-primary trek_explore">EXPLORE</button></a>
 									</div>
 								</div>
 							</div>
@@ -232,9 +225,9 @@
 				</div>
 
 				<!-- 3rd TREKKING PATH dIV -->
-				<div class="col-lg-4 col-sm-6 col-xs-12">
-					<div class="zoom">
-						<div class="text-center zoom trek_page_div spacing shadow">
+				<div class="col-lg-4 col-sm-6 col-xs-12 text-center ">
+					<div class="translate">
+						<div class="translate trek_page_div spacing shadow">
 							<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
 							 	<param name="src" value="images/trek_two-03.svg">
 							</object>
@@ -273,7 +266,7 @@
 												<p class="text-black">Km/hr</p>
 											</div>
 										</div>
-										<a href="#"><button id="trek-3" class="btn btn-primary trek_explore">EXPLORE</button></a>
+										<a href="trek/"><button id="path_3" class="btn btn-primary trek_explore">EXPLORE</button></a>
 									</div>
 								</div>
 							</div>
@@ -282,9 +275,9 @@
 				</div>
 
 				<!-- 4th TREKKING PATH dIV -->
-				<div class="col-lg-4 col-sm-6 col-xs-12">
-					<div class="zoom">
-						<div class="text-center zoom trek_page_div spacing shadow">
+				<div class="col-lg-4 col-sm-6 col-xs-12 text-center">
+					<div class="translate">
+						<div class="trek_page_div spacing shadow">
 							<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
 							 	<param name="src" value="images/trek_two-03.svg">
 							</object>
@@ -323,7 +316,7 @@
 												<p class="text-black">Km/hr</p>
 											</div>
 										</div>
-										<a href="#"><button id="trek-4" class="btn btn-primary trek_explore">EXPLORE</button></a>
+										<a href="trek/"><button id="path_4" class="btn btn-primary trek_explore">EXPLORE</button></a>
 									</div>
 								</div>
 							</div>
@@ -332,9 +325,9 @@
 				</div>
 
 				<!-- 5th TREKKING PATH dIV -->
-				<div class="col-lg-4 col-sm-6 col-xs-12">
-					<div class="zoom">
-						<div class="text-center zoom trek_page_div spacing shadow">
+				<div class="col-lg-4 col-sm-6 col-xs-12 text-center">
+					<div class="translate">
+						<div class="trek_page_div spacing shadow">
 							<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
 							 	<param name="src" value="images/trek_two-03.svg">
 							</object>
@@ -373,7 +366,7 @@
 												<p class="text-black">Km/hr</p>
 											</div>
 										</div>
-										<a href="#"><button id="trek-5" class="btn btn-primary trek_explore">EXPLORE</button></a>
+										<a href="trek/"><button id="path_5" class="btn btn-primary trek_explore">EXPLORE</button></a>
 									</div>
 								</div>
 							</div>
@@ -382,9 +375,9 @@
 				</div>
 
 				<!-- 6th TREKKING PATH dIV -->
-				<div class="col-lg-4 col-sm-6 col-xs-12">
-					<div class="zoom">
-						<div class="text-center zoom trek_page_div spacing shadow">
+				<div class="col-lg-4 col-sm-6 col-xs-12 text-center">
+					<div class="translate">
+						<div class="trek_page_div spacing shadow">
 							<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
 							 	<param name="src" value="images/trek_two-03.svg">
 							</object>
@@ -423,7 +416,7 @@
 												<p class="text-black">Km/hr</p>
 											</div>
 										</div>
-										<a href="#"><button id="trek-6" class="btn btn-primary trek_explore">EXPLORE</button></a>
+										<a href="trek/"><button id="path_6" class="btn btn-primary trek_explore">EXPLORE</button></a>
 									</div>
 								</div>
 							</div>
@@ -433,94 +426,119 @@
 			</div>
 		</div>
 
-		<!-- EXPLORE REGIONS' LINKS  DIV -->
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="white_bg other_regions">
-					<div class="row padding">
+		<!-- EXPLORE OTHER ACTIVITIES  DIV -->
+		<div class="white_bg spacing">
+			<div class="container">
+				<div class="col-xs-12 text-center">
+					<div class=" spacing">
 						<h3 class="color-blue text-center">Other Activities</h3>
-							<!-- NOTHERN AREAS LINKS -->
-							<div class="col-sm-8">
-								<div class="col-sm-2"></div>
-								<div class="col-sm-10">
-									<h4 class="color-blue north_heading_margin">Naran KP</h4>
-									<div class="col-sm-6">
-										<div class="small-screen-margin">
-											<ul>
-												<li class="other_regions_link"><a href="#">Scuba diving</a></li>
-												<li class="other_regions_link"><a href="#">Skiing</a></li>
-												<li class="other_regions_link"><a href="#">Bike Trails</a></li>
-												<li class="other_regions_link"><a href="#">Hiking</a></li>
-												<li class="other_regions_link"><a href="#">Camping</a></li>
-												<li class="other_regions_link"><a href="#">Culture</a></li>
-											</ul>
-										</div>
+						<h4 class="color-text text-center">Lorem ipsum dolor sit amet</h4>
+					</div>
+
+					<!-- FISHING dIV -->
+					<div class="col-lg-4 col-sm-6 col-xs-12">
+						<div class="translate">
+							<div class="famous_events_div shadow">
+								<img id="fishing_normal" class="image_normal events_image_normal" src="./images/fishing.png" />
+								<img id="fishing_hover" class="image_hover" src="https://unsplash.it/400/320/?random" />	
+								<div class="normal_details">
+									<div class="has_wrapper">
+										<h2 class="color-black">Fishing</h2>
+										<p>In Naran</p>
+										<img src="images/spots-pin.png" class="img auto-margin">
+										<p>5 differnet spots for fishing and relaxing</p>
 									</div>
-									<div class="col-sm-6">
-										<div class="small-screen-margin right-separation">
-											<ul>
-												<li class="other_regions_link"><a href="#">Scuba diving</a></li>
-												<li class="other_regions_link"><a href="#">Skiing</a></li>
-												<li class="other_regions_link"><a href="#">Bike Trails</a></li>
-												<li class="other_regions_link"><a href="#">Hiking</a></li>
-												<li class="other_regions_link"><a href="#">Camping</a></li>
-												<li class="other_regions_link"><a href="#">Culture</a></li>
-											</ul>
-										</div>
+								</div>				
+								<div class="has_bottom hover_details">	
+									<h2>Fishing</h2>
+									<div class="white_bg radius">					
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+										<a href="#"><button id="fishing" class="btn btn-primary">EXPLORE</button></a>
 									</div>
-								</div>
-							</div>
-						<!-- SOUTHERN AREAS LINKS -->
-						<div class="col-sm-1"></div>
-						<div class="col-sm-3">
-							<div class="col-sm-12">
-								<div class=" small-screen-margin">
-									<h4 class="color-blue">Essentials</h4>
-									<ul>
-										<li class="other_regions_link"><a href="#">Emergency Services</a></li>
-										<li class="other_regions_link"><a href="#">ATMs</a></li>
-										<li class="other_regions_link"><a href="#">Accomodation</a></li>
-										<li class="other_regions_link"><a href="#">Utility Stores</a></li>
-										<li class="other_regions_link"><a href="#">Discover Places</a></li>
-										<li class="other_regions_link"><a href="#">Navigation</a></li>
-									</ul>
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>			
+
+					<!-- CULTURE dIV -->
+					<div class="col-lg-4 col-sm-6 col-xs-12">
+						<div class="translate">
+							<div class="famous_events_div shadow">
+								<img id="culture_normal" class="image_normal events_image_normal" src="./images/cult.png" />
+								<img id="culture_hover" class="image_hover" src="https://unsplash.it/400/320/?random" />	
+								<div class="normal_details">
+									<div class="has_wrapper">
+										<h2 class="color-black">Culture</h2>
+										<p>In Naran</p>
+										<img src="images/spots-pin.png" class="img auto-margin">
+										<p>Explore the cultural values of naran</p>
+									</div>
+								</div>				
+								<div class="has_bottom hover_details">	
+									<h2>Culture</h2>
+									<div class="white_bg radius">					
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+										<a href="#"><button id="culture" class="btn btn-primary">EXPLORE</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+
+					<!-- PARAGLIDING dIV -->
+					<div class="col-lg-4 col-sm-6 col-xs-12">
+						<div class="translate">
+							<div class="famous_events_div shadow">
+								<img id="paragliding_normal" class="image_normal events_image_normal" src="./images/paragliding.png" />
+								<img id="paragliding_hover" class="image_hover" src="https://unsplash.it/400/320/?random" />	
+								<div class="normal_details">
+									<div class="has_wrapper">
+										<h2 class="color-black">Paragliding</h2>
+										<p>In Naran</p>
+										<img src="images/spots-pin.png" class="img auto-margin">
+										<p>3 amazing paragliding experiences</p>
+									</div>
+								</div>				
+								<div class="has_bottom hover_details">	
+									<h2>Paragliding</h2>
+									<div class="white_bg radius">					
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+										<a href="#"><button id="paragliding" class="btn btn-primary">EXPLORE</button></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>			
 				</div>
 			</div>
 		</div>
 
-		<!-- FOOTER DIV -->
-		<div class="row">
+		<!-- START OF FOOTER -->
+		<div class="footer">
 			<div class="col-sm-12">
-				<div class="footer">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-8">
-						<ul class="text-center">
-							<li class="footer-links"><a href="#">Home</a></li>
-							<li class="footer-links"><a href="#">Terms</a></li>
-							<li class="footer-links"><a href="#">Privacy Policy</a></li>
-							<li class="footer-links"><a href="#">Site Map</a></li>
-							<li class="footer-links"><a href="#">Discover Places</a></li>
-							<li class="footer-links"><a href="#">Navigation</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-2"></div>
+				<div class="col-sm-push-2 col-sm-8 col-sm-pull-2">
+					<ul class="text-center">
+						<li class="footer-links"><a href="#">Home</a></li>
+						<li class="footer-links"><a href="#">Terms</a></li>
+						<li class="footer-links"><a href="#">Privacy Policy</a></li>
+						<li class="footer-links"><a href="#">Site Map</a></li>
+						<li class="footer-links"><a href="#">Discover Places</a></li>
+						<li class="footer-links"><a href="#">Navigation</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
+		<!-- END OF FOOTER -->
 	</div>
 
 </body>
 
 <script type="text/javascript" src="js/jquery.min.js" ></script>
 <script type="text/javascript" src="js/bootstrap.min.js" ></script>
-<script type="text/javascript" src="js/devrama.slider.js" ></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('.scroller').DrSlider(); 
+		//show selected area in breadcrumb
+		$('.breadcrumb .active').html(window.sessionStorage.getItem('activity')); 
 
 		// SET SELECTED ACTIVITY
 		$('button').click(function() {
