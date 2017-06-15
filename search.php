@@ -83,9 +83,11 @@
 					<div class="searchPage_banner">
 						<img class="img img-responsive" src="images/img_1.jpg" />
 						<!-- SEARCH FORM -->
-			        	<form class="form-inline search search-page" action="search.php">
-						    <span class="glyphicon glyphicon-remove"></span>
-							<div class="form-group col-sm-2 col-xs-12">
+						<form class="form-inline search search-page" action="search.php">
+			        		<div class="form-group col-sm-1 col-xs-12 text-center ">
+			        			<span class="glyphicon glyphicon-search"></span>
+			        		</div>
+							<div class="form-group col-sm-3 col-xs-12">
 							      	<select class="form-control search_select" id="sel1" name="sel1">
 							          <option>Ketchup</option>
 							          <option>Relish</option>
@@ -95,7 +97,7 @@
 							          <option>Toilet Paper</option>
 							      	</select>
 							</div>
-							<div class="form-group col-sm-2 col-xs-12">
+							<div class="form-group col-sm-3 col-xs-12">
 							      	<select class="form-control search_select" id="sel2" name="sel2">
 							          <option>Mustard</option>
 							          <option>Ketchup</option>
@@ -105,7 +107,7 @@
 							          <option>Toilet Paper</option>
 							      	</select>
 						    </div>
-						    <div class="form-group col-sm-2 col-xs-12">
+						    <div class="form-group col-sm-3 col-xs-12">
 							      	<select class="form-control search_select" id="sel3" name="sel3">
 							          <option>Tent</option>
 							          <option>Flashlight</option>
@@ -114,14 +116,11 @@
 							          <option>Relish</option>
 							          <option>Toilet Paper</option>
 							      	</select>
-						    </div>	
-						    <div class="form-group col-sm-4 col-xs-12">
-							    <input type="text" class="form-control" id="search-text" name="search-text" placeholder="Or search places, regions, activities">
-						    </div>							    
-						    <div class="form-group col-xs-2 text-right">
+						    </div>								    
+						    <div class="form-group col-sm-2 col-xs-12 text-right">
 							    <button type="submit" class="btn btn-info">Submit</button>
 							</div>
-						</form>
+					</form>
 					</div>
 				</div>
 			</div>

@@ -16,86 +16,89 @@
 	<div class="container">	
 		<!-- TOP DIV -->
 		<!-- TOP LOGO AND MENU DIV -->
-		<!-- TOP LOGO AND MENU DIV -->
+		<div class="row top_div">
 			<div class="col-sm-12">	
-				<div class="row margins top_div">
-					<!-- LOGO DIV -->
-					<div class="col-lg-6 col-sm-5 col-xs-3">
-						<div class="col-sm-3 col-xs-9">
-							<img class="img img-responsive logo" src="images/logo.png" alt="">
-						</div>
-						<div class="col-sm-9 col-xs-3 text-left">
-							<h4 class="color-blue top_div_logo_heading"> TCKP DISCOVER</h4>
-							<h5 class="color-text heading-description">Tourism Cooperation KP</h5>
-						</div>
+				<!-- LOGO DIV -->
+				<div class="col-lg-6 col-sm-5 col-xs-3">
+					<div class="col-sm-2 col-xs-9">
+						<img class="img logo" src="images/logo.png" alt="">
 					</div>
-					<!-- MENU DIV -->				
-					<div class="col-lg-6 col-sm-7 col-xs-9">
-						<nav class="navbar">
-							<div class="navbar-header">
-						      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuBar">
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>                        
-						      </button>
-						    </div>
-						    <div class="collapse navbar-collapse" id="menuBar">
-								<ul class="nav navbar-nav">
-									<li class="top-links color-black"><a href="#">Destination</a></li>
-									<li class="top-links color-black"><a href="#">Tour</a></li>
-									<li class="top-links color-black"><a href="#">Plan</a></li>
-									<li class="top-links color-black"><a href="#">Sign In</a></li>
-								</ul>
-							</div>
-						</nav>
+					<div class="col-sm-10 col-xs-3 text-left">
+						<h4 class="color-blue top_div_logo_heading"> TCKP DISCOVER</h4>
+						<h5 class="heading-description">Tourism Cooperation KP</h5>
 					</div>
 				</div>
+				<!-- MENU DIV -->				
+				<div class="col-lg-6 col-sm-7 col-xs-9">
+					<nav class="navbar">
+						<div class="navbar-header">
+				    	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuBar">
+							    <span class="icon-bar"></span>
+							    <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>                        
+						    </button>
+						</div>
+					    <div class="collapse navbar-collapse" id="menuBar">
+							<ul class="nav navbar-nav">
+								<li class="top-links color-black"><a href="#">Sign In</a></li>
+								<li class="top-links color-black"><a href="#">Plan</a></li>
+								<li class="top-links color-black"><a href="#">Events</a></li>
+								<li class="top-links color-black"><a href="#">Destinations</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
 			</div>
+		</div>
 		
 
-		<!-- TOP LOGO DIV -->
+		<!-- SHORT DESCRIPTION DIV -->
 		<div class="row">
 			<div class="col-sm-12">	
-				<div class="col-sm-3"></div>
-					<div class="col-sm-6">
-						<div class="text-center margins">
+					<div class="col-sm-push-3 col-sm-6 col-sm-pull-3 col-xs-12 text-center">
+						<div class="spacing">
 							<h3 class="color-blue heading_large">Choose your adventure</h3>
-							<p class="color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt, eiusmod tempor incididunt </p>
+							<p class="color-black description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt, eiusmod tempor incididunt </p>
 						</div>
 					</div>
-					<div class="col-sm-3"></div>
 				</div>
 		</div>	
 
 		<!-- NAVIGATIONS -->
 		<div class="row">
 			<!-- DISCOVER -->
-			<div class="col-sm-6">
-				<div class="margins text-center right-separation animated SlideInLeft">
-					<object type="image/svg+xml" data="images/home_page_illlustrations-02.svg" width="50%" height="auto">
-					 	<param name="src" value="images/home_page_illlustrations-02.svg">
-					</object>
-					<h2 class="color-blue">Discover</h2>
-					<p class="color-text intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-					<a href="discover.php"><button class="btn btn-default">GO</button></a>
+			<div class="col-sm-push-1 col-sm-10 col-sm-pull-1 col-xs-12 text-center">
+				<div class="col-sm-6">
+					<a href="discover.php">
+						<div class="left-landing-div">
+							<object type="image/svg+xml" data="images/home_page_illlustrations-03.svg" width="50%" height="auto">
+							 	<param name="src" value="images/home_page_illlustrations-03.svg">
+							</object>					
+							<h2 class="color-blue">Discover</h2>
+							<p class="color-text intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<button class="btn btn-default">GO</button>
+						</div>
+					</a>
 				</div>
-			</div>
-			<!-- NAVIGATE -->
-			<div class="col-sm-6">
-				<div class="margins text-center animated SlideInRight">
-					<object type="image/svg+xml" data="images/home_page_illlustrations-03.svg" width="50%" height="auto">
-					 	<param name="src" value="images/home_page_illlustrations-03.svg">
-					</object>
-					<h2 class="color-blue">Navigation</h2>
-					<p class="color-text intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-					<a href="#"><button class="btn btn-default">GO</button></a>
+				<!-- NAVIGATE -->
+				<div class="col-sm-6">
+					<a href="#">
+						<div class="right-landing-div">
+							<object type="image/svg+xml" data="images/home_page_illlustrations-02-cropped.svg" width="53%" height="auto">
+							 	<param name="src" value="images/home_page_illlustrations-02-cropped.svg">
+							</object>
+							<h2 class="color-blue">Navigation</h2>
+							<p class="color-text intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<button class="btn btn-default">GO</button>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-lg-12">
-				<div class="padding text-center">
+				<div class="margins text-center">
 					<a href="#"><button class="btn btn-default gotomain">GO TO MAIN SITE</button></a>
 				</div>
 			</div>

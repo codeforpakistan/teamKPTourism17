@@ -82,9 +82,22 @@
 				</div>
 			</div>
 		</div>
-					
+		<!-- END OF TOP IMAGE DIV -->			
 
-		<div class="white_bg horizontal_rule">
+		<!-- STICKY MENU -->
+		<div class="row">
+			<div class="col-sm-12">
+				  <ul class="survival-menu" data-spy="affix" data-offset-top="450">
+				    <li class="active"><a href="#best-time-to-go">Best Time to Go</a></li>
+				    <li><a href="#visas">Visas</a></li>
+				    <li><a href="#health">Health</a></li>
+				    <li><a href="#money-and-cost">Money and Cost</a></li>
+				  </ul>
+			</div>
+		</div>
+		<!-- END OF STICKY MENU -->	
+
+		<div id="best-time-to-go" class="white_bg horizontal_rule">
 			<!-- BEST TIME GUIDE DIV -->
 				<!--BEST TIME HEADING DIV -->
 			<div class="row">
@@ -93,7 +106,7 @@
 					<div class="col-lg-10 col-sm-12">
 						<div class="row padding horizontal_rule">
 							<div class="col-xs-2">
-								<img class="img img-responsive survival-icon" src="images/best-time.png" alt="">
+								<img class="img survival-icon" src="images/best-time.png" alt="">
 							</div>
 							<div class="col-xs-10">
 								<h4 class="color-blue top_div_logo_heading text-left"> BEST TIME TO GO</h4>
@@ -259,7 +272,7 @@
 		<!-- END OF BEST TIME -->
 
 		<!-- START OF VISAS -->
-		<div class="horizontal_rule">
+		<div id="visas" class="horizontal_rule">
 			<!-- VISAS HEADIND DIV -->
 			<div class="row">
 				<div class="col-xs-12">
@@ -312,7 +325,7 @@
 		<!-- END OF VISAS -->
 
 		<!-- START OF HEALTH -->
-		<div class="gray_bg horizontal_rule">
+		<div id="health" class="gray_bg horizontal_rule">
 			<!-- HEALTH HEADIND DIV -->
 			<div class="row">
 				<div class="col-xs-12">
@@ -363,7 +376,7 @@
 		<!-- END OF HEALTH -->
 
 		<!-- START OF MONEY AND COSTS -->
-		<div class="horizontal_rule white_bg">
+		<div id="money-and-cost" class="horizontal_rule white_bg">
 			<!-- MONEY AND COSTS HEADIND DIV -->
 			<div class="row">
 				<div class="col-xs-12">
@@ -540,7 +553,7 @@
 		//show selected area in breadcrumb
 		$('.breadcrumb .active').html(window.sessionStorage.getItem('region'));
 		//current temperature 
-		var temp = 'http://'+api.openweathermap.org/data/2.5/weather?lat=35&lon=139&APPID=eefd513f3a11f3652be8d3ff855f3293;
+		var temp = api.openweathermap.org/data/2.5/weather?lat=35&lon=139&APPID=eefd513f3a11f3652be8d3ff855f3293;
 		//$('.current-temp').html(main[temp]);
 		console.log(temp);
 		//view/hide details 
