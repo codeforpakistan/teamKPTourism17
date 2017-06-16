@@ -24,22 +24,9 @@
 }
 
 body {
-	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color: #5d5c56;
 	background: #fff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-a {
-	text-decoration: none;
-	color: #47dbb4;
-	outline: none;
-}
-
-a:hover,
-a:focus {
-	color: #33b996;
 }
 
 .hidden {
@@ -75,7 +62,7 @@ a:focus {
 }
 
 .header-title__main {
-	font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+	font-family: 'Robotto-Thin';
 	font-size: 3em;
 	font-weight: 400;
 	line-height: 1;
@@ -285,26 +272,25 @@ a:focus {
 }
 
 .text section:not(:first-child) h2 {
-	padding: 2em 0 0 0;
+	padding: 1em 0 0 0;
 }
 
 .title-up {
 	font-size: 0.365em;
-	font-weight: bold;
 	display: block;
 	letter-spacing: 7px;
 	text-transform: uppercase;
-	color: #cecec5;
+	color: #1465a3 !important;
+	padding: 0.8em 0;
 }
 
 .title-down {
-	font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
-	font-size: 1.35em;
-	font-weight: 400;
-	line-height: 0.9;
+	font-family: 'Robotto-Thin';
+	font-size: 1.2em;
+	line-height: 0.9em;
 	display: block;
-	padding: 0.15em 0 0.35em;
-	color: #5f646c;
+	padding: 0;
+	color: #333;
 }
 
 .text figure {
@@ -312,7 +298,8 @@ a:focus {
 }
 
 .text figure img {
-	max-width: 100%;
+	width: 100%;
+	max-height: 350px;
 }
 
 .text figcaption {
@@ -323,27 +310,14 @@ a:focus {
 	color: #5f646c;
 }
 
-.text section p {
-	font-size: 0.95em;
-	margin: 0.5em 0 1.5em;
-}
-
-.text section p.text-intro {
-	font-size: 1.3em;
-	font-style: italic;
-	line-height: 1.5;
-	margin: 0.5em 0 1.25em;
-	text-align: left;
-	color: #9d9c95;
-}
-
 .text blockquote {
-	font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+	font-family: 'Free-Script';
 	font-size: 2em;
-	line-height: 1.5;
+	line-height: 1.1;
 	position: relative;
 	text-align: left;
 	color: #939997;
+	border: none !important;
 }
 
 .text blockquote::before {
@@ -355,14 +329,14 @@ a:focus {
 	top: -0.15em;
 	right: 100%;
 	margin: 0 0.075em 0 0;
-	color: #f0f3f3;
+	color: #1465a3;
 }
 
 .text blockquote span {
-	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 0.5em;
+	font-family: 'Robotto-Light';
+	font-size: 0.4em;
 	white-space: nowrap;
-	color: #cbcece;
+	color: #1465a3;
 }
 
 .js-section {
@@ -371,13 +345,25 @@ a:focus {
 }
 
 .js-gallery {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 .js-gallery-content {
 	font-size: 0;
 	text-align: center;
+	clear: both;
+	min-height: 200px;
+	float: left;
+}
+
+.js-gallery-content img {
+	width: 46% !important;
+	max-height: 200px !important;
+	float: left; 
+	padding-left: 2%;
+	padding-right: 2%;
+	height: 200px;
 }
 
 .js-gallery-content img {

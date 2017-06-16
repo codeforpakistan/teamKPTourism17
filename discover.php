@@ -59,7 +59,7 @@
 					<!-- BREADCRUMB DIV -->
 					<div class="col-lg-6 col-xs-12">
 						<ol class="breadcrumb">
-						  <li><a href="http://localhost/tckp">Home</a></li>						  
+						  <li><a href="index.php">Home</a></li>						  
 						  <li class="active">Discover</li>
 						</ol>
 					</div>

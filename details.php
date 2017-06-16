@@ -59,8 +59,8 @@
 					<!-- BREADCRUMB DIV -->
 					<div class="col-lg-6 col-xs-12">
 						<ol class="breadcrumb">
-						  <li><a href="http://localhost/tckp">Home</a></li>
-						  <li><a href="http://localhost/tckp/discover.php">Discover</a></li>						  						  
+						  <li><a href="index.php">Home</a></li>
+						  <li><a href="discover.php">Discover</a></li>						  						  
 						  <li class="active"></li>
 						</ol>
 					</div>
@@ -335,8 +335,8 @@
 						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 							<div class="scale">
 								<div class="top-sights-box">
-									<div class="top-sights-box-cover"></div>
 									<a href="activity.php">
+										<div class="top-sights-box-cover"></div>
 										<img class="img img-responsive" src="images/stock-img3.jpg" />
 										<h4 class="color-black site-count">1</h4>
 										<div class="site-info-text text-center">
@@ -353,8 +353,8 @@
 						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 							<div class="scale">
 								<div class="top-sights-box">
-									<div class="top-sights-box-cover"></div>
 									<a href="activity.php">
+										<div class="top-sights-box-cover"></div>
 										<img class="img img-responsive" src="images/stock-img1.jpg" />
 										<h4 class="color-black site-count">2</h4>
 										<div class="site-info-text text-center">
@@ -371,8 +371,8 @@
 						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 							<div class="scale">
 								<div class="top-sights-box">
-									<div class="top-sights-box-cover"></div>
 									<a href="activity.php">
+										<div class="top-sights-box-cover"></div>
 										<img class="img img-responsive" src="images/stock-img4.jpg" />
 										<h4 class="color-black site-count">3</h4>
 										<div class="site-info-text text-center">
@@ -389,8 +389,8 @@
 						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 							<div class="scale">
 								<div class="top-sights-box">
-									<div class="top-sights-box-cover"></div>
 									<a href="activity.php">
+										<div class="top-sights-box-cover"></div>
 										<img class="img img-responsive" src="images/stock-img2.jpg" />
 										<h4 class="color-black site-count">4</h4>
 										<div class="site-info-text text-center">
@@ -407,8 +407,8 @@
 						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 							<div class="scale">
 								<div class="top-sights-box">
-									<div class="top-sights-box-cover"></div>
 									<a href="activity.php">
+										<div class="top-sights-box-cover"></div>
 										<img class="img img-responsive" src="images/stock-img1.jpg" />
 										<h4 class="color-black site-count">5</h4>
 										<div class="site-info-text text-center">
@@ -425,8 +425,8 @@
 						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 							<div class="scale">
 								<div class="top-sights-box">
-									<div class="top-sights-box-cover"></div>
 									<a href="activity.php">
+										<div class="top-sights-box-cover"></div>
 										<img class="img img-responsive" src="images/stock-img2.jpg" />
 										<h4 class="color-black site-count">6</h4>
 										<div class="site-info-text text-center">
@@ -762,6 +762,7 @@
 		$('.top-sights-to-visit .sort-heading').text('top sights in '+window.sessionStorage.getItem('region'));
 		$('.top-sights-to-visit .sort-description').text('Explore top sights in '+window.sessionStorage.getItem('region'));
 		$('.food-and-drinks .sort-description').text('Explore the delicious food in '+window.sessionStorage.getItem('region')); 
+
 		// SET SELECTED ACTIVITY
 		$('.famous_events_div').click(function() {
 			var activity = $(this).attr('id'); 
@@ -880,6 +881,11 @@
 			else {
 				$('.top-sights-to-visit .next').show();
 			}
+		});
+
+		$('.top-sights-box').click(function() {
+			window.sessionStorage.setItem('activity', 'site seeing');
+			console.log(sessionStorage);
 		});
 			
 	});

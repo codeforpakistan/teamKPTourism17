@@ -28,11 +28,11 @@
 }
 @font-face {
     font-family: Free-Script;
-    src: url('../fonts/FREESCPT.ttf');
+    src: url('../fonts/FREESCPT.TTF');
 }
 p, a {
 	font-family: 'Open-Sans-Light';
-	font-size: 13;
+	font-size: 13px;
 }
 h4, h3 {
 	font-family: 'Robotto-Light';
@@ -712,13 +712,14 @@ select.search_select {
     width: 100%;
 }
 .normal_details, .famous_regions_div:hover div.hover_details, .famous_regions_div:hover img.image_hover,.famous_events_div:hover div.hover_details, img.image_normal, .famous_events_div:hover img.image_hover, .trek_page_normal_details, .trek_page_div:hover .trek_page_hover_details {
-	opacity: 1;
 	display: block;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
 }
 div.hover_details,.famous_regions_div:hover .normal_details, .famous_regions_div:hover img.image_normal, .famous_events_div:hover .normal_details, .famous_events_div:hover img.image_normal, img.image_hover, .trek_page_hover_details, .trek_page_div:hover .trek_page_normal_details {
-  opacity: 0;
-  display: none;
-  transition: opacity .35s ease-in-out;
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    display: none;
 }
 @keyframes anim {
   0% {
@@ -1177,6 +1178,11 @@ a.guide_link:hover {
 .events-and-tours-div {
 	padding: 5% 0 4%;
 }
+/*.has_bottom.hover_details div:first-of-type {
+	border-radius: 100% / 50%;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 31px;
+}
 /********************************/
 /*         TREKS PAGE CSS    */
 /********************************/
@@ -1195,8 +1201,9 @@ a.guide_link:hover {
 	border-radius: 30px !important;
 	width: 90%;
 	position: relative;
-	background: url('../images/trek-tile-bg-map.png') no-repeat; 
+	background: url('../images/trek-tile-bg-map.png') no-repeat;
 	background-size: cover !important;
+	box-shadow: 0 0 60px #eee;
 }
 .trek_page_div:hover {
 	padding: 0;
@@ -1316,8 +1323,75 @@ a.guide_link:hover {
     transition: width 0.35s ease-in-out;
     text-transform: uppercase;
 }
-.other-activities-to-search {	
-	padding: 3% 0 5%;
+
+.other-activity-box {
+	position: relative;
+	border-radius: 20px;
+	height: 320px;
+}
+.other-activity-box img {
+	border-radius: 20px;
+	top: 0;
+	height: 100%;
+}
+.other-activity-box-cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,.5);
+	opacity: 0;
+	transition: anim .25s ease-in-out;
+	display: none;
+	border-radius: 20px;
+}
+.other-activity-box:hover .other-activity-box-cover {
+	opacity: 1;
+	animation: anim .15s ease-in-out;
+	display: block;
+	box-shadow: 0 0 30px #ddd;
+}
+.other-activity-info-text {
+	position: absolute;
+	bottom: 10%;
+	width: 100%;
+	text-align: center;
+	text-transform: capitalize;
+	transform: translateY(0px);
+    transition: transform .25s ease-in-out;
+    -webkit-transition: transform .25s ease-in-out;
+}
+.other-activity-info-text h3{
+	font-family: 'Open-Sans-Light';
+	font-size: 18px;
+}
+.other-activity-box:hover .other-activity-info-text {
+	transform: translateY(-6px);
+    transition: transform .25s ease-in-out;
+    -webkit-transition: transform .25s ease-in-out;
+    cursor: pointer;
+    z-index: 999;
+}
+.activity-description {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    width: 80%;
+    margin: auto;
+    display: none;
+}
+.other-activity-box:hover .activity-description {	
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    display: block;
+}
+.activity-area {
+	font-family: 'Free-Script';
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.activity-name {
+	font-family: 'Robotto-Thin';
+	font-size: 22px;
+	text-transform: capitalize;
 }
 /********************************/
 /*   SURVIVAL GUIDE PAGE CSS    */
@@ -1441,16 +1515,21 @@ a.guide_link:hover {
    color: #fff;
 }
 .trek-text {
-	padding: 0 6% 0 0;
+	padding: 5% 6% 4% 0;
 	margin-top: 6%;
 }
 .also-visit-box {
 	border: 1px solid #e6e6e6;
 	border-radius: 15px;
 	background-color: #fff;
+    box-shadow: 0 0 30px #eee;
+	-webkit-transition: box-shadow 0.35s ease-in-out;
+	transition: box-shadow box 0.35s ease-in-out;
 }
 .also-visit-box:hover {
-    box-shadow: 0 0 30px #ccc;
+    box-shadow: 0 0 40px #ccc;
+	-webkit-transition: box-shadow 0.35s ease-in-out;
+	transition: box-shadow box 0.35s ease-in-out;
 }
 .also-visit-box img {	
 	border-radius: 15px 15px 0 0;
@@ -1576,16 +1655,21 @@ a.guide_link:hover {
 .search-results {
 	border-radius: 10px;
 	border: 1px solid #eee;
+	box-shadow: 0 0 30px #ccc;
 }
 .search-results:hover {
-	box-shadow: 0 0 30px #bbb;
+	box-shadow: 0 0 40px #bbb;
 }
 .gotopage {
-	opacity: 0;
+	opacity: 0;	
+	-webkit-transition: opacity 0.35s ease-in-out;
+	transition: opacity box 0.35s ease-in-out;
 	margin-bottom: -18px;
 }
 .search-results:hover .gotopage {
 	opacity: 1;
+	-webkit-transition: opacity 0.35s ease-in-out;
+	transition: opacity 0.35s ease-in-out;
 }
 .search-results .contact {
 	border-bottom: none;
@@ -1885,6 +1969,8 @@ a.guide_link:hover {
 	.survival-menu {
 	    text-align: left !important;
 	    float: left !important;
+	    width: 100%;
+	    left: 0;
 	}
 	.guide_map_image {
 	    height: auto;

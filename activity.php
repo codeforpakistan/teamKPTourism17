@@ -27,7 +27,7 @@
 							<img class="img img-responsive logo" src="images/logo.png" alt="">
 						</div>
 						<div class="col-sm-9 col-xs-3 text-left">
-							<h4 class="color-blue top_div_logo_heading"> TCKP DISCOVER</h4>
+							<h4 class="color-blue top_div_logo_heading">TCKP DISCOVER</h4>
 							<h5 class="color-text heading-description">Tourism Cooperation KP</h5>
 						</div>
 					</div>
@@ -62,7 +62,7 @@
 						<ol class="breadcrumb">
 						  <li><a href="index.php">Home</a></li>
 						  <li><a href="discover.php">Discover</a></li>							  
-						  <li><a href="details.php">Area & Activities</a></li>
+						  <li><a class="selected-region" href="details.php"></a></li>
 						  <li class="active"></li>
 						</ol>
 					</div>
@@ -94,10 +94,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h2 class="color-black heading_large text-center">Title For The Spot</h2>
-						<h4 class="color-blue text-center">Lorem ipsum dolor sit amet</h4>
+						<h3 class="color-black sort-heading text-center">Title For The Spot</h3>
+						<h5 class="color-blue sort-description text-center">Lorem ipsum dolor sit amet</h5>
 						<div class="col-lg-7 col-md-7 col-sm-12">
-							<div class="trek-text color-black paddi">
+							<div class="trek-text color-black">
 								<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget egestas quam. Aliquam facilisis fringilla lectus, nec dictum purus commodo ut. Pellentesque vel odio vitae sapien convallis accumsan.</b></p>
 								<p><b>Cras luctus,</b> diam vitae cursus vulputate, nulla magna porttitor diam, at semper quam nulla id urna. Praesent pulvinar id tellus eu consequat. Duis lobortis, ligula at egestas euismod, lacus sapien fermentum metus, at convallis eros erat ac purus. Donec eros nibh, porta et lacinia eu, placerat at tortor. Cras condimentum ex eu ipsum dapibus auctor. Praesent iaculis leo vel sem dictum auctor. Phasellus in magna lobortis, pharetra erat vel, fringilla velit. Donec dictum congue justo, vestibulum condimentum felis consequat convallis. Mauris nec faucibus urna, eget mollis erat.</p>
 								<p><b>In nulla metus,</b> consequat eget felis non, dapibus pellentesque massa. Aenean id ultricies ante. Curabitur maximus ligula at pulvinar faucibus. Phasellus nec accumsan quam, eget laoreet orci. Donec quis sem vitae nisi tempor commodo at sit amet neque. Nam placerat metus est, in suscipit enim malesuada non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nisi purus, ultricies id placerat ac, scelerisque quis felis. Duis venenatis odio vel tellus commodo feugiat. Quisque sit amet pulvinar leo, in ultricies mauris. Proin tincidunt sit amet arcu non pretium.</p>
@@ -137,8 +137,8 @@
 		<div class="gray_bg about">
 			<div class="container">
 					<div class="col-xs-12">
-						<h2 class="color-black heading_large text-center">A Glimpse</h2>
-						<h4 class="color-blue text-center">Lorem ipsum dolor sit amet</h4>						
+						<h3 class="color-black sort-heading text-center">A Glimpse</h3>
+						<h5 class="color-blue sort-description text-center">Lorem ipsum dolor sit amet</h5>						
 						<div id="gallery" class="spacing"></div>						
 					</div>
 			</div>
@@ -150,8 +150,8 @@
 			<!-- DISCOVER ACTIVITIES  DIV -->
 			<div class="container">
 				<div class="row">
-					<h2 class="text-center">Near By Places</h2>
-					<h4 class="text-center color-blue">People who visited this place also visited these places</h4>
+					<h3 class="color-black sort-heading text-center">Near By Places</h3>
+					<h5 class="color-blue sort-description text-center">People who visited this place also visited these places</h5>
 					<!-- ACTIVITIES DIV -->
 						<div class="col-sm-12">
 							<!-- LEFT CONTAINER DIV -->
@@ -265,8 +265,8 @@
 		<div class="gray_bg about">
 			<div class="container">
 				<div class="col-xs-12">
-					<h2 class="color-black heading_large text-center">People Also Visited</h2>
-					<h4 class="color-blue text-center">Lorem ipsum dolor sit amet</h4>	
+					<h3 class="color-black sort-heading text-center">People Also Visited</h3>
+					<h5 class="color-blue sort-description text-center">Lorem ipsum dolor sit amet</h5>	
 
 					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center">
 						<div class="also-visit-box margins">
@@ -325,7 +325,8 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		//show selected area in breadcrumb
-		$('.breadcrumb .active').html(window.sessionStorage.getItem('activity')); 
+		$('.breadcrumb .selected-region').text(window.sessionStorage.getItem('region'));
+		$('.breadcrumb .active').text(window.sessionStorage.getItem('activity')); 
 
 		$('#gallery').imagesGrid({
                 images: [

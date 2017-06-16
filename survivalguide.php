@@ -58,7 +58,8 @@
 						<ol class="breadcrumb">
 						  <li><a href="index.php">Home</a></li>
 						  <li><a href="discover.php">Discover</a></li>
-						  <li class="active"></li>
+						  <li><a class="selected-region" href="details.php"></a></li>
+						  <li class="active">Essential Information</li>
 						</ol>
 					</div>
 					<!-- ELEVATION AND WEATHER DIV -->				
@@ -97,6 +98,7 @@
 		</div>
 		<!-- END OF STICKY MENU -->	
 
+		<!-- START OF BEST TIME -->
 		<div id="best-time-to-go" class="white_bg horizontal_rule">
 			<!-- BEST TIME GUIDE DIV -->
 				<!--BEST TIME HEADING DIV -->
@@ -268,7 +270,6 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- END OF BEST TIME -->
 
 		<!-- START OF VISAS -->
@@ -551,9 +552,9 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		//show selected area in breadcrumb
-		$('.breadcrumb .active').html(window.sessionStorage.getItem('region'));
+		$('.breadcrumb .selected-region').text(window.sessionStorage.getItem('region'));
 		//current temperature 
-		var temp = api.openweathermap.org/data/2.5/weather?lat=35&lon=139&APPID=eefd513f3a11f3652be8d3ff855f3293;
+		//var temp = api.openweathermap.org/data/2.5/weather?lat=35&lon=139&APPID=eefd513f3a11f3652be8d3ff855f3293;
 		//$('.current-temp').html(main[temp]);
 		console.log(temp);
 		//view/hide details 

@@ -59,9 +59,9 @@
 					<!-- BREADCRUMB DIV -->
 					<div class="col-lg-6 col-xs-12">
 						<ol class="breadcrumb">
-						  <li><a href="http://localhost/tckp">Home</a></li>
-						  <li><a href="http://localhost/tckp/discover.php">Discover</a></li>
-						  <li><a class="region-selected" href="http://localhost/tckp/details.php"></a></li>					  						  
+						  <li><a href="index.php">Home</a></li>
+						  <li><a href="discover.php">Discover</a></li>
+						  <li><a class="region-selected" href="details.php"></a></li>					  						  
 						  <li class="active"></li>
 						</ol>
 					</div>
@@ -106,7 +106,7 @@
 		<div class="container">
 			<!-- TREKS SELECTION DIV -->
 			<div class="row margins text-center ">	
-				<h3 class="color-text sort-heading">FAMOUS Trekking Paths</h3>
+				<h3 class="color-black sort-heading">FAMOUS Trekking Paths</h3>
 				<h5 class="color-blue sort-description">Choose a trail to explore</h5>
 				<form class="margins" action="" method="">
 					<select class="form-control input-group-lg" name="trek_selection_sort" id="trek_selection_sort">
@@ -122,49 +122,51 @@
 					<!-- 1st TREKKING PATH dIV -->
 					<div class="col-lg-4 col-sm-6 col-xs-12 text-center ">
 						<div class="translate">
-							<div class="trek_page_div spacing shadow">
-								<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
-								 	<param name="src" value="images/trek_two-03.svg">
-								</object>
+							<div id="path-1" class="trek_page_div">
+								<a href="trek/">
+									<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
+									 	<param name="src" value="images/trek_two-03.svg">
+									</object>
 
-								<div class="trek_page_normal_details has_bottom white_bg radius">
-										<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
-										<p class="recommendation">Recommended</p>
-										<h4 class="">Trekking Lorem Ipsum</h4>
-										<p class="">Resturants, Bicycling, Hiking, Sites</p>
-								</div>
-								<!-- HOVER DETAILS -->	
-								<div class="trek_page_cover_div"></div>		
-								<div class="trek_page_hover_details radius">	
-									<div class="has_bottom">
-										<div class="width_76">	
-											<h3 class="text-black">Trekking Lorem Ipsum</h3>
+									<div class="trek_page_normal_details has_bottom white_bg radius">
 											<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
-											<p class="recommendation">Recommended</p>			
-											<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-										</div>
-										<div class="white_bg radius trek_specs">
-											<div class="col-lg-12"> 
-												<div class="col-xs-4">
-													<p class="text-black">Distance</p>
-													<h3 id="trek_1_distance" class="color-blue">8.5</h3>
-													<p class="text-black">Km</p>
-												</div>
-												<div class="col-xs-4">
-													<p class="text-black">Time</p>
-													<h3 id="trek_1_time" class="color-blue">1.5</h3>
-													<p class="text-black">hrs</p>
-												</div>
-												<div class="col-xs-4">
-													<p class="text-black">Speed</p>
-													<h3 id="trek_1_speed" class="color-blue">3</h3>
-													<p class="text-black">Km/hr</p>
-												</div>
+											<p class="recommendation">Recommended</p>
+											<h4 class="">Trekking Lorem Ipsum</h4>
+											<p class="">Resturants, Bicycling, Hiking, Sites</p>
+									</div>
+									<!-- HOVER DETAILS -->	
+									<div class="trek_page_cover_div"></div>		
+									<div class="trek_page_hover_details radius">	
+										<div class="has_bottom">
+											<div class="width_76">	
+												<h3 class="text-black">Trekking Lorem Ipsum</h3>
+												<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
+												<p class="recommendation">Recommended</p>			
+												<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 											</div>
-											<a href="trek/"><button id="path_1" class="btn btn-primary trek_explore">EXPLORE</button></a>
+											<div class="white_bg radius trek_specs">
+												<div class="col-lg-12"> 
+													<div class="col-xs-4">
+														<p class="text-black">Distance</p>
+														<h3 id="trek_1_distance" class="color-blue">8.5</h3>
+														<p class="text-black">Km</p>
+													</div>
+													<div class="col-xs-4">
+														<p class="text-black">Time</p>
+														<h3 id="trek_1_time" class="color-blue">1.5</h3>
+														<p class="text-black">hrs</p>
+													</div>
+													<div class="col-xs-4">
+														<p class="text-black">Speed</p>
+														<h3 id="trek_1_speed" class="color-blue">3</h3>
+														<p class="text-black">Km/hr</p>
+													</div>
+												</div>
+												<button class="btn btn-primary trek_explore">EXPLORE</button>
+											</div>
 										</div>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -172,49 +174,51 @@
 					<!-- 2nd TREKKING PATH dIV -->
 					<div class="col-lg-4 col-sm-6 col-xs-12 text-center ">
 						<div class="translate">
-							<div class="trek_page_div spacing shadow">
-								<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
-								 	<param name="src" value="images/trek_two-03.svg">
-								</object>
+							<div id="path-2" class="trek_page_div">
+								<a href="trek/">
+									<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
+									 	<param name="src" value="images/trek_two-03.svg">
+									</object>
 
-								<div class="trek_page_normal_details has_bottom white_bg radius">
-										<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
-										<p class="recommendation">Recommended</p>
-										<h4 class="">Trekking Lorem Ipsum</h4>
-										<p class="">Resturants, Bicycling, Hiking, Sites</p>
-								</div>
-								<!-- HOVER DETAILS -->	
-								<div class="trek_page_cover_div"></div>		
-								<div class="trek_page_hover_details radius">	
-									<div class="has_bottom">
-										<div class="width_76">	
-											<h3 class="text-black">Trekking Lorem Ipsum</h3>
+									<div class="trek_page_normal_details has_bottom white_bg radius">
 											<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
-											<p class="recommendation">Recommended</p>			
-											<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-										</div>
-										<div class="white_bg radius trek_specs">
-											<div class="col-lg-12"> 
-												<div class="col-xs-4">
-													<p class="text-black">Distance</p>
-													<h3 id="trek_2_distance" class="color-blue">8.5</h3>
-													<p class="text-black">Km</p>
-												</div>
-												<div class="col-xs-4">
-													<p class="text-black">Time</p>
-													<h3 id="trek_2_time" class="color-blue">1.5</h3>
-													<p class="text-black">hrs</p>
-												</div>
-												<div class="col-xs-4">
-													<p class="text-black">Speed</p>
-													<h3 id="trek_2_speed" class="color-blue">3</h3>
-													<p class="text-black">Km/hr</p>
-												</div>
+											<p class="recommendation">Recommended</p>
+											<h4 class="">Trekking Lorem Ipsum</h4>
+											<p class="">Resturants, Bicycling, Hiking, Sites</p>
+									</div>
+									<!-- HOVER DETAILS -->	
+									<div class="trek_page_cover_div"></div>		
+									<div class="trek_page_hover_details radius">	
+										<div class="has_bottom">
+											<div class="width_76">	
+												<h3 class="text-black">Trekking Lorem Ipsum</h3>
+												<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
+												<p class="recommendation">Recommended</p>			
+												<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 											</div>
-											<a href="trek/"><button id="path_2" class="btn btn-primary trek_explore">EXPLORE</button></a>
+											<div class="white_bg radius trek_specs">
+												<div class="col-lg-12"> 
+													<div class="col-xs-4">
+														<p class="text-black">Distance</p>
+														<h3 id="trek_2_distance" class="color-blue">8.5</h3>
+														<p class="text-black">Km</p>
+													</div>
+													<div class="col-xs-4">
+														<p class="text-black">Time</p>
+														<h3 id="trek_2_time" class="color-blue">1.5</h3>
+														<p class="text-black">hrs</p>
+													</div>
+													<div class="col-xs-4">
+														<p class="text-black">Speed</p>
+														<h3 id="trek_2_speed" class="color-blue">3</h3>
+														<p class="text-black">Km/hr</p>
+													</div>
+												</div>
+												<button class="btn btn-primary trek_explore">EXPLORE</button>
+											</div>
 										</div>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -222,49 +226,51 @@
 					<!-- 3rd TREKKING PATH dIV -->
 					<div class="col-lg-4 col-sm-6 col-xs-12 text-center ">
 						<div class="translate">
-							<div class="trek_page_div spacing shadow">
-								<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
-								 	<param name="src" value="images/trek_two-03.svg">
-								</object>
+							<div id="path-3" class="trek_page_div">
+								<a href="trek/">
+									<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
+									 	<param name="src" value="images/trek_two-03.svg">
+									</object>
 
-								<div class="trek_page_normal_details has_bottom white_bg radius">
-										<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
-										<p class="recommendation">Recommended</p>
-										<h4 class="">Trekking Lorem Ipsum</h4>
-										<p class="">Resturants, Bicycling, Hiking, Sites</p>
-								</div>
-								<!-- HOVER DETAILS -->	
-								<div class="trek_page_cover_div"></div>		
-								<div class="trek_page_hover_details radius">	
-									<div class="has_bottom">
-										<div class="width_76">	
-											<h3 class="text-black">Trekking Lorem Ipsum</h3>
+									<div class="trek_page_normal_details has_bottom white_bg radius">
 											<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
-											<p class="recommendation">Recommended</p>			
-											<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-										</div>
-										<div class="white_bg radius trek_specs">
-											<div class="col-lg-12"> 
-												<div class="col-xs-4">
-													<p class="text-black">Distance</p>
-													<h3 id="trek_3_distance" class="color-blue">8.5</h3>
-													<p class="text-black">Km</p>
-												</div>
-												<div class="col-xs-4">
-													<p class="text-black">Time</p>
-													<h3 id="trek_3_time" class="color-blue">1.5</h3>
-													<p class="text-black">hrs</p>
-												</div>
-												<div class="col-xs-4">
-													<p class="text-black">Speed</p>
-													<h3 id="trek_3_speed" class="color-blue">3</h3>
-													<p class="text-black">Km/hr</p>
-												</div>
+											<p class="recommendation">Recommended</p>
+											<h4 class="">Trekking Lorem Ipsum</h4>
+											<p class="">Resturants, Bicycling, Hiking, Sites</p>
+									</div>
+									<!-- HOVER DETAILS -->	
+									<div class="trek_page_cover_div"></div>		
+									<div class="trek_page_hover_details radius">	
+										<div class="has_bottom">
+											<div class="width_76">	
+												<h3 class="text-black">Trekking Lorem Ipsum</h3>
+												<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
+												<p class="recommendation">Recommended</p>			
+												<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 											</div>
-											<a href="trek/"><button id="path_3" class="btn btn-primary trek_explore">EXPLORE</button></a>
+											<div class="white_bg radius trek_specs">
+												<div class="col-lg-12"> 
+													<div class="col-xs-4">
+														<p class="text-black">Distance</p>
+														<h3 id="trek_3_distance" class="color-blue">8.5</h3>
+														<p class="text-black">Km</p>
+													</div>
+													<div class="col-xs-4">
+														<p class="text-black">Time</p>
+														<h3 id="trek_3_time" class="color-blue">1.5</h3>
+														<p class="text-black">hrs</p>
+													</div>
+													<div class="col-xs-4">
+														<p class="text-black">Speed</p>
+														<h3 id="trek_3_speed" class="color-blue">3</h3>
+														<p class="text-black">Km/hr</p>
+													</div>
+												</div>
+												<button class="btn btn-primary trek_explore">EXPLORE</button>
+											</div>
 										</div>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -272,49 +278,51 @@
 					<!-- 4th TREKKING PATH dIV -->
 					<div class="col-lg-4 col-sm-6 col-xs-12 text-center">
 						<div class="translate">
-							<div class="trek_page_div spacing shadow">
-								<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
-								 	<param name="src" value="images/trek_two-03.svg">
-								</object>
+							<div id="path-4" class="trek_page_div">
+								<a href="trek/">
+									<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
+									 	<param name="src" value="images/trek_two-03.svg">
+									</object>
 
-								<div class="trek_page_normal_details has_bottom white_bg radius">
-										<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
-										<p class="recommendation">Recommended</p>
-										<h4 class="">Trekking Lorem Ipsum</h4>
-										<p class="">Resturants, Bicycling, Hiking, Sites</p>
-								</div>
-								<!-- HOVER DETAILS -->	
-								<div class="trek_page_cover_div"></div>		
-								<div class="trek_page_hover_details radius">	
-									<div class="has_bottom">
-										<div class="width_76">	
-											<h3 class="text-black">Trekking Lorem Ipsum</h3>
+									<div class="trek_page_normal_details has_bottom white_bg radius">
 											<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
-											<p class="recommendation">Recommended</p>			
-											<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-										</div>
-										<div class="white_bg radius trek_specs">
-											<div class="col-lg-12"> 
-												<div class="col-xs-4">
-													<p class="text-black">Distance</p>
-													<h3 id="trek_4_distance" class="color-blue">8.5</h3>
-													<p class="text-black">Km</p>
-												</div>
-												<div class="col-xs-4">
-													<p class="text-black">Time</p>
-													<h3 id="trek_4_time" class="color-blue">1.5</h3>
-													<p class="text-black">hrs</p>
-												</div>
-												<div class="col-xs-4">
-													<p class="text-black">Speed</p>
-													<h3 id="trek_4_speed" class="color-blue">3</h3>
-													<p class="text-black">Km/hr</p>
-												</div>
+											<p class="recommendation">Recommended</p>
+											<h4 class="">Trekking Lorem Ipsum</h4>
+											<p class="">Resturants, Bicycling, Hiking, Sites</p>
+									</div>
+									<!-- HOVER DETAILS -->	
+									<div class="trek_page_cover_div"></div>		
+									<div class="trek_page_hover_details radius">	
+										<div class="has_bottom">
+											<div class="width_76">	
+												<h3 class="text-black">Trekking Lorem Ipsum</h3>
+												<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
+												<p class="recommendation">Recommended</p>			
+												<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 											</div>
-											<a href="trek/"><button id="path_4" class="btn btn-primary trek_explore">EXPLORE</button></a>
+											<div class="white_bg radius trek_specs">
+												<div class="col-lg-12"> 
+													<div class="col-xs-4">
+														<p class="text-black">Distance</p>
+														<h3 id="trek_4_distance" class="color-blue">8.5</h3>
+														<p class="text-black">Km</p>
+													</div>
+													<div class="col-xs-4">
+														<p class="text-black">Time</p>
+														<h3 id="trek_4_time" class="color-blue">1.5</h3>
+														<p class="text-black">hrs</p>
+													</div>
+													<div class="col-xs-4">
+														<p class="text-black">Speed</p>
+														<h3 id="trek_4_speed" class="color-blue">3</h3>
+														<p class="text-black">Km/hr</p>
+													</div>
+												</div>
+												<button class="btn btn-primary trek_explore">EXPLORE</button>
+											</div>
 										</div>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -322,49 +330,51 @@
 					<!-- 5th TREKKING PATH dIV -->
 					<div class="col-lg-4 col-sm-6 col-xs-12 text-center">
 						<div class="translate">
-							<div class="trek_page_div spacing shadow">
-								<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
-								 	<param name="src" value="images/trek_two-03.svg">
-								</object>
+							<div class="trek_page_div">
+								<a id="path-5" href="trek/">
+									<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
+									 	<param name="src" value="images/trek_two-03.svg">
+									</object>
 
-								<div class="trek_page_normal_details has_bottom white_bg radius">
-										<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
-										<p class="recommendation">Recommended</p>
-										<h4 class="">Trekking Lorem Ipsum</h4>
-										<p class="">Resturants, Bicycling, Hiking, Sites</p>
-								</div>
-								<!-- HOVER DETAILS -->	
-								<div class="trek_page_cover_div"></div>		
-								<div class="trek_page_hover_details radius">	
-									<div class="has_bottom">
-										<div class="width_76">	
-											<h3 class="text-black">Trekking Lorem Ipsum</h3>
+									<div class="trek_page_normal_details has_bottom white_bg radius">
 											<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
-											<p class="recommendation">Recommended</p>			
-											<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-										</div>
-										<div class="white_bg radius trek_specs">
-											<div class="col-lg-12"> 
-												<div class="col-xs-4">
-													<p class="text-black">Distance</p>
-													<h3 id="trek_5_distance" class="color-blue">8.5</h3>
-													<p class="text-black">Km</p>
-												</div>
-												<div class="col-xs-4">
-													<p class="text-black">Time</p>
-													<h3 id="trek_5_time" class="color-blue">1.5</h3>
-													<p class="text-black">hrs</p>
-												</div>
-												<div class="col-xs-4">
-													<p class="text-black">Speed</p>
-													<h3 id="trek_5_speed" class="color-blue">3</h3>
-													<p class="text-black">Km/hr</p>
-												</div>
+											<p class="recommendation">Recommended</p>
+											<h4 class="">Trekking Lorem Ipsum</h4>
+											<p class="">Resturants, Bicycling, Hiking, Sites</p>
+									</div>
+									<!-- HOVER DETAILS -->	
+									<div class="trek_page_cover_div"></div>		
+									<div class="trek_page_hover_details radius">	
+										<div class="has_bottom">
+											<div class="width_76">	
+												<h3 class="text-black">Trekking Lorem Ipsum</h3>
+												<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
+												<p class="recommendation">Recommended</p>			
+												<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 											</div>
-											<a href="trek/"><button id="path_5" class="btn btn-primary trek_explore">EXPLORE</button></a>
+											<div class="white_bg radius trek_specs">
+												<div class="col-lg-12"> 
+													<div class="col-xs-4">
+														<p class="text-black">Distance</p>
+														<h3 id="trek_5_distance" class="color-blue">8.5</h3>
+														<p class="text-black">Km</p>
+													</div>
+													<div class="col-xs-4">
+														<p class="text-black">Time</p>
+														<h3 id="trek_5_time" class="color-blue">1.5</h3>
+														<p class="text-black">hrs</p>
+													</div>
+													<div class="col-xs-4">
+														<p class="text-black">Speed</p>
+														<h3 id="trek_5_speed" class="color-blue">3</h3>
+														<p class="text-black">Km/hr</p>
+													</div>
+												</div>
+												<button class="btn btn-primary trek_explore">EXPLORE</button>
+											</div>
 										</div>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -372,49 +382,51 @@
 					<!-- 6th TREKKING PATH dIV -->
 					<div class="col-lg-4 col-sm-6 col-xs-12 text-center">
 						<div class="translate">
-							<div class="trek_page_div spacing shadow">
-								<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
-								 	<param name="src" value="images/trek_two-03.svg">
-								</object>
+							<div id="path-6" class="trek_page_div">
+								<a href="trek/">
+									<object type="image/svg+xml" data="images/trek_two-03.svg" class="trek_dimensions">
+									 	<param name="src" value="images/trek_two-03.svg">
+									</object>
 
-								<div class="trek_page_normal_details has_bottom white_bg radius">
-										<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
-										<p class="recommendation">Recommended</p>
-										<h4 class="">Trekking Lorem Ipsum</h4>
-										<p class="">Resturants, Bicycling, Hiking, Sites</p>
-								</div>
-								<!-- HOVER DETAILS -->	
-								<div class="trek_page_cover_div"></div>		
-								<div class="trek_page_hover_details radius">	
-									<div class="has_bottom">
-										<div class="width_76">	
-											<h3 class="text-black">Trekking Lorem Ipsum</h3>
+									<div class="trek_page_normal_details has_bottom white_bg radius">
 											<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
-											<p class="recommendation">Recommended</p>			
-											<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-										</div>
-										<div class="white_bg radius trek_specs">
-											<div class="col-lg-12"> 
-												<div class="col-xs-4">
-													<p class="text-black">Distance</p>
-													<h3 id="trek_6_distance" class="color-blue">8.5</h3>
-													<p class="text-black">Km</p>
-												</div>
-												<div class="col-xs-4">
-													<p class="text-black">Time</p>
-													<h3 id="trek_6_time" class="color-blue">1.5</h3>
-													<p class="text-black">hrs</p>
-												</div>
-												<div class="col-xs-4">
-													<p class="text-black">Speed</p>
-													<h3 id="trek_6_speed" class="color-blue">3</h3>
-													<p class="text-black">Km/hr</p>
-												</div>
+											<p class="recommendation">Recommended</p>
+											<h4 class="">Trekking Lorem Ipsum</h4>
+											<p class="">Resturants, Bicycling, Hiking, Sites</p>
+									</div>
+									<!-- HOVER DETAILS -->	
+									<div class="trek_page_cover_div"></div>		
+									<div class="trek_page_hover_details radius">	
+										<div class="has_bottom">
+											<div class="width_76">	
+												<h3 class="text-black">Trekking Lorem Ipsum</h3>
+												<p class="ratings"><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span><span class="filled_stars">&#9734;</span></p>
+												<p class="recommendation">Recommended</p>			
+												<p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 											</div>
-											<a href="trek/"><button id="path_6" class="btn btn-primary trek_explore">EXPLORE</button></a>
+											<div class="white_bg radius trek_specs">
+												<div class="col-lg-12"> 
+													<div class="col-xs-4">
+														<p class="text-black">Distance</p>
+														<h3 id="trek_6_distance" class="color-blue">8.5</h3>
+														<p class="text-black">Km</p>
+													</div>
+													<div class="col-xs-4">
+														<p class="text-black">Time</p>
+														<h3 id="trek_6_time" class="color-blue">1.5</h3>
+														<p class="text-black">hrs</p>
+													</div>
+													<div class="col-xs-4">
+														<p class="text-black">Speed</p>
+														<h3 id="trek_6_speed" class="color-blue">3</h3>
+														<p class="text-black">Km/hr</p>
+													</div>
+												</div>
+												<button class="btn btn-primary trek_explore">EXPLORE</button></a>
+											</div>
 										</div>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					</div>			
@@ -422,7 +434,7 @@
 			</div>
 		</div>
 
-		<!-- EXPLORE OTHER ACTIVITIES  DIV -->
+		<!-- EXPLORE OTHER ACTIVITIES  DIV -->	
 		<div class="white_bg other-activities-to-search">
 			<!-- CONTAINER DIV -->
 			<div class="container">
@@ -430,87 +442,82 @@
 					<h3 class="color-text sort-heading text-center">Other Activities</h3>
 					<h5 class="color-blue sort-description text-center">Lorem ipsum dolor sit amet</h5>
 				</div>
-						
+				<!-- ACTIVITIES DIV -->
 				<div class="row spacing">	
 					<div id="other-activities" class="col-lg-12">
-						<!-- FISHING dIV -->
-						<div class="col-lg-4 col-sm-6 col-xs-12">
-							<div class="translate">
-								<div class="famous_events_div shadow">
-									<img id="fishing_normal" class="image_normal events_image_normal" src="./images/fishing.png" />
-									<img id="fishing_hover" class="image_hover events_image_hover" src="https://unsplash.it/400/320/?random" />	
-									<div class="normal_details">
-										<div class="has_wrapper">
-											<h2 class="color-black">Fishing</h2>
-											<p>In Naran</p>
-											<img src="images/spots-pin.png" class="img auto-margin">
-											<p>5 differnet spots for fishing and relaxing</p>
+						<!-- ACTIVITY1 CONTAINER DIV -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+							<div class="scale">
+								<div class="other-activity-box">
+									<a href="search.php">
+										<div class="other-activity-box-cover"></div>
+										<img class="img img-responsive" src="images/stock-img3.jpg" />
+										<div class="other-activity-info-text text-center">
+											<h4 class="color-white activity-name">Fishing</h4>
+											<p class="color-white activity-area"></p>
+											<p class="color-white activity-description animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nibh vestibulum odio laoreet venenatis. Praesent efficitur vehicula gravida.</p>
 										</div>
-									</div>				
-									<div class="has_bottom hover_details">	
-										<h2>Fishing</h2>
-										<div class="white_bg radius">					
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-											<a href="#"><button id="fishing" class="btn btn-primary">EXPLORE</button></a>
-										</div>
-									</div>
+									</a>
 								</div>
-							</div>
-						</div>			
+							</div>	
+						</div>
 
-						<!-- CULTURE dIV -->
-						<div class="col-lg-4 col-sm-6 col-xs-12">
-							<div class="translate">
-								<div class="famous_events_div shadow">
-									<img id="culture_normal" class="image_normal events_image_normal" src="./images/cult.png" />
-									<img id="culture_hover" class="image_hover events_image_hover" src="https://unsplash.it/400/320/?random" />	
-									<div class="normal_details">
-										<div class="has_wrapper">
-											<h2 class="color-black">Culture</h2>
-											<p>In Naran</p>
-											<img src="images/spots-pin.png" class="img auto-margin">
-											<p>Explore the cultural values of naran</p>
+						<!-- ACTIVITY2 CONTAINER DIV -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+							<div class="scale">
+								<div class="other-activity-box">
+									<a href="search.php">
+										<div class="other-activity-box-cover"></div>
+										<img class="img img-responsive" src="images/stock-img1.jpg" />
+										<div class="other-activity-info-text text-center">
+											<h4 class="color-white activity-name">Paragliding</h3>
+											<p class="color-white activity-area"></p>
+											<p class="color-white activity-description animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nibh vestibulum odio laoreet venenatis. Praesent efficitur vehicula gravida.</p>
 										</div>
-									</div>				
-									<div class="has_bottom hover_details">	
-										<h2>Culture</h2>
-										<div class="white_bg radius">					
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-											<a href="#"><button id="culture" class="btn btn-primary">EXPLORE</button></a>
-										</div>
-									</div>
-								</div>
+									</a>
+								</div>	
 							</div>
-						</div>	
+						</div>
 
-						<!-- PARAGLIDING dIV -->
-						<div class="col-lg-4 col-sm-6 col-xs-12">
-							<div class="translate">
-								<div class="famous_events_div shadow">
-									<img id="paragliding_normal" class="image_normal events_image_normal" src="./images/paragliding.png" />
-									<img id="paragliding_hover" class="image_hover events_image_hover" src="https://unsplash.it/400/320/?random" />	
-									<div class="normal_details">
-										<div class="has_wrapper">
-											<h2 class="color-black">Paragliding</h2>
-											<p>In Naran</p>
-											<img src="images/spots-pin.png" class="img auto-margin">
-											<p>3 amazing paragliding experiences</p>
+						<!-- ACTIVITY3 CONTAINER DIV -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+							<div class="scale">
+								<div class="other-activity-box">
+									<a href="search.php">
+										<div class="other-activity-box-cover"></div>
+										<img class="img img-responsive" src="images/stock-img4.jpg" />
+										<div class="other-activity-info-text text-center">
+											<h4 class="color-white activity-name">White water rafting</h3>
+											<p class="color-white activity-area"></p>
+											<p class="color-white activity-description animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nibh vestibulum odio laoreet venenatis. Praesent efficitur vehicula gravida.</p>
 										</div>
-									</div>				
-									<div class="has_bottom hover_details">	
-										<h2>Paragliding</h2>
-										<div class="white_bg radius">					
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-											<a href="#"><button id="paragliding" class="btn btn-primary">EXPLORE</button></a>
-										</div>
-									</div>
-								</div>
+									</a>
+								</div>	
 							</div>
-						</div>			
-					</div>
+						</div>
+
+						<!-- ACTIVITY4 CONTAINER DIV -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+							<div class="scale">
+								<div class="other-activity-box">
+									<a href="search.php">
+										<div class="other-activity-box-cover"></div>
+										<img class="img img-responsive" src="images/stock-img2.jpg" />
+										<div class="other-activity-info-text text-center">
+											<h4 class="color-white activity-name">Site Seeing</h3>
+											<p class="color-white activity-area"></p>
+											<p class="color-white activity-description animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nibh vestibulum odio laoreet venenatis. Praesent efficitur vehicula gravida.</p>
+										</div>
+									</a>
+								</div>	
+							</div>
+						</div>
+					</div>						
 				</div>
+				<!-- END OF TOP SIGHTS DIV -->
 			</div>
 		</div>
+		<!-- END OF TOP SIGHTS IN NARAN-->
 
 		<!-- START OF FOOTER -->
 		<div class="footer">
@@ -538,11 +545,31 @@
 	$(document).ready(function(){
 		//show selected area and activity in breadcrumb		
 		$('.breadcrumb .region-selected').text(window.sessionStorage.getItem('region')); 
+		$('.activity-area').text('In '+window.sessionStorage.getItem('region')); 
 		$('.breadcrumb .active').html(window.sessionStorage.getItem('activity')); 
 
 		// SET SELECTED ACTIVITY
-		$('button').click(function() {
+		$('.trek_page_div').click(function() {
 			window.sessionStorage.setItem('path', $(this).attr('id'));
+			console.log(sessionStorage);
+		});
+
+		// SET SELECTED PATH
+		$('.famous_events_div').click(function() {
+			var activity = $(this).attr('id'); 
+			window.sessionStorage.setItem('activity', activity);
+			console.log(sessionStorage);
+			if(activity == 'trekking') {
+				window.location.href = "treks.php";
+			}
+			else  {
+				window.location.href = "activities.php";
+			}
+		});
+
+		$('.other-activity-box').click(function() {
+			var activity = $(this).find('.activity-name').text();
+			window.sessionStorage.setItem('activity', activity);
 			console.log(sessionStorage);
 		});
 	});
