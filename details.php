@@ -14,6 +14,29 @@
 
 
 <body class="pattern animated fadeIn">
+	 <!-- details Modal -->
+	<div class="modal fade" id="detailsModal" role="dialog">
+	    <div class="modal-dialog">	    
+	      <!-- Modal content-->
+	      	<div class="modal-content">
+	        	<div class="modal-header">
+	          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+	          		<h3 class="modal-title color-black sort-heading">The Bliss of <span class="selected-area"></h3>
+	        	</div>
+	        	<div class="modal-body">
+	          		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nibh vestibulum odio laoreet venenatis. Praesent efficitur vehicula gravida. Vivamus ut metus felis. Mauris feugiat diam nec odio ullamcorper gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus id magna pharetra, imperdiet orci luctus, commodo urna. Aenean venenatis velit non turpis sollicitudin viverra. Ut mattis enim vel magna fermentum lacinia. Donec risus ligula, maximus et justo ut, semper ultrices sem. Phasellus vehicula nisi in mauris egestas ultricies.Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Proin vel nibh vestibulum odio laoreet venenatis. Praesent efficitur vehicula gravida. Vivamus ut metus felis. Mauris feugiat diam nec odio ullamcorper gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus id magna pharetra, imperdiet orci luctus, commodo urna. Aenean venenatis velit non turpis sollicitudin viverra. Ut mattis enim vel magna fermentum lacinia. Donec risus ligula, maximus et justo ut, semper ultrices sem. Phasellus vehicula nisi in mauris egestas ultricies. 	
+					</p>
+	        	</div>
+	        	<div class="modal-footer">
+	          		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        	</div>
+	      	</div>
+	    </div>
+	</div>
+
 	<div class="content">
 		<!-- TOP DIV -->
 		<div class="container">	
@@ -84,7 +107,7 @@
 						<div id="slide1" class="slide">
 							<img class="img img-responsive" src="images/img_1.jpg" />
 							<div class="banner-text">
-								<h3 class="color-white">EXPLORE HIKING TREKS IN NARAN!</h3>
+								<h3 class="color-white">EXPLORE HIKING TREKS IN <span class="selected-area"></span></h3>
 							    <p class="color-white">Lorem ipsum dolor sit amet</p>
 			                    <a href="#"><button class="btn btn-white">VISIT NOW</button></a> 							                    
 							</div>
@@ -92,7 +115,7 @@
 						<div id="slide2" class="slide">
 							<img class="img img-responsive" src="images/img_6.jpg" />
 							<div class="banner-text">
-								<h3 class="color-white">EXPLORE NATURAL BEAUTY OF NARAN!</h3>
+								<h3 class="color-white">EXPLORE NATURAL BEAUTY OF <span class="selected-area"></span></h3>
 							    <p class="color-white">Lorem ipsum dolor sit amet</p>
 			                    <a href="#"><button class="btn btn-white">VISIT NOW</button></a> 							                    
 							</div>
@@ -100,7 +123,7 @@
 						<div id="slide3" class="slide">
 							<img class="img img-responsive" src="images/img_5.jpg" />
 							<div class="banner-text">
-								<h3 class="color-white">EXPLORE PLACES IN NARAN!</h3>
+								<h3 class="color-white">EXPLORE PLACES IN <span class="selected-area"></span></h3>
 							    <p class="color-white">Lorem ipsum dolor sit amet</p>
 			                    <a href="#"><button class="btn btn-white">VISIT NOW</button></a> 							                    
 							</div>
@@ -122,14 +145,14 @@
 			<div class="container">
 				<div class="">
 					<div class="col-sm-12">
-						<h3 class="color-black sort-heading text-center">The Bliss of Naran</h3>
+						<h3 class="color-black sort-heading text-center">The Bliss of <span class="selected-area"></span></h3>
 						<h5 class="color-blue sort-description text-center">Lorem ipsum dolor sit amet</h5>
 						<div class="col-lg-5 col-md-5 col-sm-12">
 							<p class="color margins">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nibh vestibulum odio laoreet venenatis. Praesent efficitur vehicula gravida. Vivamus ut metus felis. Mauris feugiat diam nec odio ullamcorper gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
 								Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus id magna pharetra, imperdiet orci luctus, commodo urna. Aenean venenatis velit non turpis sollicitudin viverra. Ut mattis enim vel magna fermentum lacinia. Donec risus ligula, maximus et justo ut, semper ultrices sem. Phasellus vehicula nisi in mauris egestas ultricies. <br/>
 							</p>
 							<p class="about_elevation"><span>8202'</span><br/><span>Elevation</span></p>
-							<a href="#"><p class="color-blue seeAllLink">Read More</p></a>
+							<a href="#"><p class="color-blue seeAllLink" data-toggle="modal" data-target="#detailsModal">Read More</p></a>
 						</div>
 						<div class="col-lg-7 col-md-7 col-sm-12">
 							<img class="img img-responsive pushedright" src="images/naran-desc-map.png" />	
@@ -325,8 +348,8 @@
 			<!-- CONTAINER DIV -->
 			<div class="container">
 				<div class="row">
-					<h3 class="color-text sort-heading text-center"></h3>
-					<h5 class="color-blue sort-description text-center"></h5>
+					<h3 class="color-text sort-heading text-center">Top Sights In <span class="selected-area"></span></h3>
+					<h5 class="color-blue sort-description text-center">Explore top sights in <span class="selected-area"></span></h5>
 				</div>
 				<!-- TOP SIGHTS DIV -->
 				<div class="row spacing">	
@@ -455,61 +478,82 @@
 				</div>
 				<!-- HOTELS DIV -->
 				<div class="container">	
-					<div class="row spacing">
-						<div class="col-lg-3 col-xs-12">
-							<div class="food-box">
-								<h5 class="food-name">Pellentesque egizzle</h3>
-								<p class="food-type">type of resturant</p>
+					<div class="row spacing">						
+						<div class="col-lg-6 col-xs-12">
+							<div class="col-lg-6 col-xs-12">
+								<div class="food-box">
+									<h5 class="food-name">Pellentesque egizzle</h3>
+									<p class="food-type">type of resturant</p>
+								</div>
 							</div>	
-							<div class="food-box">
-								<h5 class="food-name">Pellentesque egizzle</h3>
-								<p class="food-type">type of resturant</p>
-							</div>	
-							<div class="food-box">
-								<h5 class="food-name">Pellentesque egizzle</h3>
-								<p class="food-type">type of resturant</p>
-							</div>	
-							<div class="food-box">
-								<h5 class="food-name">Pellentesque egizzle</h3>
-								<p class="food-type">type of resturant</p>
-							</div>		
-							<div class="food-box">
-								<h5 class="food-name">Pellentesque egizzle</h3>
-								<p class="food-type">type of resturant</p>
-							</div>	
-						</div>
-
-						<div class="col-lg-3 col-xs-12">
-							<div class="food-box">
-								<h5 class="food-name">Pellentesque egizzle</h3>
-								<p class="food-type">type of resturant</p>
-							</div>	
-							<div class="food-box">
-								<h5 class="food-name">Pellentesque egizzle</h3>
-								<p class="food-type">type of resturant</p>
-							</div>	
-							<div class="food-box">
-								<h5 class="food-name">Pellentesque egizzle</h3>
-								<p class="food-type">type of resturant</p>
-							</div>	
-							<div class="food-box">
-								<h5 class="food-name">Pellentesque egizzle</h3>
-								<p class="food-type">type of resturant</p>
-							</div>		
-							<div class="food-box">
-								<h5 class="food-name">Pellentesque egizzle</h3>
-								<p class="food-type">type of resturant</p>
-							</div>	
+							<div class="col-lg-6 col-xs-12">
+								<div class="food-box">
+									<h5 class="food-name">Pellentesque egizzle</h3>
+									<p class="food-type">type of resturant</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-xs-12">
+								<div class="food-box">
+									<h5 class="food-name">Pellentesque egizzle</h3>
+									<p class="food-type">type of resturant</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-xs-12">
+								<div class="food-box">
+									<h5 class="food-name">Pellentesque egizzle</h3>
+									<p class="food-type">type of resturant</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-xs-12">
+								<div class="food-box">
+									<h5 class="food-name">Pellentesque egizzle</h3>
+									<p class="food-type">type of resturant</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-xs-12">
+								<div class="food-box">
+									<h5 class="food-name">Pellentesque egizzle</h3>
+									<p class="food-type">type of resturant</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-xs-12">
+								<div class="food-box">
+									<h5 class="food-name">Pellentesque egizzle</h3>
+									<p class="food-type">type of resturant</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-xs-12">
+								<div class="food-box">
+									<h5 class="food-name">Pellentesque egizzle</h3>
+									<p class="food-type">type of resturant</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-xs-12">
+								<div class="food-box">
+									<h5 class="food-name">Pellentesque egizzle</h3>
+									<p class="food-type">type of resturant</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-xs-12">
+								<div class="food-box">
+									<h5 class="food-name">Pellentesque egizzle</h3>
+									<p class="food-type">type of resturant</p>
+								</div>
+							</div>
 						</div>	
 
 						<div class="col-lg-6 col-xs-12">
-							<img class="img img-responsive" src="images/food.png" />
+							<img class="img img-responsive food-img" src="images/food.png" />
 						</div>				
+					</div>
+
+					<div class="row margins">
+						<a href="search.php"><p class="color-blue seeAllLink text-center">See All</p></a>
 					</div>						
 				</div>
 			</div>
 		</div>	
-		<!-- END OF TOP SIGHTS IN NARAN	-->
+		<!-- END OF FOOD AND DRINKS	-->
 
 		<!-- SEARCH HOTELS AND RESTURANTS DIV-->		
 		<div class="hotels-container">
@@ -760,8 +804,7 @@
 		//Show selected area in activities and sight seeing cards, food and drinks
 		$('.area-name').text('in '+window.sessionStorage.getItem('region')); 
 		$('.top-sights-to-visit .sort-heading').text('top sights in '+window.sessionStorage.getItem('region'));
-		$('.top-sights-to-visit .sort-description').text('Explore top sights in '+window.sessionStorage.getItem('region'));
-		$('.food-and-drinks .sort-description').text('Explore the delicious food in '+window.sessionStorage.getItem('region')); 
+		$('.selected-area').text(window.sessionStorage.getItem('region'));
 
 		// SET SELECTED ACTIVITY
 		$('.famous_events_div').click(function() {
@@ -885,6 +928,11 @@
 
 		$('.top-sights-box').click(function() {
 			window.sessionStorage.setItem('activity', 'site seeing');
+			console.log(sessionStorage);
+		});
+
+		$('.food-and-drinks .seeAllLink').click(function() {
+			window.sessionStorage.setItem('activity', 'hotel');
 			console.log(sessionStorage);
 		});
 			

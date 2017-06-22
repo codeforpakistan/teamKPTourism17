@@ -229,7 +229,7 @@ select.search_select {
 	border-radius: 0;
 }
 .form-inline .form-control {
-    width: 100%; 
+    width: 100%;
 }
 .search form {
 	margin-bottom: 0;
@@ -903,6 +903,7 @@ a.guide_link:hover {
 	position: absolute;
 	top: 40%;
 	left: 11.3%;
+	text-transform: uppercase;
 }
 .innerPages_banner {
 	height: 77% !important;
@@ -986,14 +987,16 @@ a.guide_link:hover {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(255,255,255,.5);
 	opacity: 0;
 	transition: anim .25s ease-in-out;
 	display: none;
+	background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	border-radius: 15px;
 }
 .top-sights-box:hover .top-sights-box-cover {
 	opacity: 1;
-	animation: anim .15s ease-in-out;
+	animation: anim .25s ease-in-out;
 	display: block;
 }
 .site-info-text {
@@ -1178,11 +1181,52 @@ a.guide_link:hover {
 .events-and-tours-div {
 	padding: 5% 0 4%;
 }
+.food-and-drinks .food-img {
+	margin-right: 0;
+    margin-left: auto;
+}
+.search-form select {
+	height: auto;
+	font-size: 28px;
+	font-family: "Robotto-Thin";
+	padding: 0 15px 0 15px;
+	color: #1465a3;
+	margin-top: -10px;
+	width: auto;
+	max-width: 220px;
+	-webkit-appearance: none;
+	background-image: url('../images/caretDown.png');
+	background-repeat: no-repeat;
+	background-position: right 20px bottom 10px;
+	margin-right: 15px;
+}
+.search-form select:focus {
+    border-color: #transparent;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.search-form select option {
+	font-size: 15px;
+	color: #000;
+	font-family: 'Open-Sans-Light';
+}
+#detailsModal .modal-body p {
+	padding: 0 3%;
+	line-height: 1.75em;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
 /*.has_bottom.hover_details div:first-of-type {
 	border-radius: 100% / 50%;
     border-top-left-radius: 0;
     border-bottom-right-radius: 31px;
 }
+
 /********************************/
 /*         TREKS PAGE CSS    */
 /********************************/
@@ -1290,25 +1334,28 @@ a.guide_link:hover {
 	overflow: hidden;
 }
 .trekkingMainPage-banner {
-    height: 75%;
+    height: 50%;
     overflow: hidden;
 }
-.about-trek .col-lg-6:first-child p:first-child:first-letter {
+.about-trek p:first-of-type:first-letter {
 	color: #000;
 	float: left;
 	font-family: 'Robotto-Bold';
 	font-size: 100px;
-	line-height: 60px;
-	padding-top: 4px;
-	padding-right: 8px;
-	padding-left: 3px;
+	line-height: 58px;
+	padding: 15px 8px 2px 3px;
 }
 .about-trek p {
 	padding: 0 3%;
 	line-height: 1.75em;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
 }
 .about-trek {
-	line-height: 2em;
 	padding: 3% 0 2%;
 }
 #trek_selection_sort {
@@ -1639,6 +1686,20 @@ a.guide_link:hover {
 /********************************/
 /*         SEARCH PAGE       */
 /********************************/
+.search-form {
+	border-bottom: 1px solid #e6e6e6;
+	min-height: 45px;
+	width: 100%;
+}
+.search-form > div {
+	white-space: nowrap;
+	overflow: hidden;
+}
+.search-label {
+	font-family: 'Robotto-Thin';
+	font-size: 22px;
+	color: #333;
+}
 .search-page {
 	top: 93%;
 	box-shadow: 0 0 30px #ccc;
@@ -1652,10 +1713,14 @@ a.guide_link:hover {
 	padding: 4% 0 2%;
 	border-bottom: 1px solid #eee;
 }
+.search-section h3 {
+	font-size: 20px;
+}
 .search-results {
 	border-radius: 10px;
 	border: 1px solid #eee;
 	box-shadow: 0 0 30px #ccc;
+	margin-bottom: 2em;
 }
 .search-results:hover {
 	box-shadow: 0 0 40px #bbb;
@@ -1678,7 +1743,7 @@ a.guide_link:hover {
 	border-radius: 10px 10px 0 0;
 }
 .searchPage_banner {
-    height: 77% !important;
+    height: 50% !important;
     overflow: hidden;
 }
 .search-page .glyphicon-search{
@@ -1695,6 +1760,53 @@ a.guide_link:hover {
 }
 .search-page .form-group:not(:last-child) {
 	padding: 1.7em 0;
+}
+.result-title {
+	margin: 10px 0 0;
+}
+.result-caption {
+	font-size: 11px;
+	margin-bottom: 5px;
+}
+.result-icons {
+	margin-bottom: 5px;	
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+.stay-cost {
+	border-left: 1px solid #e6e6e6;
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+	padding-left: 5px;
+	height: 80%;
+	margin-top: 2em;
+}
+.search-result-box {
+	border: 1px solid #e6e6e6;
+	height: 50vh;
+	min-height: 133px;
+	box-shadow: none;
+	-webkit-transition: box-shadow .35s ease-in-out;
+	transition: box-shadow .35s ease-in-out;
+	margin: 1em 0;
+	overflow: hidden;
+}
+.search-result-box:hover {
+	box-shadow: 0 0 40px #d9d9d9;
+	-webkit-transition: box-shadow .35s ease-in-out;
+	transition: box-shadow .35s ease-in-out;
+} 
+.search-result-box:hover .stay-cost, .search-result-box:hover .result-icons{
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+.search-result-box > div {
+	height: 100%;
+}
+.search-result-box .result-img {
+	margin-left: -15px;
+	width: 100%;
+	height: 100%;
 }
 
 /********************************/
@@ -1716,8 +1828,16 @@ a.guide_link:hover {
 /********************************/
 
 @media (max-width: 1200px) {
+	.search-result-box {
+		height: 35vh;
+	}
 	.famous-regions .next, .famous-regions .prev {
 		top: 550px;
+	}
+}
+@media (min-width: 1200px) {
+	.search-result-box {
+		height: 25vh;
 	}
 }
 @media (max-width: 1110px) {
@@ -1863,6 +1983,28 @@ a.guide_link:hover {
 @media (max-width: 767px) {
 }
 @media (max-width: 768px) {
+	.search-result-box > div {
+	    height: auto;
+	}
+	.search-result-box {
+		height: 64%;
+	}
+	.search-result-box .result-img {
+	    margin-left: auto;
+	    width: 100%;
+	    height: 200px;
+	} 
+	.stay-cost {
+		margin-top: 0;
+		border-left: none;
+		padding: 0;
+	}
+	.search-label, .search-form select  {
+		font-size: 15px;
+	}
+	.search-form {
+		border-bottom: none;
+	}
 	.hotels-container {
 		height: auto;
 	}
@@ -2098,6 +2240,10 @@ a.guide_link:hover {
 	.famous_regions_div:hover h2 {
 		background-size: 180%;
 	}
+	.search-result-box {
+	    height: 65%;
+	}
+	
 }
 
 
@@ -2127,5 +2273,4 @@ a.guide_link:hover {
   animation-name: fadeIn30;
 }
 
-
-
+    
