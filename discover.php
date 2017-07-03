@@ -485,7 +485,7 @@
 						<h2 class="text-center">Other Places To Discover</h2>
 						<h4 class="text-center color-blue">Discover all other beautiful regions of KP</h4>
 						<!-- SEARCH FORM -->	
-						<form class="discover-events-form" action="" method="">
+						<form class="discover-regions-form" action="" method="">
 							<input class="form-group input-group-lg searchbox"  type="text" name="search" placeholder="Search">
 							<select class="form-control input-group-lg" name="region_selection_sort" id="region_selection_sort">
 							    <option class="selectoptions">By Name</option>	
@@ -498,9 +498,9 @@
 							</select>
 						</form>
 							<!-- LEFT CONTAINER DIV -->
-						<div id="activities-div" class="col-lg-12">
+						<div id="other-regions-div" class="col-lg-12">
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-1" class="other_activities_box">
+								<div id="other-region-1" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -508,7 +508,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Tank</h4>
+											<h4 class="color-black region-name">Tank</h4>
 											<p class="color">DI Khan, KP</p>
 										</div>
 									</a>
@@ -517,7 +517,7 @@
 
 							<!-- CENTERAL CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-2" class="other_activities_box">
+								<div id="other-region-2" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -525,7 +525,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Peshawar</h4>
+											<h4 class="color-black region-name">Peshawar</h4>
 											<p class="color">Peshawar, KP</p>
 										</div>
 									</a>
@@ -534,7 +534,7 @@
 
 							<!-- RIGHT CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-3" class="other_activities_box">
+								<div id="other-region-3" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -542,7 +542,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Swabi</h4>
+											<h4 class="color-black region-name">Swabi</h4>
 											<p class="color">Swabi, KP</p>
 										</div>
 									</a>
@@ -551,7 +551,7 @@
 						
 							<!-- LEFT CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-4" class="other_activities_box">
+								<div id="other-region-4" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -559,7 +559,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Mardan</h4>
+											<h4 class="color-black region-name">Mardan</h4>
 											<p class="color">Mardan, KP</p>
 										</div>
 									</a>
@@ -568,7 +568,7 @@
 
 							<!-- CENTERAL CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-5" class="other_activities_box">
+								<div id="other-region-5" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -576,7 +576,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Nowshera</h4>
+											<h4 class="color-black region-name">Nowshera</h4>
 											<p class="color">Nowshera, KP</p>
 										</div>
 									</a>
@@ -585,7 +585,7 @@
 
 							<!-- RIGHT CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-6" class="other_activities_box">
+								<div id="other-region-6" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -593,7 +593,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Charsadda</h4>
+											<h4 class="color-black region-name">Charsadda</h4>
 											<p class="color">Charsadda, KP</p>
 										</div>
 									</a>
@@ -602,7 +602,7 @@
 
 							<!-- LEFT CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-7" class="other_activities_box">
+								<div id="other-region-7" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -610,7 +610,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Mansehra</h4>
+											<h4 class="color-black region-name">Mansehra</h4>
 											<p class="color">Mansehra, KP</p>
 										</div>
 									</a>
@@ -619,7 +619,7 @@
 
 							<!-- CENTERAL CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-8" class="other_activities_box">
+								<div id="other-region-8" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -627,7 +627,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Kaghan</h4>
+											<h4 class="color-black region-name">Kaghan</h4>
 											<p class="color">Mansehra, KP</p>
 										</div>
 									</a>
@@ -636,7 +636,7 @@
 
 							<!-- RIGHT CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-9" class="other_activities_box">
+								<div id="other-region-9" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -644,7 +644,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Naran</h4>
+											<h4 class="color-black region-name">Naran</h4>
 											<p class="color">Mansehra, KP</p>
 										</div>
 									</a>
@@ -653,7 +653,7 @@
 
 							<!-- LEFT CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-10" class="other_activities_box">
+								<div id="other-region-10" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -661,7 +661,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Dasu</h4>
+											<h4 class="color-black region-name">Dasu</h4>
 											<p class="color">Upper Kohistan, KP</p>
 										</div>
 									</a>
@@ -670,7 +670,7 @@
 
 							<!-- CENTERAL CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-11" class="other_activities_box">
+								<div id="other-region-12" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -678,7 +678,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Batkhela</h4>
+											<h4 class="color-black region-name">Batkhela</h4>
 											<p class="color">Malakand, KP</p>
 										</div>
 									</a>
@@ -687,7 +687,7 @@
 
 							<!-- RIGHT CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-12" class="other_activities_box">
+								<div id="other-region-13" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -695,7 +695,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Saidu Sharif</h4>
+											<h4 class="color-black region-name">Saidu Sharif</h4>
 											<p class="color">Swat, KP</p>
 										</div>
 									</a>
@@ -704,7 +704,7 @@
 
 							<!-- LEFT CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-13" class="other_activities_box">
+								<div id="other-region-14" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -712,7 +712,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Pattan</h4>
+											<h4 class="color-black region-name">Pattan</h4>
 											<p class="color">Lower Kohistan, KP</p>
 										</div>
 									</a>
@@ -721,7 +721,7 @@
 
 							<!-- CENTERAL CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-14" class="other_activities_box">
+								<div id="other-region-15" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -729,7 +729,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Bannu</h4>
+											<h4 class="color-black region-name">Bannu</h4>
 											<p class="color">Bannu, KP</p>
 										</div>
 									</a>
@@ -738,7 +738,7 @@
 
 							<!-- RIGHT CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-15" class="other_activities_box">
+								<div id="other-region-16" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -746,7 +746,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Battagram</h4>
+											<h4 class="color-black region-name">Battagram</h4>
 											<p class="color">Battagram, KP</p>
 										</div>
 									</a>
@@ -755,7 +755,7 @@
 
 							<!-- LEFT CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-16" class="other_activities_box">
+								<div id="other-region-17" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -763,7 +763,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Haripur</h4>
+											<h4 class="color-black region-name">Haripur</h4>
 											<p class="color">Haripur, KP</p>
 										</div>
 									</a>
@@ -772,7 +772,7 @@
 
 							<!-- CENTERAL CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-17" class="other_activities_box">
+								<div id="other-region-18" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -780,7 +780,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Kohat</h4>
+											<h4 class="color-black region-name">Kohat</h4>
 											<p class="color">Kohat, KP</p>
 										</div>
 									</a>
@@ -789,7 +789,7 @@
 
 							<!-- RIGHT CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-18" class="other_activities_box">
+								<div id="other-region-19" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -797,7 +797,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Lakki Marwat</h4>
+											<h4 class="color-black region-name">Lakki Marwat</h4>
 											<p class="color">Lakki Marwat, KP</p>
 										</div>
 									</a>
@@ -806,7 +806,7 @@
 
 							<!-- LEFT CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-19" class="other_activities_box">
+								<div id="other-region-20" class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -814,7 +814,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color-black">Timergara</h4>
+											<h4 class="color-black region-name">Timergara</h4>
 											<p class="color">Lower Dir, KP</p>
 										</div>
 									</a>
@@ -823,7 +823,7 @@
 
 							<!-- CENTERAL CONTAINER DIV -->
 							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<div id="activity-20" class="other_activities_box">
+								<div class="other_activities_box">
 									<a href="details.php">
 										<!-- LEFT IMAGE DIV -->
 										<div class="col-xs-6">
@@ -831,7 +831,7 @@
 										</div>	
 										<!-- LEFT TEXT DIV -->
 										<div class="col-xs-6">
-											<h4 class="color">Alpuri</h4>
+											<h4 class="color-black region-name">Alpuri</h4>
 											<p class="color">Shangla, KP</p>
 										</div>
 									</a>
@@ -934,7 +934,7 @@
 			//OTHER REGIONS PAGINATION 
 			if ($(window).width() > 768){
 				//OTHER REGIONS PAGINATION 
-				$('#activities-div').easyPaginate({
+				$('#other-regions-div').easyPaginate({
 				    paginateElement: 'div.col-lg-4.col-md-4.col-sm-6.col-xs-12',
 				    elementsPerPage: 9,
 				    effect: 'fade'
@@ -948,7 +948,7 @@
 			}
 			if ($(window).width() <= 768){
 				//OTHER REGIONS PAGINATION 
-				$('#activities-div').easyPaginate({
+				$('#other-regions-div').easyPaginate({
 				    paginateElement: 'div.col-lg-4.col-md-4.col-sm-6.col-xs-12',
 				    elementsPerPage: 3,
 				    effect: 'climb'
@@ -998,6 +998,12 @@
 		$('.has-feedback a.region-select').click(function() {
 			window.sessionStorage.setItem('region', $(this).attr('id'));
 			console.log(sessionStorage);
+		});
+
+		$('.other_activities_box').click(function() {
+			var id = $(this).attr('id');
+			window.sessionStorage.setItem('region', $('#'+id).find('.region-name').text());
+			//console.log(sessionStorage);
 		});
 	});
 </script>

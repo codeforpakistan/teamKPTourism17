@@ -7,6 +7,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" id="bootstrap-css" href="css/bootstrap.css" type="text/css" media="all">
 <link rel="stylesheet" id="style-css" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="datetimepicker-css" href="css/jquery-ui.css" type="text/css" media="all">
 <link rel="stylesheet" id="animate-css" href="css/animate.css" type="text/css" media="all">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -567,16 +568,10 @@
 						<!-- SEARCH FORM -->	
 						<form class="form-inline hotel-search" action="search.php">
 							<div class="form-group col-sm-3 col-xs-12">
-							    <select class="form-control hotel_select" id="sel1" name="sel1">
-							        <option>Check In</option>
-							        <option>Check Out</option>
-						      	</select>
+							    <input type="text" class="form-control hotel_select" name="checkin_date" id="checkin_date" placeholder="Check In" value="">
 							</div>
 							<div class="form-group col-sm-3 col-xs-12">
-						      	<select class="form-control hotel_select" id="sel2" name="sel2">
-						          <option>Check Out</option>
-						          <option>Check In</option>
-						      	</select>
+						      	<input type="text" class="form-control hotel_select" name="checkout_date" id="checkout_date" placeholder="Check Out" value="">
 						    </div>
 						    <div class="form-group col-sm-3 col-xs-12">
 							    <select class="form-control hotel_select" id="sel3" name="sel3">
@@ -797,6 +792,7 @@
 <script src="js/jquery.snippet.min.js"></script>
 <script src="js/jquery.easyPaginate.js"></script>
 <script src="js/scripts.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js" ></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 		//show selected area in breadcrumb
@@ -935,6 +931,17 @@
 			window.sessionStorage.setItem('activity', 'hotel');
 			console.log(sessionStorage);
 		});
+
+		$('#checkin_date, #checkout_date').datepicker({
+		  autoSize: true,
+		  dateFormat: "dd-mm-yy",
+		  minDate: 0,
+		  hideIfNoPrevNext: false,
+		  showAnim: "slideDown",		  
+		});
+  		
+
+	
 			
 	});
 </script>

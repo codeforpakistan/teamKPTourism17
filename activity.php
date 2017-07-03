@@ -124,7 +124,64 @@
 								<h5>website</h5>
 								<p>http://activity.pk</p>
 							</div>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419794.5533011189!2d71.74880674440472!3d34.714134220284926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9070045a05577803!2sFishing+Hut!5e0!3m2!1sen!2sus!4v1494842318878" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>						
+
+							<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCe0I76FCBsgJP2dh193EWuX2IPST4gn0k&sensor=false"></script>
+							<script type="text/javascript">
+		                    	var latitude= ["34.001527", "33.992333", "33.987094", "34.035952", "34.059421"];
+		                    	var longitude= ["71.450434", "71.495198", "71.471981", "71.421389", "71.670641"];
+		                    	var map = null; 
+		                    	var markerArray = []; 
+
+								function initialize() {
+		                            var myOptions = {
+
+		                                zoom: 12,
+		                                center: new google.maps.LatLng(latitude[0], longitude[0]),
+		                                mapTypeControl: true, 
+		                                mapTypeControlOptions: {
+		                                    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+		                                },
+		                                navigationControl: true,
+		                                mapTypeId: google.maps.MapTypeId.ROADMAP
+		                            }
+		                            map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+		                            infowindow = new google.maps.InfoWindow({
+		                                size: new google.maps.Size(150, 50)
+		                            });
+
+		                            google.maps.event.addListener(map, 'click', function() {
+		                                infowindow.close();
+		                            });
+
+		                            for (var i = 0; i < longitude.length; i++) {                            
+		                                createMarker(new google.maps.LatLng(latitude[i],longitude[i]));
+		                            }
+									//console.log(description);
+		                        }
+
+		                        var onMarkerClick = function() {
+		                          var marker = this;
+		                          var latLng = marker.getPosition();
+		                          infowindow.open(map, marker);
+		                        };
+
+
+			                    function createMarker(latlng){
+			                        var marker = new google.maps.Marker({
+			                            position: latlng,
+			                            icon: icon = "http://maps.google.com/mapfiles/ms/icons/blue.png",
+			                            animation: google.maps.Animation.DROP,
+			                            map: map
+			                        });
+			                        google.maps.event.addListener(marker, 'click', onMarkerClick);
+			                        markerArray.push(marker);
+			                    }
+
+			                    window.onload = initialize;
+			                </script>
+			              	
+			              	<div id="map_canvas"></div>
 						</div>					
 					</div>
 				</div>
@@ -353,6 +410,12 @@
 		});
 	});
 </script>
+<style type="text/css">
+        #map_canvas {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
 
 
 
