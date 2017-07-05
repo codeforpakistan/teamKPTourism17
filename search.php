@@ -255,8 +255,8 @@
 							<div class="col-sm-6  col-xs-12">
 								<h4 class="result-title">Hotel Ipsum</h4>
 								<p class="result-caption">Lorem ipsum dolor sit amet. </p>
-								<p class="result-icons animated"><span><img src="images/favicon.png" /></span><span><img src="images/favicon.png" /></span>
-								<span><img src="images/favicon.png" /></span><span><img src="images/favicon.png" /></span></p>
+								<p class="result-icons animated"><span><img src="images/noun_649646_cc.png" /></span><span><img src="images/noun_728690_cc.png" /></span>
+								<span><img src="images/noun_889343_cc.png" /></span><span><img src="images/noun_1026748_cc.png" /></span></p>
 								<p class="result-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 									Proin vel nibh vestibulum odio laoreet venenatis. Praesent efficitur vehicula gravida. </p>
 							</div>
@@ -279,8 +279,8 @@
 							<div class="col-sm-6 col-xs-12">
 								<h4 class="result-title">Hotel Ipsum</h4>
 								<p class="result-caption">Lorem ipsum dolor sit amet. </p>
-								<p class="result-icons animated"><span><img src="images/favicon.png" /></span><span><img src="images/favicon.png" /></span>
-								<span><img src="images/favicon.png" /></span><span><img src="images/favicon.png" /></span></p>
+								<p class="result-icons animated"><span><img src="images/noun_649646_cc.png" /></span><span><img src="images/noun_728690_cc.png" /></span>
+								<span><img src="images/noun_889343_cc.png" /></span><span><img src="images/noun_1026748_cc.png" /></span></p>
 								<p class="result-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 									Proin vel nibh vestibulum odio laoreet venenatis. Praesent efficitur vehicula gravida. </p>
 							</div>
@@ -303,8 +303,8 @@
 							<div class="col-sm-6 col-xs-12">
 								<h4 class="result-title">Hotel Ipsum</h4>
 								<p class="result-caption">Lorem ipsum dolor sit amet. </p>
-								<p class="result-icons animated"><span><img src="images/favicon.png" /></span><span><img src="images/favicon.png" /></span>
-								<span><img src="images/favicon.png" /></span><span><img src="images/favicon.png" /></span></p>
+								<p class="result-icons animated"><span><img src="images/noun_649646_cc.png" /></span><span><img src="images/noun_728690_cc.png" /></span>
+								<span><img src="images/noun_889343_cc.png" /></span><span><img src="images/noun_1026748_cc.png" /></span></p>
 								<p class="result-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 									Proin vel nibh vestibulum odio laoreet venenatis. Praesent efficitur vehicula gravida. </p>
 							</div>
