@@ -436,32 +436,45 @@
 						    	<form class="search" action="search.php">
 										<div class="form-group col-xs-12">
 										      	<select class="form-control search_select" id="sel1" name="sel1">
-										          <option>Ketchup</option>
-										          <option>Relish</option>
-										          <option>Mustard</option>
-										          <option>Tent</option>
-										          <option>Flashlight</option>
-										          <option>Toilet Paper</option>
+										          	<option value="trekking">Trekking</option>
+													<option value="sightseeing">Sight Seeing</option>
+													<option value="attractions">Attractions</option>
+													<option value="fishing">Fishing</option>
+													<option value="paragliding">Paragliding</option>
+													<option value="ziplining">Zip Lining</option>
+													<option value="rafting">White River Rafting</option>
+													<option value="culture">Culture</option>
+													<option value="transportion">Transportion</option>
+													<option value="hotel">Hotels</option>
 										      	</select>
 										</div>
 										<div class="form-group col-xs-12">
 										      	<select class="form-control search_select" id="sel2" name="sel2">
-										          <option>Mustard</option>
-										          <option>Ketchup</option>
-										          <option>Relish</option>
-										          <option>Tent</option>
-										          <option>Flashlight</option>
-										          <option>Toilet Paper</option>
+										          	<option value="meuseum">Meuseum</option>
+													<option value="gallery">Gallery</option>
+													<option value="nationalpark">National Park</option>
+													<option value="beach">Beach</option>
+													<option value="rental">Rental</option>
+													<option value="historicsite">Historic Site</option>
+													<option value="landmark">Land Mark</option>
+													<option value="mosque">Mosque</option>
+													<option value="viewpoint">View Point</option>
+													<option value="lorem">Lorem</option>
+													<option value="ipsum">Ipsum</option>
 										      	</select>
 									    </div>
 									    <div class="form-group col-xs-12">
 										      	<select class="form-control search_select" id="sel3" name="sel3">
-										          <option>Tent</option>
-										          <option>Flashlight</option>
-										          <option>Mustard</option>
-										          <option>Ketchup</option>
-										          <option>Relish</option>
-										          <option>Toilet Paper</option>
+										          	<option value="naran">Naran</option>
+													<option value="kaghan">Kaghan</option>
+													<option value="swat">Swat</option>
+													<option value="peshawar">Peshawar</option>
+													<option value="abbottabad">Abbottabad</option>
+													<option value="chitral">Chitral</option>
+													<option value="gilgit">Gilgit</option>
+													<option value="kohistan">Kohistan</option>
+													<option value="DI khan">DI Khan</option>
+													<option value="hunza">Hunza</option>
 										      	</select>
 									    </div>								    
 									    <div class="form-group col-xs-12 text-right">

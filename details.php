@@ -604,8 +604,8 @@
 							<!-- VISAS dIV -->
 							<div class="col-lg-3 col-sm-6 col-xs-12 text-center">
 								<div class="translate guide_box">
-									<a href="survivalguide.php" class="survival_link">
-										<img id="visa_guide" class="img img-responsive auto-margin" src="./images/visas.png" />	
+									<a id="visas" href="survivalguide.php" class="survival_link">
+										<img class="img img-responsive auto-margin" src="./images/visas.png" />	
 										<div class="survival_text_wrapper">
 											<h4 class="color-text">Visas</h4>
 											<p class="color-text">Essential passport work and entry info</p>
@@ -617,8 +617,8 @@
 							<!-- BEST TIME TO VISIT dIV -->
 							<div class="col-lg-3 col-sm-6 col-xs-12 text-center">
 								<div class="translate guide_box">
-									<a href="survivalguide.php" class="survival_link">
-										<img id="time_guide" class="img img-responsive auto-margin" src="./images/best-time.png" />	
+									<a id="best-time-to-go" href="survivalguide.php" class="survival_link">
+										<img class="img img-responsive auto-margin" src="./images/best-time.png" />	
 										<div class="survival_text_wrapper">
 											<h4 class="color-text">Best time to visit</h4>
 											<p class="color-text">Hit the ground at the right time</p>
@@ -631,8 +631,8 @@
 							<!-- COSTS dIV -->
 							<div class="col-lg-3 col-sm-6 col-xs-12 text-center">
 								<div class="translate guide_box">
-									<a href="survivalguide.php" class="survival_link">
-										<img id="cost_guide" class="img img-responsive auto-margin" src="./images/money-and-costs.png" />	
+									<a id="money-and-cost" href="survivalguide.php" class="survival_link">
+										<img class="img img-responsive auto-margin" src="./images/money-and-costs.png" />	
 										<div class="survival_text_wrapper">
 											<h4 class="color-text">Money and Costs</h4>
 											<p class="color-text">Budgets and on-the-ground costs</p>
@@ -645,8 +645,8 @@
 							<!-- HEALTH dIV -->
 							<div class="col-lg-3 col-sm-6 col-xs-12 text-center">
 								<div class="translate guide_box">
-									<a href="survivalguide.php" class="survival_link">
-										<img id="health_guide" class="img img-responsive auto-margin" src="./images/health.png" />	
+									<a id="health" href="survivalguide.php" class="survival_link">
+										<img class="img img-responsive auto-margin" src="./images/health.png" />	
 										<div class="survival_text_wrapper">
 											<h4 class="color-text">Health</h4>
 											<p class="color-text">Keep safe and well on the road</p>
@@ -806,6 +806,7 @@
 		$('.famous_events_div').click(function() {
 			var activity = $(this).attr('id'); 
 			window.sessionStorage.setItem('activity', activity);
+			window.sessionStorage.setItem('category', activity);
 			console.log(sessionStorage);
 			if(activity == 'trekking') {
 				window.location.href = "treks.php";
@@ -923,12 +924,13 @@
 		});
 
 		$('.top-sights-box').click(function() {
-			window.sessionStorage.setItem('activity', 'site seeing');
+			window.sessionStorage.setItem('activity', 'sight seeing');
+			window.sessionStorage.setItem('category', 'sightseeing');
 			console.log(sessionStorage);
 		});
 
 		$('.food-and-drinks .seeAllLink').click(function() {
-			window.sessionStorage.setItem('activity', 'hotel');
+			window.sessionStorage.setItem('category', 'hotel');
 			console.log(sessionStorage);
 		});
 
@@ -940,8 +942,14 @@
 		  showAnim: "slideDown",		  
 		});
   		
+		$('.survival_link').click(function() {
+			var id = '#'+$(this).attr('id');
+			window.sessionStorage.setItem('survival-section', id);
+			console.log(sessionStorage);
 
+		})
 	
+
 			
 	});
 </script>

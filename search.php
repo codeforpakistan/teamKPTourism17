@@ -142,17 +142,18 @@
 							<option value="ziplining">Zip Lining</option>
 							<option value="rafting">White River Rafting</option>
 							<option value="culture">Culture</option>
-							<option value="transport">Transport</option>
+							<option value="transportion">Transportion</option>
 							<option value="hotel">Hotels</option>
 						</select>
 					</div>
 					<div class="form-group">
-						<label class="search-label" for="type">of type </label>
-						<select class="form-control search_select" id="type" name="type">
+						<label class="search-label" for="category-subtype">of type </label>
+						<select class="form-control search_select" id="category-subtype" name="category-subtype">
 						    <option value="meuseum">Meuseum</option>
 							<option value="gallery">Gallery</option>
 							<option value="nationalpark">National Park</option>
 							<option value="beach">Beach</option>
+							<option value="rental">Rental</option>
 							<option value="historicsite">Historic Site</option>
 							<option value="landmark">Land Mark</option>
 							<option value="mosque">Mosque</option>
@@ -427,7 +428,8 @@
 		$(document).ready(function(){
 			$('.breadcrumb .active').text(window.sessionStorage.getItem('region'));
 			$('#region').val(window.sessionStorage.getItem('region'));
-			$('#category').val(window.sessionStorage.getItem('activity'));
+			$('#category').val(window.sessionStorage.getItem('category'));
+			$('#category-subtype').val(window.sessionStorage.getItem('category-subtype'));
 
 
 			$('.glyphicon-remove').click(function(){
