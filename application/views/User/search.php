@@ -72,46 +72,6 @@
 				<div class="banner-wrapper">
 					<div class="searchPage_banner">
 						<img class="img img-responsive" src="images/user/img_1.jpg" />
-						<!-- SEARCH FORM 
-						<form class="form-inline search search-page" action="search.php">
-			        		<div class="form-group col-sm-1 col-xs-12 text-center ">
-			        			<span class="glyphicon glyphicon-search"></span>
-			        		</div>
-							<div class="form-group col-sm-3 col-xs-12">
-							      	<select class="form-control search_select" id="sel1" name="sel1">
-							          <option>Ketchup</option>
-							          <option>Relish</option>
-							          <option>Mustard</option>
-							          <option>Tent</option>
-							          <option>Flashlight</option>
-							          <option>Toilet Paper</option>
-							      	</select>
-							</div>
-							<div class="form-group col-sm-3 col-xs-12">
-							      	<select class="form-control search_select" id="sel2" name="sel2">
-							          <option>Mustard</option>
-							          <option>Ketchup</option>
-							          <option>Relish</option>
-							          <option>Tent</option>
-							          <option>Flashlight</option>
-							          <option>Toilet Paper</option>
-							      	</select>
-						    </div>
-						    <div class="form-group col-sm-3 col-xs-12">
-							      	<select class="form-control search_select" id="sel3" name="sel3">
-							          <option>Tent</option>
-							          <option>Flashlight</option>
-							          <option>Mustard</option>
-							          <option>Ketchup</option>
-							          <option>Relish</option>
-							          <option>Toilet Paper</option>
-							      	</select>
-						    </div>								    
-						    <div class="form-group col-sm-2 col-xs-12 text-right">
-							    <button type="submit" class="btn btn-info">Submit</button>
-							</div>
-						</form>
-						-->
 					</div>
 				</div>
 			</div>
@@ -175,65 +135,6 @@
 		<!-- RESULTS ROW -->
 		<div class="container">
 			<div class="row margins">
-					<!--
-					<div class="col-lg-4 col-md-4 col-sm-12 text-center">
-						<div class="search-results">
-							<img src="images/img_4.jpg" class="img img-responsive ">
-							<div class="search-section">
-								<h3 class="color-black">Rafting</h3>
-								<p class="color-text">Lorem ipsum dolor sit</p>
-							</div>
-							<div class="search-section">
-								<h4 class="color-black">Address</h4>
-								<p class="color-text">Lorem ipsum dolor sit</p>
-							</div>
-							<div class="search-section contact">
-								<h4 class="color-black">Contact</h4>
-								<p class="color-text">(+92) 000 0000</p>
-								<p class="color-text">abc.com/xyz</p>
-							</div>
-							<a href="#"><button class="btn btn-primary gotopage">EXPLORE</button></a>
-						</div>	
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 text-center">
-						<div class="search-results">
-							<img src="images/img_3.jpg" class="img img-responsive">
-							<div class="search-section">
-								<h3 class="color-black">Rafting</h3>
-								<p class="color-text">Lorem ipsum dolor sit</p>
-							</div>
-							<div class="search-section">
-								<h4 class="color-black">Address</h4>
-								<p class="color-text">Lorem ipsum dolor sit</p>
-							</div>
-							<div class="search-section contact">
-								<h4 class="color-black">Contact</h4>
-								<p class="color-text">(+92) 000 0000</p>
-								<p class="color-text">abc.com/xyz</p>
-							</div>
-							<a href="#"><button class="btn btn-primary gotopage">EXPLORE</button></a>
-						</div>
-					</div>	
-					<div class="col-lg-4 col-md-4 col-sm-12 text-center">
-						<div class="search-results">
-							<img src="images/img_2.jpg" class="img img-responsive">
-							<div class="search-section">
-								<h3 class="color-black">Rafting</h3>
-								<p class="color-text">Lorem ipsum dolor sit</p>
-							</div>
-							<div class="search-section">
-								<h4 class="color-black">Address</h4>
-								<p class="color-text">Lorem ipsum dolor sit</p>
-							</div>
-							<div class="search-section contact">
-								<h4 class="color-black">Contact</h4>
-								<p class="color-text">(+92) 000 0000</p>
-								<p class="color-text">abc.com/xyz</p>
-							</div>
-							<a href="#"><button class="btn btn-primary gotopage">EXPLORE</button></a>									
-						</div>	
-					</div>
-					-->
 				<div class="col-sm-8 col-xs-12">
 					<!-- RESULT 1-->
 					<div class="row">
@@ -290,6 +191,66 @@
 						</div>
 					</div>
 					<!-- RESULT 3-->
+					<div class="row">
+						<div class="search-result-box">
+							<div class="col-sm-4 col-xs-12">
+								<img class="img img-responsive result-img" src="images/user/stock-img4.jpg" />
+							</div>
+
+							<div class="col-sm-6 col-xs-12">
+								<h4 class="result-title">Hotel Ipsum</h4>
+								<p class="result-caption">Lorem ipsum dolor sit amet. </p>
+								<p class="result-icons animated">
+                                	<span><img src="images/user/noun_649646_cc.png" /></span>
+                                    <span><img src="images/user/noun_728690_cc.png" /></span>
+									<span><img src="images/user/noun_889343_cc.png" /></span>
+                                    <span><img src="images/user/noun_1026748_cc.png" /></span>
+                                </p>
+								<p class="result-description">
+                                	Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+									Proin vel nibh vestibulum odio laoreet venenatis. Praesent efficitur vehicula gravida. 
+                                </p>
+							</div>
+
+							<div class="col-sm-2 col-xs-12">
+								<div class="stay-cost animated">
+									<h3 class="color-blue"><span class="result-caption">Rs. </span><br> 1.2 K</h3>
+									<p class="result-caption">per night</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- RESULT 4-->
+					<div class="row">
+						<div class="search-result-box">
+							<div class="col-sm-4 col-xs-12">
+								<img class="img img-responsive result-img" src="images/user/stock-img4.jpg" />
+							</div>
+
+							<div class="col-sm-6 col-xs-12">
+								<h4 class="result-title">Hotel Ipsum</h4>
+								<p class="result-caption">Lorem ipsum dolor sit amet. </p>
+								<p class="result-icons animated">
+                                	<span><img src="images/user/noun_649646_cc.png" /></span>
+                                    <span><img src="images/user/noun_728690_cc.png" /></span>
+									<span><img src="images/user/noun_889343_cc.png" /></span>
+                                    <span><img src="images/user/noun_1026748_cc.png" /></span>
+                                </p>
+								<p class="result-description">
+                                	Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+									Proin vel nibh vestibulum odio laoreet venenatis. Praesent efficitur vehicula gravida. 
+                                </p>
+							</div>
+
+							<div class="col-sm-2 col-xs-12">
+								<div class="stay-cost animated">
+									<h3 class="color-blue"><span class="result-caption">Rs. </span><br> 1.2 K</h3>
+									<p class="result-caption">per night</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- RESULT 5-->
 					<div class="row">
 						<div class="search-result-box">
 							<div class="col-sm-4 col-xs-12">
