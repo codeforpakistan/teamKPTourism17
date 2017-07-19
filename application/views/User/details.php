@@ -1,4 +1,4 @@
-<body class="pattern animated fadeIn">
+<body class="pattern">
 	<link rel="stylesheet" id="datetimepicker-css" href="css/user/jquery-ui.css" type="text/css" media="all">
 	<!-- details Modal -->
 	<div class="modal fade" id="detailsModal" role="dialog">
@@ -24,50 +24,56 @@
 		<!-- TOP DIV -->
 		<div class="container">	
         	<!-- TOP LOGO AND MENU DIV -->
-			<div class="row top_div">
-				<div class="col-sm-12">	
+			<div class="col-sm-12">
+				<div class="row top_div">	
 					<!-- LOGO DIV -->
-					<div class="col-lg-6 col-sm-5 col-xs-3">
-						<div class="col-sm-2 col-xs-9">
-							<a href="index.php"><img class="img logo" src="images/user/logo.png" alt=""></a>
+					<nav class="navbar">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="col-sm-5 col-xs-3">
+						    <div class="navbar-header">							      	
+						      	<a class="navbar-brand" href="<?php echo base_url();?>home">
+							      	<div class="col-sm-2 col-xs-9">
+										<img class="img logo" src="images/user/logo.png" alt="">
+									</div>
+									<div class="col-sm-10 col-xs-3 text-left">
+										<h4 class="color-blue top_div_logo_heading">TCKP DISCOVER</h4>
+										<h5 class="heading-description">Tourism Cooperation KP</h5>
+									</div>
+								</a>
+						    </div>
 						</div>
-						<div class="col-sm-10 col-xs-3 text-left">
-							<h4 class="color-blue top_div_logo_heading">TCKP DISCOVER</h4>
-							<h5 class="heading-description">Tourism Cooperation KP</h5>
+
+						<!-- Collect the nav links for toggling -->
+						<div class="col-sm-7 col-xs-9">
+					    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+							    <span class="sr-only">Toggle navigation</span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						    </button>
+							<div class="collapse navbar-collapse" id="main-menu">
+						      	<ul class="nav navbar-nav">
+						        	<li class="top-links color-black"><a href="<?php echo base_url();?>home">Home</a></li>
+									<li class="top-links color-black"><a href="<?php echo base_url();?>discover">Destintions</a></li>
+									<li class="top-links color-black"><a href="#">Events</a></li>
+									<li class="top-links color-black"><a href="#">Bookings</a></li>
+									<li class="top-links color-black"><a href="#">Activities</a></li>
+								</ul>						     
+							</div><!-- /.navbar-collapse -->
 						</div>
-					</div>
-					<!-- MENU DIV -->				
-					<div class="col-lg-6 col-sm-7 col-xs-9">
-							<nav class="navbar">
-								<div class="navbar-header">
-							      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuBar">
-							        <span class="icon-bar"></span>
-							        <span class="icon-bar"></span>
-							        <span class="icon-bar"></span>                        
-							      </button>
-							    </div>
-							    <div class="collapse navbar-collapse" id="menuBar">
-									<ul class="nav navbar-nav">
-										<li class="top-links color-black"><a href="#">Sign In</a></li>
-										<li class="top-links color-black"><a href="#">Plan</a></li>
-										<li class="top-links color-black"><a href="#">Events</a></li>
-										<li class="top-links color-black"><a href="#">Destinations</a></li>
-									</ul>
-								</div>
-							</nav>
-					</div>
+					</nav>
 				</div>
 			</div>
 
 			<!-- BREAD CRUMB AND WEATHER DIV -->
-			<div class="row breadcrumbdiv">	
-				<div class="col-sm-push-1 col-sm-10 col-sm-pull-1">
+			<div class="col-sm-push-1 col-sm-10 col-sm-pull-1">	
+				<div class="row breadcrumbdiv">
 					<!-- BREADCRUMB DIV -->
 					<div class="col-lg-6 col-xs-12">
 						<ol class="breadcrumb">
 						  <li><a href="<?php echo base_url();?>home">Home</a></li>
 						  <li><a href="<?php echo base_url();?>discover">Discover</a></li>						  						  
-						  <li class="active"></li>
+						  <li class="selected-area active"></li>
 						</ol>
 					</div>
 					<!-- ELEVATION AND WEATHER DIV -->				
@@ -342,7 +348,7 @@
 							?>
 							<div class="col-lg-6 col-xs-12">
                             	<a href="<?php echo base_url();?>restaurant/<?php echo $value['rest_id'];?>">
-                                    <div class="food-box">
+                                    <div class="food-box translatehorizontal">
                                         <h5 class="food-name"><?php echo $value['name'];?></h5>
                                         <p class="food-type"><?php echo $value['address'];?></p>
                                     </div>
@@ -555,11 +561,10 @@
 <script type="text/javascript" src="js/user/jquery-ui.js" ></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		//show selected area in breadcrumb
-		$('.breadcrumb .active').text(window.sessionStorage.getItem('region'));
 		//Show selected area in activities and sight seeing cards, food and drinks
 		$('.area-name').text('in '+window.sessionStorage.getItem('region')); 
 		$('.top-sights-to-visit .sort-heading').text('top sights in '+window.sessionStorage.getItem('region'));
+		//showing selected area 
 		$('.selected-area').text(window.sessionStorage.getItem('region'));
 
 		// SET SELECTED ACTIVITY
