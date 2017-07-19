@@ -56,6 +56,9 @@ h5 {
 ul {
 	-webkit-padding-start: 30px !important;
 }
+.modal-body h1, .modal-body h2, .modal-body h3, .modal-body h4, .modal-body h5, .modal-body h6 {
+	text-transform: uppercase;
+}
 .pattern {
 	background: url('../../images/user/geo_pattern_light.png');
 }
@@ -452,10 +455,10 @@ select.search_select {
     margin-bottom: 0;
 }
 .logo {
-    width: 60px;
+    width: 65px;
     height: auto;
     margin-left: -15px;
-    margin-top: 5px;
+    margin-top: 4px;
 }
 .top_div {
 	padding: 1em 0 0;
@@ -806,6 +809,22 @@ select.search_select {
     font-size: 12px;
     font-family: 'Robotto-Light';
     color: #000;
+}
+#KPModal .modal-body  {
+	padding: 0 3%;
+	line-height: 1.75em;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-moz-column-count: 2; /* Firefox */
+	column-count: 2;
+	-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+	-moz-column-gap: 40px; /* Firefox */
+	column-gap: 40px;
+	padding-top: 1em;
+	text-align: justify;
+}
+.about-kp {
+	line-height: 2em;
+	padding: 5% 0;
 }
 /********************************/
 /*    AREA DETAILS PAGE CSS     */
