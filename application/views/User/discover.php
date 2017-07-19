@@ -1,46 +1,52 @@
-<body class="pattern animated fadeIn">
+<body class="white_bg animated fadeIn">
 	<div class="content">
 		<!-- TOP DIV -->
 		<div class="container">	
 			<!-- TOP LOGO AND MENU DIV -->
-			<div class="row top_div">
-				<div class="col-sm-12">	
+			<div class="col-sm-12">
+				<div class="row top_div">	
 					<!-- LOGO DIV -->
-					<div class="col-lg-6 col-sm-5 col-xs-3">
-						<div class="col-sm-2 col-xs-9">
-							<img class="img logo" src="images/user/logo.png" alt="">
+					<nav class="navbar">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="col-sm-5 col-xs-3">
+						    <div class="navbar-header">							      	
+						      	<a class="navbar-brand" href="<?php echo base_url();?>home">
+							      	<div class="col-sm-2 col-xs-9">
+										<img class="img logo" src="images/user/logo.png" alt="">
+									</div>
+									<div class="col-sm-10 col-xs-3 text-left">
+										<h4 class="color-blue top_div_logo_heading">TCKP DISCOVER</h4>
+										<h5 class="heading-description">Tourism Cooperation KP</h5>
+									</div>
+								</a>
+						    </div>
 						</div>
-						<div class="col-sm-10 col-xs-3 text-left">
-							<h4 class="color-blue top_div_logo_heading"> TCKP DISCOVER</h4>
-							<h5 class="heading-description">Tourism Cooperation KP</h5>
+
+						<!-- Collect the nav links for toggling -->
+						<div class="col-sm-7 col-xs-9">
+					    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+							    <span class="sr-only">Toggle navigation</span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						    </button>
+							<div class="collapse navbar-collapse" id="main-menu">
+						      	<ul class="nav navbar-nav">
+						        	<li class="top-links color-black"><a href="home.php">Home</a></li>
+									<li class="top-links color-black"><a href="discover.php">Destintions</a></li>
+									<li class="top-links color-black"><a href="#">Events</a></li>
+									<li class="top-links color-black"><a href="#">Bookings</a></li>
+									<li class="top-links color-black"><a href="#">Activities</a></li>
+								</ul>						     
+							</div><!-- /.navbar-collapse -->
 						</div>
-					</div>
-					<!-- MENU DIV -->				
-					<div class="col-lg-6 col-sm-7 col-xs-9">
-							<nav class="navbar">
-								<div class="navbar-header">
-							      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuBar">
-							        <span class="icon-bar"></span>
-							        <span class="icon-bar"></span>
-							        <span class="icon-bar"></span>                        
-							      </button>
-							    </div>
-							    <div class="collapse navbar-collapse" id="menuBar">
-									<ul class="nav navbar-nav">
-										<li class="top-links color-black"><a href="#">Sign In</a></li>
-										<li class="top-links color-black"><a href="#">Plan</a></li>
-										<li class="top-links color-black"><a href="#">Events</a></li>
-										<li class="top-links color-black"><a href="#">Destinations</a></li>
-									</ul>
-								</div>
-							</nav>
-					</div>
+					</nav>
 				</div>
 			</div>
 
 			<!-- BREAD CRUMB AND WEATHER DIV -->
-			<div class="row breadcrumbdiv">	
-				<div class="col-sm-push-1 col-sm-10 col-sm-pull-1">
+			<div class="col-sm-push-1 col-sm-10 col-sm-pull-1">	
+				<div class="row breadcrumbdiv">
 					<!-- BREADCRUMB DIV -->
 					<div class="col-lg-6 col-xs-12">
 						<ol class="breadcrumb">
@@ -51,6 +57,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- BANNER ROW -->
 		<div class="container-fluid">
 			<div class="row">
@@ -91,7 +98,7 @@
 		</div>
 
 		<!-- REGIONS SORT AND REGIONS DISPALY DIV -->
-		<div class="regions-wrapper margins">
+		<div class="regions-wrapper padding pattern">
 			<div class="container">	
 				<!-- REGIONS SORT DIV -->
 				<div class="row">
