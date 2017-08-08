@@ -11,7 +11,7 @@
 							<a href="index.php"><img class="img logo" src="images/user/logo.png" alt=""></a>
 						</div>
 						<div class="col-sm-10 col-xs-3 text-left">
-							<h4 class="color-blue top_div_logo_heading"> TCKP DISCOVER</h4>
+							<h4 class="color-blue top_div_logo_heading">TCKP DISCOVER</h4>
 							<h5 class="heading-description">Tourism Cooperation KP</h5>
 						</div>
 					</div>
@@ -60,77 +60,98 @@
 				</div>
 			</div>
 		</div>
-		<?php 
-		echo "<pre>";
-		//print_r($search_data);
-		echo "</pre>";
 		
-		?>
+
 		<!-- BANNER ROW -->
 		<div class="container-fluid">
 			<div class="row">
 				<div class="banner-wrapper">
 					<div class="searchPage_banner">
 						<img class="img img-responsive" src="images/user/img_1.jpg" />
+						<!------ search form ------>
+						<div class="search-banner-form">
+							<div class="col-sm-push-1 col-sm-10 col-sm-pull-1 col-xs-12">
+		                        <form class="discover-search-form" action="<?php echo base_url();?>User/User/search" method="post">
+									<div class="form-group col-sm-4 col-xs-12">
+										<label class="discover-search-label" for="category">Show me</label>
+										<select class="form-control search_select" id="category" name="category">
+							          	<?php  
+											if(!empty($categories))
+												{
+													?>
+		                                			<option value=""> -- Select Category -- </option>
+		                                			<?php
+													foreach($categories as $key => $value)
+														{
+													?>	
+		                                                <option value="<?php echo $value['cat_id'];?>"><?php echo $value['name'];?></option>	
+													<?php	
+														}	
+												}
+											else{
+													?>
+		                                            <option value=""> -- No category Found --</option>
+		                                            <?php	
+												}
+												?>
+											</select>
+										</div>
+										<div class="form-group col-sm-4 col-xs-12">
+											<label class="discover-search-label" for="category">of type</label>
+										    <select class="form-control search_select" id="type" name="type">
+										       	<?php  
+												if(!empty($types))
+												{
+												?>
+		                                           	<option> -- Select Type -- </option>
+		                                            <?php
+													foreach($types as $key => $value)
+													{
+													?>	
+		                                            <option value="<?php $value['type_id'];?>"><?php echo $value['name'];?></option>	
+													<?php	
+													}	
+												}
+												else{
+													?>
+		                                           	<option value=""> -- No type Found --</option>
+		                                           	<?php	
+													}
+												?>
+										      </select>
+										</div>
+										<div class="form-group col-sm-4 col-xs-12">
+									    	<label class="discover-search-label" for="category">in</label>
+									      	<select class="form-control search_select" id="form-region" name="form-region">
+									          	<?php  
+												if(!empty($regions))
+												{
+												?>
+		                                           	<option> -- Select Region -- </option>
+		                                            <?php
+													foreach($regions as $key => $value)
+													{
+													?>	
+		                                            <option value="<?php $value['reg_id'];?>"><?php echo $value['name'];?></option>	
+													<?php	
+													}	
+												}
+												else{
+													?>
+		                                           	<option value=""> -- No region Found --</option>
+		                                           	<?php	
+													}
+													?>
+									      	</select>
+									    </div>	
+								</form>
+							</div>
+						</div>
+						<!------ end of search form ------>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<!-- SEARCH FORM -->
-		<div class="container">
-			<div class="row margins">
-				<form class="form-inline search-form" action="search.php">
-					<div class="form-group">
-						<label class="search-label" for="category">Show me</label>
-						<select class="form-control search_select" id="category" name="category">
-						    <option value="trekking">Trekking</option>
-							<option value="sightseeing">Sight Seeing</option>
-							<option value="attractions">Attractions</option>
-							<option value="fishing">Fishing</option>
-							<option value="paragliding">Paragliding</option>
-							<option value="ziplining">Zip Lining</option>
-							<option value="rafting">White River Rafting</option>
-							<option value="culture">Culture</option>
-							<option value="transportion">Transportion</option>
-							<option value="hotel">Hotels</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<label class="search-label" for="category-subtype">of type </label>
-						<select class="form-control search_select" id="category-subtype" name="category-subtype">
-						    <option value="meuseum">Meuseum</option>
-							<option value="gallery">Gallery</option>
-							<option value="nationalpark">National Park</option>
-							<option value="beach">Beach</option>
-							<option value="rental">Rental</option>
-							<option value="historicsite">Historic Site</option>
-							<option value="landmark">Land Mark</option>
-							<option value="mosque">Mosque</option>
-							<option value="viewpoint">View Point</option>
-							<option value="lorem">Lorem</option>
-							<option value="ipsum">Ipsum</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<label class="search-label" for="region">in</label>
-						<select class="form-control search_select" id="region" name="region">
-							<option value="naran">Naran</option>
-							<option value="kaghan">Kaghan</option>
-							<option value="swat">Swat</option>
-							<option value="peshawar">Peshawar</option>
-							<option value="abbottabad">Abbottabad</option>
-							<option value="chitral">Chitral</option>
-							<option value="gilgit">Gilgit</option>
-							<option value="kohistan">Kohistan</option>
-							<option value="DI khan">DI Khan</option>
-							<option value="hunza">Hunza</option>
-						</select>
-					</div>
-				</form>
-			</div>
-		</div>
-		<!-- END OF SEARCH FORM -->
 
 		<!-- RESULTS ROW -->
 		<div class="container">
@@ -148,7 +169,7 @@
 								<p class="result-caption">Lorem ipsum dolor sit amet. </p>
 								<p class="result-icons animated">
                                 	<span><img src="images/user/noun_649646_cc.png" /></span>
-                                    <span><img src="images/noun_728690_cc.png" /></span>
+                                    <span><img src="images/user/noun_728690_cc.png" /></span>
 									<span><img src="images/user/noun_889343_cc.png" /></span>
                                     <span><img src="images/user/noun_1026748_cc.png" /></span></p>
 								<p class="result-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -157,7 +178,8 @@
 
 							<div class="col-sm-2  col-xs-12">
 								<div class="stay-cost animated">
-									<h3 class="color-blue"><span class="result-caption">Rs. </span><br> 1.2 K</h3>
+									<h3 class="color-blue result-caption">Rs.</h3>
+									<h3 class="color-blue">1.2 K</h3>
 									<p class="result-caption">per night</p>
 								</div>
 							</div>
@@ -175,7 +197,7 @@
 								<p class="result-caption">Lorem ipsum dolor sit amet. </p>
 								<p class="result-icons animated">
                                 	<span><img src="images/user/noun_649646_cc.png" /></span>
-                                    <span><img src="images/noun_728690_cc.png" /></span>
+                                    <span><img src="images/user/noun_728690_cc.png" /></span>
 									<span><img src="images/user/noun_889343_cc.png" /></span>
                                 	<span><img src="images/user/noun_1026748_cc.png" /></span></p>
 								<p class="result-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -184,7 +206,8 @@
 
 							<div class="col-sm-2 col-xs-12">
 								<div class="stay-cost animated">
-									<h3 class="color-blue"><span class="result-caption">Rs. </span><br> 1.2 K</h3>
+									<h3 class="color-blue result-caption">Rs.</h3>
+									<h3 class="color-blue">1.2 K</h3>
 									<p class="result-caption">per night</p>
 								</div>
 							</div>
@@ -214,7 +237,8 @@
 
 							<div class="col-sm-2 col-xs-12">
 								<div class="stay-cost animated">
-									<h3 class="color-blue"><span class="result-caption">Rs. </span><br> 1.2 K</h3>
+									<h3 class="color-blue result-caption">Rs.</h3>
+									<h3 class="color-blue">1.2 K</h3>
 									<p class="result-caption">per night</p>
 								</div>
 							</div>
@@ -244,7 +268,8 @@
 
 							<div class="col-sm-2 col-xs-12">
 								<div class="stay-cost animated">
-									<h3 class="color-blue"><span class="result-caption">Rs. </span><br> 1.2 K</h3>
+									<h3 class="color-blue result-caption">Rs.</h3>
+									<h3 class="color-blue">1.2 K</h3>
 									<p class="result-caption">per night</p>
 								</div>
 							</div>
@@ -274,7 +299,8 @@
 
 							<div class="col-sm-2 col-xs-12">
 								<div class="stay-cost animated">
-									<h3 class="color-blue"><span class="result-caption">Rs. </span><br> 1.2 K</h3>
+									<h3 class="color-blue result-caption">Rs.</h3>
+									<h3 class="color-blue">1.2 K</h3>
 									<p class="result-caption">per night</p>
 								</div>
 							</div>
@@ -284,6 +310,69 @@
 				</div>
 
 				<div class="col-sm-4 col-xs-12">
+					<form class="form-horizontal search-form" action="search.php">
+							<div class="form-group checks">
+								<p class="search-label">of type </p>
+								<div class="checkbox-columns">
+									<div class="col-sm-6 col-xs-12">
+										<label class="control-label checkbox-label">
+											<input class="types" type="checkbox" value="meuseum" name="meuseum" id="meuseum">Meuseum
+										</label>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<label class="control-label checkbox-label">
+											<input class="types" type="checkbox" value="gallery" name="gallery" id="gallery">Gallery
+										</label>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<label class="control-label checkbox-label">
+											<input class="types" type="checkbox" value="beach" name="beach" id="beach">Beach
+										</label>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<label class="control-label checkbox-label">
+											<input class="types" type="checkbox" value="rental" name="rental" id="rental">Rental
+										</label>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<label class="control-label checkbox-label">
+											<input class="types" type="checkbox" value="mosque" name="mosque" id="mosque">Mosque
+										</label>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<label class="control-label checkbox-label">
+											<input class="types" type="checkbox" value="nationalpark" name="nationalpark" id="nationalpark">National Park
+										</label>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<label class="control-label checkbox-label">
+											<input class="types" type="checkbox" value="historicsite" name="historicsite" id="historicsite">Historic Site
+										</label>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<label class="control-label checkbox-label">
+											<input class="types" type="checkbox" value="landmark" name="landmark" id="landmark">Land Mark
+										</label>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<label class="control-label checkbox-label">
+											<input class="types" type="checkbox" value="viewpoint" name="viewpoint" id="viewpoint">View Point
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group clearfix">
+								<label class="control-label search-label">In Range</label>	
+								<div class="col-lg-8 col-md-12">							
+									<div data-role="rangeslider">
+										<input type="range" name="minPrice" id="minPrice" value="500" min="0" max="50000" step="500"  oninput="rangeOutput.value = minPrice.value">
+    									<output name="rangeOutput" id="rangeOutput">500</output>
+	      							</div>
+								</div>
+							</div>
+						</form>
+
 					<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCe0I76FCBsgJP2dh193EWuX2IPST4gn0k&sensor=false"></script>
 					<script type="text/javascript">
                     	var latitude= ["34.001527", "33.992333", "33.987094", "34.035952", "34.059421"];
@@ -382,7 +471,7 @@
 	<style type="text/css">
         #map_canvas {
             width: 100%;
-            height: 700px;
+            height: 600px;
         }
     </style>
 	<script type="text/javascript" src="js/user/jquery.min.js" ></script>
@@ -404,6 +493,19 @@
 				window.sessionStorage.setItem('path', $(this).attr('id'));
 				console.log(sessionStorage);
 			});
+
+			/*var search_form = document.querySelector('.search-banner-form')
+			var menuPosition = search_form.getBoundingClientRect().top;		
+			window.addEventListener('scroll', function() {
+			    if (window.pageYOffset >= menuPosition) {
+			        search_form.style.position = 'fixed';
+			        search_form.style.top = '0px';
+			    } else if (window.pageYOffset <= menuPosition){
+			        search_form.style.position = 'absolute';
+			        search_form.style.bottom = '0px';
+			    }
+			});
+			*/
 		});
 	</script>
 

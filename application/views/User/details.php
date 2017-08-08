@@ -1,4 +1,4 @@
-<body class="pattern">
+<body class="white_bg animated fadeIn">
 	<link rel="stylesheet" id="datetimepicker-css" href="css/user/jquery-ui.css" type="text/css" media="all">
 	<!-- details Modal -->
 	<div class="modal fade" id="detailsModal" role="dialog">
@@ -32,11 +32,11 @@
 						<div class="col-sm-5 col-xs-3">
 						    <div class="navbar-header">							      	
 						      	<a class="navbar-brand" href="<?php echo base_url();?>home">
-							      	<div class="col-sm-2 col-xs-9">
+							      	<div class="col-sm-3 col-xs-9">
 										<img class="img logo" src="images/user/logo.png" alt="">
 									</div>
-									<div class="col-sm-10 col-xs-3 text-left">
-										<h4 class="color-blue top_div_logo_heading">TCKP DISCOVER</h4>
+									<div class="col-sm-9 col-xs-3 text-left">
+										<h4 class="color-blue top_div_logo_heading">TCKP</h4>
 										<h5 class="heading-description">Tourism Cooperation KP</h5>
 									</div>
 								</a>
@@ -53,8 +53,8 @@
 						    </button>
 							<div class="collapse navbar-collapse" id="main-menu">
 						      	<ul class="nav navbar-nav">
-						        	<li class="top-links color-black"><a href="<?php echo base_url();?>home">Home</a></li>
-									<li class="top-links color-black"><a href="<?php echo base_url();?>discover">Destintions</a></li>
+						        	<li class="top-links color-black"><a href="home.php">Home</a></li>
+									<li class="top-links color-black"><a href="discover.php">Destintions</a></li>
 									<li class="top-links color-black"><a href="#">Events</a></li>
 									<li class="top-links color-black"><a href="#">Bookings</a></li>
 									<li class="top-links color-black"><a href="#">Activities</a></li>
@@ -147,7 +147,6 @@
 		<!-- ABOUT DIV -->
 		<div class="white_bg about">
 			<div class="container">
-				<div class="">
 					<div class="col-sm-12">
                     <?php 
 					if(!empty($region_data))
@@ -159,9 +158,9 @@
 						<div class="col-lg-5 col-md-5 col-sm-12">
 							<p class="color margins">
 								<?php 
-								if(strlen($region_data->description) > 500)
+								if(strlen($region_data->description) > 600)
 								{
-									echo html_entity_decode(substr($region_data->description,0,500))." ...";
+									echo html_entity_decode(substr($region_data->description,0,600))." ...";
 								?>
                                 	<br>
                                 	<a href="javascript:void(0);" class="color-blue seeAllLink" data-toggle="modal" data-target="#detailsModal">
@@ -185,13 +184,14 @@
 				</div>
 			</div>
 		</div>
-		<br><br><br><br><br><br>
+		<br><br><br><br><br>
+
 		<!-- REGIONS SELECTION AND EVENTS SELECTION DIV -->
         <?php 
 		if(!empty($region_activities))
 		{
 		?>
-		<div class="gray_bg padding">
+		<div class="pattern">
 			<div class="container">	
 				<!-- EVENTS SELECTION DIV -->
 				<div class="row margins text-center ">	
@@ -330,7 +330,7 @@
 		if(!empty($restaurant))
 		{
 		?>		
-		<div class="white_bg food-and-drinks">
+		<div class="gray_bg food-and-drinks">
 			<!-- CONTAINER DIV -->
 			<div class="container-fluid">
 				<div class="row">
@@ -531,7 +531,8 @@
 		}
 		/*else{
 			echo "No event Yet for this region";
-			}*/
+			}
+			*/
 		?>
 
 		<!-- START OF FOOTER -->
