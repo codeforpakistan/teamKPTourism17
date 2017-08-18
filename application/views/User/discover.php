@@ -29,104 +29,108 @@
 		    </div>
 		</div>
 	<div class="content">
-		<!-- TOP DIV -->
-		<div class="container">	
-			<!-- TOP LOGO AND MENU DIV -->
-			<div class="col-sm-12">
-				<div class="row top_div">	
-					<!-- LOGO DIV -->
-					<nav class="navbar">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="col-sm-5 col-xs-3">
-						    <div class="navbar-header">							      	
-						      	<a class="navbar-brand" href="<?php echo base_url();?>home">
-							      	<div class="col-sm-3 col-xs-9">
-										<img class="img logo" src="images/user/logo.png" alt="">
-									</div>
-									<div class="col-sm-9 col-xs-3 text-left">
-										<h4 class="color-blue top_div_logo_heading">TCKP</h4>
-										<h5 class="heading-description">Tourism Cooperation KP</h5>
-									</div>
-								</a>
-						    </div>
-						</div>
-
-						<!-- Collect the nav links for toggling -->
-						<div class="col-sm-7 col-xs-9">
-					    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
-							    <span class="sr-only">Toggle navigation</span>
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-						    </button>
-							<div class="collapse navbar-collapse" id="main-menu">
-						      	<ul class="nav navbar-nav">
-						        	<li class="top-links color-black"><a href="home.php">Home</a></li>
-									<li class="top-links color-black"><a href="discover.php">Destintions</a></li>
-									<li class="top-links color-black"><a href="#">Events</a></li>
-									<li class="top-links color-black"><a href="#">Bookings</a></li>
-									<li class="top-links color-black"><a href="#">Activities</a></li>
-								</ul>						     
-							</div><!-- /.navbar-collapse -->
-						</div>
-					</nav>
-				</div>
-			</div>
-
-			<!-- BREAD CRUMB AND WEATHER DIV -->
-			<div class="col-sm-push-1 col-sm-10 col-sm-pull-1">	
-				<div class="row breadcrumbdiv">
-					<!-- BREADCRUMB DIV -->
-					<div class="col-lg-6 col-xs-12">
-						<ol class="breadcrumb">
-						  <li><a href="<?php echo base_url();?>home">Home</a></li>						  
-						  <li class="active">Discover</li>
-						</ol>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- END OF TOP DIV -->
-
-		<!-- BANNER ROW -->
-		<div class="container-fluid">
-			<div class="row">
-				<div class="banner-wrapper">
-					<div id="top-slider" class="banner">
-                    <?php
-					if(!empty($slider))
-					{
-						$a = 1; 
-						foreach($slider as $key=>$value)
-						{
-						?>
-							<div id="slide<?php echo $a;?>" class="slide">
-								<img class="img img-responsive" width="100%" src="images/admin/main_slider/<?php echo $value['image'];?>" />
-								<div class="banner-text">
-									<h3 class="color-white"><?php echo $value['heading'];?></h3>
-									<p class="color-white"><?php echo $value['description'];?></p>
-									<a href="<?php echo $value['link'];?>"><button class="btn btn-white">VISIT NOW</button></a> 																                            </div>
+		<!-- TOP MENU AND BANNER DIV -->
+		<div class="menu-and-banner-div">
+			<!-- TOP DIV -->
+			<div class="container">	
+				<!-- TOP LOGO AND MENU DIV -->
+				<div class="col-sm-12">
+					<div class="row top_div">	
+						<!-- LOGO DIV -->
+						<nav class="navbar">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="col-sm-5 col-xs-3">
+							    <div class="navbar-header">							      	
+							      	<a class="navbar-brand" href="<?php echo base_url();?>home">
+								      	<div class="col-sm-3 col-xs-9">
+											<img class="img logo" src="images/user/logo.png" alt="">
+										</div>
+										<div class="col-sm-9 col-xs-3 text-left">
+											<h4 class="color-blue top_div_logo_heading">TCKP</h4>
+											<h5 class="heading-description">Tourism Corporation KP</h5>
+										</div>
+									</a>
+							    </div>
 							</div>
-						<?php 
-						$a++;
-						}
-					}
-					else{
-						echo "No slides found";
-						}
-					?>
+
+							<!-- Collect the nav links for toggling -->
+							<div class="col-sm-7 col-xs-9">
+						    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+								    <span class="sr-only">Toggle navigation</span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							    </button>
+								<div class="collapse navbar-collapse" id="main-menu">
+							      	<ul class="nav navbar-nav">
+							        	<li class="top-links color-black"><a href="<?php echo base_url();?>home">Home</a></li>
+										<li class="top-links color-black"><a href="<?php echo base_url();?>discover">Destintions</a></li>
+										<li class="top-links color-black"><a href="#">Events</a></li>
+										<li class="top-links color-black"><a href="#">Bookings</a></li>
+										<li class="top-links color-black"><a href="#">Activities</a></li>
+									</ul>						     
+								</div><!-- /.navbar-collapse -->
+							</div>
+						</nav>
 					</div>
-					<!-- END WRAPPER FOR SLIDES -->
-					<a class="left slide-left carousel-control" href="discover#top-slider" role="button" data-slide="prev">
-						<i class="fa fa-angle-left"></i>
-					</a>
-					<a  class="right slide-right carousel-control" href="discover#top-slider" role="button" data-slide="next">
-						<i class="fa fa-angle-right"></i>
-			        </a>
+				</div>
+
+				<!-- BREAD CRUMB AND WEATHER DIV -->
+				<div class="col-sm-push-1 col-sm-10 col-sm-pull-1">	
+					<div class="row breadcrumbdiv">
+						<!-- BREADCRUMB DIV -->
+						<div class="col-lg-6 col-xs-12">
+							<ol class="breadcrumb">
+							  <li><a href="<?php echo base_url();?>home">Home</a></li>						  
+							  <li class="active">Discover</li>
+							</ol>
+						</div>
+					</div>
 				</div>
 			</div>
+			<!-- END OF TOP DIV -->
+
+			<!-- BANNER ROW -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="banner-wrapper">
+						<div id="top-slider" class="banner">
+	                    <?php
+						if(!empty($slider))
+						{
+							$a = 1; 
+							foreach($slider as $key=>$value)
+							{
+							?>
+								<div id="slide<?php echo $a;?>" class="slide">
+									<img class="img img-responsive" width="100%" src="images/admin/main_slider/<?php echo $value['image'];?>" />
+									<div class="banner-text">
+										<h3 class="color-white"><?php echo $value['heading'];?></h3>
+										<p class="color-white"><?php echo $value['description'];?></p>
+										<a href="<?php echo $value['link'];?>"><button class="btn btn-white">VISIT NOW</button></a> 																                            </div>
+								</div>
+							<?php 
+							$a++;
+							}
+						}
+						else{
+							echo "No slides found";
+							}
+						?>
+						</div>
+						<!-- END WRAPPER FOR SLIDES -->
+						<a class="left slide-left carousel-control" href="discover#" role="button" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a  class="right slide-right carousel-control" href="discover#" role="button" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+				        </a>
+					</div>
+				</div>
+			</div>
+			<!-- END OF BANNER DIV -->
 		</div>
-		<!-- END OF BANNER DIV -->
+		<!-- END OF TOP MENU AND BANNER DIV -->
 
 		<!-- ABOUT DIV -->
 		<div class="white_bg about-kp">
@@ -225,22 +229,24 @@
 		<!-- END OF REGIONS SORT AND REGIONS DISPALY DIV -->
 
 		<!-- SEARCH ROW -->
-		<div class="container-fluid">
-			<div class="row">
-				<div class="discover-search">
-					<div class="container">
+		<div class="discover-search-div">
+			<div class="container-fluid">
+					<div class="row">
 						<!-- SEARCH FORM -->
-						<div class="col-sm-4 col-xs-12">
+						<div class="col-sm-push-2 col-sm-8 col-sm-pull-2 col-xs-12">
 							<div class="search-banner-text">				
-								<h2 class="color-white">PLAN YOUR TRIP IN KP</h2>
+								<h2 class="color-white">SEARCH ANY SPOT IN KP</h2>
+								<span class="search-form-icon"><img src="<?php echo base_url();?>images/user/search-icon.svg" alt=""></span>
 							</div>
 						</div>
-						<div class="col-sm-4 col-xs-12"></div>
-						<div class="col-sm-4 col-xs-12 text-right">
-							<div class="search-banner-form">
-                            	<form class="search" action="<?php echo base_url();?>User/User/search" method="post">
-										<div class="form-group col-xs-12">
-										      	<select class="form-control search_select" id="sel1" name="sel1">
+					</div>
+					<div class="row">
+						<div class="discover-search">
+							<div class="col-sm-push-1 col-sm-10 col-sm-pull-1 col-xs-12">
+                            	<form class="discover-search-form" action="<?php echo base_url();?>User/User/search" method="post">
+										<div class="form-group col-sm-3 col-xs-12">
+											<label class="discover-search-label" for="category">Show me</label>
+										      	<select class="form-control search_select" id="category" name="category">
 										          	<?php  
 													if(!empty($categories))
 													{
@@ -262,8 +268,9 @@
 													?>
 										      	</select>
 										</div>
-										<div class="form-group col-xs-12">
-										      	<select class="form-control search_select" id="sel2" name="sel2">
+										<div class="form-group col-sm-3 col-xs-12">
+											<label class="discover-search-label" for="category">of type</label>
+										      	<select class="form-control search_select" id="type" name="type">
 										          	<?php  
 													if(!empty($types))
 													{
@@ -285,8 +292,9 @@
 													?>
 										      	</select>
 									    </div>
-									    <div class="form-group col-xs-12">
-										      	<select class="form-control search_select" id="sel3" name="sel3">
+									    <div class="form-group col-sm-3 col-xs-12">
+									    	<label class="discover-search-label" for="category">in</label>
+										      	<select class="form-control search_select" id="form-region" name="form-region">
 										          	<?php  
 													if(!empty($regions))
 													{
@@ -308,7 +316,7 @@
 													?>
 										      	</select>
 									    </div>								    
-									    <div class="form-group col-xs-12 text-right">
+									    <div class="form-group col-sm-3 col-xs-12 text-right">
 										    <input type="submit" value="Submit" class="btn btn-info">
 										</div>
 								</form>
@@ -330,8 +338,8 @@
 				<div class="row">
 					<!-- MAIN DIV -->
 					<div class="col-lg-push-1 col-lg-10 col-lg-pull-1">
-						<h2 class="text-center">Other Places To Discover</h2>
-						<h4 class="text-center color-blue">Discover all other beautiful regions of KP</h4>
+						<h2 class="text-center sort-heading">Other Places To Discover</h2>
+						<h4 class="text-center color-blue sort-description">Discover all other beautiful regions of KP</h4>
 						
                         <!-- SEARCH FORM -->	
 						<form class="discover-events-form" action="" method="post">
@@ -353,11 +361,11 @@
 								<div id="activity-<?php echo $a;?>" class="other_activities_box">
 									<a href="<?php echo base_url();?>detail/<?php echo $value['reg_id'];?>">
 										<!-- LEFT IMAGE DIV -->
-										<div class="col-xs-6">
+										<div class="col-xs-5">
 											<img class="img" src="images/admin/regions/<?php echo $value['image']?>" />
 										</div>	
 										<!-- LEFT TEXT DIV -->
-										<div class="col-xs-6">
+										<div class="col-xs-7">
 											<h4 class="color-black"><?php echo $value['name']?></h4>
 											<p class="color"><?php echo $value['location'];?></p>
 										</div>
@@ -408,14 +416,14 @@
 <script src="js/user/scripts.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$("#sel1").change(function(){
+		$("#category").change(function(){
 		$.ajax({
 			url: "<?php echo base_url();?>User/User/getCatType/",
 			data: {cat_id:$(this).val()},
 			type: "post",
 			success: function(r)
 			{
-				$("#sel2").html(r);
+				$("#type").html(r);
 			}
 			});
 		});
@@ -460,6 +468,8 @@
 		
 		
 		//Slider function
+
+		$('.slide').hide();
 		var totalslides = $('.slide').length;
 		var count=1;
 		var bannerImgSlide;
@@ -482,7 +492,7 @@
 			//console.log($('#slide'+count));
 			$('#slide'+count).show();
 			$('#slide'+count+' img').addClass('animated fadeIn30');
-			$('#slide'+count+' h3').addClass('animated fadeInDownBig');
+			$('#slide'+count+' h3').addClass('animated slideInDown');
 			$('#slide'+count+' p').addClass('animated fadeInUpBig');
 			$('#slide'+count+' button').addClass('animated slideInUp');
 	    }
@@ -525,13 +535,13 @@
 				//OTHER REGIONS PAGINATION 
 				$('#activities-div').easyPaginate({
 				    paginateElement: 'div.col-lg-4.col-md-4.col-sm-6.col-xs-12',
-				    elementsPerPage: 9,
+				    elementsPerPage: 6,
 				    effect: 'fade'
 				});
 				//FAMOUS REGIONS PAGINATION 
 				$('#famous-regions').easyPaginate({
 				    paginateElement: 'div.col-lg-4.col-sm-6.col-xs-12',
-				    elementsPerPage: 6,
+				    elementsPerPage: 3,
 				    effect: 'fade'
 				});
 			}
