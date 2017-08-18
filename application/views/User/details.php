@@ -222,7 +222,9 @@
 		if(!empty($region_activities))
 		{
 		?>
+
 		<div id="activities" class="pattern animated">
+      <div class="pattern">
 			<div class="container">	
 				<!-- EVENTS SELECTION DIV -->
 				<div class="row margins text-center ">	
@@ -362,6 +364,7 @@
 		{
 		?>		
 		<div id="resturants" class="gray_bg food-and-drinks">
+		<div class="gray_bg food-and-drinks">
 			<!-- CONTAINER DIV -->
 			<div class="container-fluid">
 				<div class="row">

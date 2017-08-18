@@ -72,7 +72,7 @@
 								</div><!-- /.navbar-collapse -->
 							</div>
 						</nav>
-					</div>
+          </div>
 				</div>
 
 				<!-- BREAD CRUMB AND WEATHER DIV -->
@@ -241,6 +241,7 @@
 						</div>
 					</div>
 					<div class="row">
+
 						<div class="discover-search">
 							<div class="col-sm-push-1 col-sm-10 col-sm-pull-1 col-xs-12">
                             	<form class="discover-search-form" action="<?php echo base_url();?>User/User/search" method="post">
