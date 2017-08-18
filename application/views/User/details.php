@@ -25,50 +25,50 @@
 		<div class="container">	
         	<!-- TOP LOGO AND MENU DIV -->
 			<div class="col-sm-12">
-				<div class="row top_div">	
-					<!-- LOGO DIV -->
-					<nav class="navbar">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="col-sm-5 col-xs-3">
-						    <div class="navbar-header">							      	
-						      	<a class="navbar-brand" href="<?php echo base_url();?>home">
-							      	<div class="col-sm-3 col-xs-9">
-										<img class="img logo" src="images/user/logo.png" alt="">
-									</div>
-									<div class="col-sm-9 col-xs-3 text-left">
-										<h4 class="color-blue top_div_logo_heading">TCKP</h4>
-										<h5 class="heading-description">Tourism Cooperation KP</h5>
-									</div>
-								</a>
-						    </div>
-						</div>
+					<div class="row top_div">	
+						<!-- LOGO DIV -->
+						<nav class="navbar">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="col-sm-5 col-xs-3">
+							    <div class="navbar-header">							      	
+							      	<a class="navbar-brand" href="<?php echo base_url();?>home">
+								      	<div class="col-sm-3 col-xs-9">
+											<img class="img logo" src="images/user/logo.png" alt="">
+										</div>
+										<div class="col-sm-9 col-xs-3 text-left">
+											<h4 class="color-blue top_div_logo_heading">TCKP</h4>
+											<h5 class="heading-description">Tourism Corporation KP</h5>
+										</div>
+									</a>
+							    </div>
+							</div>
 
-						<!-- Collect the nav links for toggling -->
-						<div class="col-sm-7 col-xs-9">
-					    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
-							    <span class="sr-only">Toggle navigation</span>
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-						    </button>
-							<div class="collapse navbar-collapse" id="main-menu">
-						      	<ul class="nav navbar-nav">
-						        	<li class="top-links color-black"><a href="home.php">Home</a></li>
-									<li class="top-links color-black"><a href="discover.php">Destintions</a></li>
-									<li class="top-links color-black"><a href="#">Events</a></li>
-									<li class="top-links color-black"><a href="#">Bookings</a></li>
-									<li class="top-links color-black"><a href="#">Activities</a></li>
-								</ul>						     
-							</div><!-- /.navbar-collapse -->
-						</div>
-					</nav>
-				</div>
+							<!-- Collect the nav links for toggling -->
+							<div class="col-sm-7 col-xs-9">
+						    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+								    <span class="sr-only">Toggle navigation</span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							    </button>
+								<div class="collapse navbar-collapse" id="main-menu">
+							      	<ul class="nav navbar-nav">
+							        	<li class="top-links color-black"><a href="<?php echo base_url();?>home">Home</a></li>
+										<li class="top-links color-black"><a href="<?php echo base_url();?>discover">Destintions</a></li>
+										<li class="top-links color-black"><a href="#">Events</a></li>
+										<li class="top-links color-black"><a href="#">Bookings</a></li>
+										<li class="top-links color-black"><a href="#">Activities</a></li>
+									</ul>						     
+								</div><!-- /.navbar-collapse -->
+							</div>
+						</nav>
+					</div>
 			</div>
 
 			<!-- BREAD CRUMB AND WEATHER DIV -->
 			<div class="col-sm-push-1 col-sm-10 col-sm-pull-1">	
 				<div class="row breadcrumbdiv">
-					<!-- BREADCRUMB DIV -->
+				<!-- BREADCRUMB DIV -->
 					<div class="col-lg-6 col-xs-12">
 						<ol class="breadcrumb">
 						  <li><a href="<?php echo base_url();?>home">Home</a></li>
@@ -143,9 +143,40 @@
 			echo "No slider found for this region";
 			}*/
 		?>
+		<!-- END OF TOP MENU AND BANNER DIV -->
+
+		<!-- STICKY MENU ROW -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="sticky-menu">
+					<nav class="navbar">
+						<!-- Collect the menu links for toggling -->
+							<div class="col-md-push-2 col-md-8 col-md-pull-2 col-sm-push-1 col-sm-10 col-sm-pull-1 col-xs-12">
+						    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sticky-menu" aria-expanded="false">
+								    <span class="sr-only">Toggle navigation</span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							    </button>
+								<div class="collapse navbar-collapse" id="sticky-menu">
+							      	<ul class="nav navbar-nav" style="float: none;">
+							        	<li><a class="color-black" href="<?php echo $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>#about">About <span class="selected-area"></span></a></li>
+										<li><a class="color-black" href="<?php echo $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>#activities">Activities</a></li>
+										<li><a class="color-black" href="<?php echo $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>#sights">Top Sights</a></li>
+										<li><a class="color-black" href="<?php echo $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>#resturants">Resturants</a></li>
+										<li><a class="color-black" href="<?php echo $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>#guest-houses">Guest Houses</a></li>
+										<li><a class="color-black" href="<?php echo $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>#survival-guide">Essential Information</a></li>
+										<li><a class="color-black" href="<?php echo $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>#events-and-tours-div">Events & Tours</a></li>
+									</ul>						     
+								</div><!-- /.navbar-collapse -->
+							</div>
+						</nav>
+				</div>
+			</div>
+		</div>
 
 		<!-- ABOUT DIV -->
-		<div class="white_bg about">
+		<div id="about" class="white_bg about animated">
 			<div class="container">
 					<div class="col-sm-12">
                     <?php 
@@ -186,12 +217,14 @@
 		</div>
 		<br><br><br><br><br>
 
-		<!-- REGIONS SELECTION AND EVENTS SELECTION DIV -->
+		<!-- ACTIVITIES SELECTION AND EVENTS SELECTION DIV -->
         <?php 
 		if(!empty($region_activities))
 		{
 		?>
-		<div class="pattern">
+
+		<div id="activities" class="pattern animated">
+      <div class="pattern">
 			<div class="container">	
 				<!-- EVENTS SELECTION DIV -->
 				<div class="row margins text-center ">	
@@ -273,7 +306,7 @@
 		if(!empty($sights))
 		{
 		?>		
-		<div class="white_bg top-sights-to-visit">
+		<div id="sights" class="white_bg top-sights-to-visit animated">
 			<!-- CONTAINER DIV -->
 			<div class="container">
 				<div class="row">
@@ -330,6 +363,7 @@
 		if(!empty($restaurant))
 		{
 		?>		
+		<div id="resturants" class="gray_bg food-and-drinks">
 		<div class="gray_bg food-and-drinks">
 			<!-- CONTAINER DIV -->
 			<div class="container-fluid">
@@ -376,7 +410,7 @@
 		<!-- END OF TOP SIGHTS IN NARAN	-->
 
 		<!-- SEARCH HOTELS AND RESTURANTS DIV-->		
-		<div class="hotels-container">
+		<div id="guest-houses" class="hotels-container">
 			<!-- CONTAINER DIV -->
 			<div class="container-fluid">
 				<div class="col-xs-pull-1 col-xs-10 col-xs-push-1 text-center">
@@ -415,7 +449,7 @@
 		<!-- END OF SEARCH HOTELS AND RESTURANTS	-->	
 
 		<!-- SURVIVAL GUIDE DIV -->
-		<div class="white_bg survival-guide">
+		<div id="survival-guide" class="white_bg survival-guide">
 			<div class="container-fluid text-center">
 				<div class="container">
 					<h3 class="color-text sort-heading">Essential Information</h3>
@@ -483,7 +517,7 @@
         if(!empty($events))
 		{
 		?>
-       <div class="grey_bg padding events-and-tours-div">
+       <div id="events-and-tours-div" class="grey_bg padding events-and-tours-div">
 			<div class="container-fluid">	
 				<div class="container">
 					<h2 class="text-center">Events/Tours</h2>
@@ -571,6 +605,8 @@
 		// SET SELECTED ACTIVITY
 		$('.famous_events_div').click(function() {
 			var id = $(this).attr('id');
+			window.sessionStorage.setItem('activity', 'activity');
+			window.sessionStorage.setItem('category', 'activity');
 			window.location.href = "<?php echo base_url();?>actvities/"+id;
         });
 
@@ -708,7 +744,38 @@
 
 		})
 	
+		// STICKY MENU
+		$('.sticky-menu').addClass('original').clone().insertAfter('.sticky-menu').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
 
+		scrollIntervalID = setInterval(stickIt, 10);
+
+
+		function stickIt() {
+
+		  var orgElementPos = $('.original').offset();
+		  orgElementTop = orgElementPos.top;               
+
+		  if ($(window).scrollTop() >= (orgElementTop)) {
+		    // scrolled past the original position; now only show the cloned, sticky element.
+
+		    // Cloned element should always have same left position and width as original element.     
+		    orgElement = $('.original');
+		    coordsOrgElement = orgElement.offset();
+		    leftOrgElement = coordsOrgElement.left;  
+		    widthOrgElement = orgElement.css('width');
+		    $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
+		    $('.original').css('visibility','hidden');
+		  } else {
+		    // not scrolled past the sticky-menu; only show the original sticky-menu.
+		    $('.cloned').hide();
+		    $('.original').css('visibility','visible');
+		  }
+		}
+
+		$('.sticky-menu li, .sticky-menu a').click(function() { 
+			$('.sticky-menu li, .sticky-menu a').removeClass('sticky-menu-active');
+			$(this).addClass('sticky-menu-active');
+		});
 			
 	});
 </script>
