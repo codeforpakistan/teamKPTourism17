@@ -18,8 +18,8 @@
     "test": "grunt bedrock-manual"
   },
   "dependencies": {
-    "@ephox/katamari": "^1.1.0",
-    "@ephox/sugar": "^3.1.0"
+    "@ephox/katamari": "^2.0.4",
+    "@ephox/sugar": "^4.0.5"
   },
   "devDependencies": {
     "@ephox/bolt": "^1.6.0",
